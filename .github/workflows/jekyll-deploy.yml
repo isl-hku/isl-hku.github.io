@@ -1,0 +1,53 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# 授予工作流必要的权限
+permissions:
+  contents: write  # 允许写入内容
+  pages: write     # 允许操作GitHub Pages
+  id-token: write  # 用于身份验证
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-24.04
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.4.4
+          bundler-cache: false
+
+      - name: Update bundle for Linux platform
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle install --jobs 4 --retry 3
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --verbose
+
+      - name: Verify build output
+        run: |
+          if [ ! -d "./_site" ] || [ -z "$(ls -A ./_site)" ]; then
+            echo "Error: Jekyll build failed - _site directory is missing or empty"
+            exit 1
+          fi
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          force_orphan: false
+          enable_jekyll: false

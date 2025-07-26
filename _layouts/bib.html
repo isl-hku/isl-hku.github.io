@@ -1,0 +1,183 @@
+---
+---
+
+
+<div id="{{entry.key}}">
+  {% if entry.type == "thesis" %}
+    {{reference}}
+  {% else %}
+    <span class="author">
+      {% for author in entry.author_array %}
+        {% unless forloop.last %}
+          {% if author.first == site.scholar.first %}
+          <strong style="color:#555555;">{{author.first}} {{author.last}}</strong>,
+          {% else %}
+            {% if site.data.coauthors[author.first] %}
+              <a href="{{site.data.coauthors[author.first].url}} " target="_blank"  style="color: #555555;">{{author.first}} {{author.last}}</a>,
+            {% else %}
+              {{author.first}} {{author.last}},
+            {% endif %}
+          {% endif %}
+        {% else %}
+          {% if author.first == site.scholar.first %}
+            <strong style="color:#555555;"> {{author.first}} {{author.last}}</strong>,
+          {% else %}
+            {% if site.data.coauthors[author.first] %}
+              <a href="{{site.data.coauthors[author.first].url}}" target="_blank"  style="color: #555555;">{{author.first}} {{author.last}}</a>,
+            {% else %}
+              {{author.first}} {{author.last}},
+            {% endif %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </span>
+
+    {% if entry.doi != "" %}
+      <a href="https://doi.org/{{entry.doi}}" target="_blank" style="color: #555555;">"<span class="title"><u>{{entry.title}}</u></span>,"</a>
+    {% elsif entry.url != "" %}
+      <a href="{{entry.url}}" target="_blank" style="color: #555555;">"<span class="title"><u>{{entry.title}}</u></span>,"</a>
+    {% else %}
+      <!-- {% if entry.title != "" %} -->
+      "<span class="title"><u>{{entry.title}}</u></span>,"
+      <!-- {% endif %} -->
+    {% endif %}
+
+    <span class="periodical">
+      {% if entry.type == "article" %}
+        <em>{{entry.journal}}</em>
+        {% if entry.volume!= "" %}
+          {{entry.volume}}
+        {% endif %}
+        {% if entry.number %}
+          ({{entry.number}})
+        {% endif %}
+        {% if entry.pages!= "" %}
+          : {{entry.pages}},
+        {% endif %}
+        {% if entry.month %}
+        <span style="text-transform:capitalize">{{entry.month}}., </span>
+        {% endif %}
+        {% if entry.year %}
+          {{entry.year}}.
+        {% endif %}
+        <!-- {% if entry.ifactor != "" %}
+        [IF: <b style="color:#2465bb;">{{entry.ifactor}}</b>].
+        {% endif %}  -->
+      {% elsif entry.type == "conference" %}
+        <em>In {{entry.booktitle}}</em>,
+        {% if entry.address %}
+          {{entry.address}},
+        {% endif %}
+        <!-- {% if entry.month %}
+        <span style="text-transform:capitalize">{{entry.month}}. </span>
+        {% endif %} -->
+        {% if entry.year %}
+          {{entry.year}}.
+        {% endif %}
+      {% elsif entry.type == "talk" %}
+        <em>In {{entry.booktitle}}</em>,
+        {% if entry.address %}
+          {{entry.address}},
+        {% endif %}
+        <!-- {% if entry.month %}
+        <span style="text-transform:capitalize">{{entry.month}}. </span>
+        {% endif %} -->
+        {% if entry.year %}
+          {{entry.year}}.
+        {% endif %}
+      {% elsif entry.type == "patent" %}
+        {% if entry.howpublished %}
+        {{entry.howpublished}},
+        {% endif %}
+        <!-- {% if entry.month %}
+        <span style="text-transform:capitalize">{{entry.month}}. </span>
+        {% endif %} -->
+        {% if entry.year %}
+          {{entry.year}}.
+        {% endif %}
+      {% else %}
+        {% if entry.year %}
+          {{entry.year}}.
+        {% endif %}
+      {% endif %}
+    </span>
+    {% endif %}
+
+    
+    <!-- <div class="dropDownBibtex" id="{{key}}-bibtex">
+        <pre>{{entry.bibtex}}</pre>
+    </div> -->
+
+    
+
+
+
+
+    <span class="links" style="margin-bottom: 2px;">
+    {% if entry.file %}
+      <a href="{{site.baseurl}}/assets/files/{{entry.file}}" target=""><i class="fa fa-file-pdf-o fa-align-left fa-sm" style="color:red"></i></a>
+    {% endif %}
+    {% if entry.video %}
+    <a href="{{ entry.video }}" target=""><i class="fa fa-youtube-play fa-align-left fa-sm"></i></a>
+    {% endif %}
+    {% if entry.code %}
+      <a href="{{ entry.code }}" target="_blank"><i class="fa fa-github fa-align-left fa-sm"></i></a>
+    {% endif %}
+    {% if entry.project %}
+      <a href="{{ entry.project }}" target="_blank"><i class="fa fa-globe fa-align-left fa-sm" ></i></a>
+    {% endif %}
+    {% if entry.news %}
+    <a href="{{ entry.news }}" target="_blank"><i class="fa fa-newspaper-o fa-align-left fa-sm"></i></a>
+    {% endif %}
+    <!-- {% if entry.altmetric %}
+    <a href="{{ entry.altmetric }}" target="_blank"><script type="text/javascript" src="{{ entry.altmetric }}"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="179049096" style="height:18px; border-radius: 0%; margin-top: 0px;"></div></a>
+    {% endif %} -->
+    {% if entry.kaustdiscovery %}
+    | <a href="{{ entry.kaustdiscovery }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/kaustdiscovery.svg" alt="News" style="height:18px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;"></a>
+    {% endif %}
+    {% if entry.hkupress %}
+    <a href="{{ entry.hkupress }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/hkupress.svg" alt="News" style="height:15px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;margin-bottom: 5px !important;"></a>
+    {% endif %}
+    {% if entry.eurekalert %}
+    <a href="{{ entry.eurekalert }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/eurekalert.svg" alt="News" style="height:15px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;margin-bottom: 5px !important;"></a>
+    {% endif %}
+    {% if entry.physorg %}
+    <a href="{{ entry.physorg }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/physorg.svg" alt="News" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;"></a>
+    {% endif %}    
+    {% if entry.acm %}
+    <a href="{{ entry.acm }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/acm.svg" alt="News" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;"></a>
+    {% endif %}
+    {% if entry.innovation %}
+    <a href="{{ entry.innovation }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/innovation.svg" alt="News" style="height:16px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;"></a>
+    {% endif %}
+    {% if entry.floridanews %}
+    <a href="{{ entry.floridanews }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/floridanews.svg" alt="News" style="height:18px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;"></a>
+    {% endif %}
+    {% if entry.newsbreak %}
+    <a href="{{ entry.newsbreak }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/newsbreak.png" alt="News" style="height:18px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;"></a>
+    {% endif %}
+    {% if entry.wechat %}
+    <a href="{{ entry.wechat }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/wechat.svg" alt="News" style="height:16px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;margin-bottom: 5px !important;"></a>
+    {% endif %}
+    {% if entry.natureresearch %}
+    <a href="{{ entry.natureresearch }}" target="_blank"><img src="{{site.baseurl}}/assets/images/logo/natureresearch.svg" alt="News" style="height:18px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px; margin-bottom: 8px !important;"></a>
+    {% endif %}
+    </span>
+
+    {% if entry.award %}
+    <i class="fa fa-trophy fa-align-left  fa-sm"></i>
+      <span class="note" class="small" style="color:#2465bb;">{{entry.award}}</span>
+    {% endif %}
+    
+    {% if entry.note.length > 0 %}
+      <br/>
+      <span class="note" class="small" style="color:#2465bb; ">
+        {{entry.note}}
+      </span>
+    {% else if entry.note !="" %}
+      <span class="note" class="small" style="color:#2465bb;">
+        {{entry.note}} 
+      </span>
+    {% endif %}
+
+</div>

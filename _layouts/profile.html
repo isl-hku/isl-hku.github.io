@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container content page">
+<div style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;">
+<img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;" src="{{ site.url }}{{site.baseurl}}/assets/images/member/{{ page.avatar }}" data-action="zoom">
+<br>
+<p style="text-align:center;">
+{% if page.email  %}
+<a href="mailto:{{ page.email }}"><i class="fa fa-envelope fa-align-left fa-lg"></i></a> 
+{% endif %}
+{% if page.scholar  %}
+<a href="{{ page.scholar }}"><i class="ai ai-google-scholar icon-align-left fa-lg" ></i></a>
+{% endif %}
+{% if page.web  %}
+<a href="{{ page.web }}"><i class="fa fa-globe fa-align-left fa-lg"></i></a> 
+{% endif %}
+{% if page.github  %}
+<a href="https://github.com/{{ page.github }}"><i class="fa fa-github fa-align-left fa-lg"></i></a>
+{% endif %}
+{% if page.orcid %}
+<a href="https://orcid.org/{{ page.orcid }}"><i class="ai ai-orcid icon-align-left fa-lg" ></i></a> 
+{% endif %}
+{% if page.twitter %}
+<a href="https://twitter.com/{{ page.twitter }}"><i class="fa fa-twitter fa-align-left fa-lg"></i></a>
+{% endif %}
+{% if profile.linkedin  %}
+<a href="https://www.linkedin.com/in/{{ profile.linkedin }}"><i class="fa fa-linkedin fa-align-left fa-lg"></i></a>
+{% endif %}
+{% if page.cv %}
+<a href="{{ site.url }}{{site.baseurl}}/files/CV/{{ page.cv }}"><i class="ai ai-cv icon-align-left fa-lg"></i></a>
+{% endif %}
+</p>
+</div>
+<h2 class="page-title">{{ page.name }}</h2>
+{{ content }}
+</div>

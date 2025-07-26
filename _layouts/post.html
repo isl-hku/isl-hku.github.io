@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+
+<div class="container content post">
+  <h2>
+    <center>
+    <strong>{{ page.title }}</strong><br/>
+    <small>{{ page.date | date: '%B %-d, %Y'}} </small>
+    <!-- <small>{{ site.first_name}} {{ site.last_name}}</small> -->
+    </center>
+  </h2>
+<hr> 
+
+
+
+<!-- <img src="{% if post.header-img %}{{ site.baseurl }}/assets/images/post/{{ page.header-img }}{% else %}  {% endif %}" style="width:40%; float: right; margin-left: 10px;"> -->
+
+{{ content }}
+
+<hr>
+ 
+
+
+<style>
+.post img, .content img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .post img, .content img {
+    max-width: 98vw !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .post table, .content table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.post {
+  position: relative;
+  margin-right: 320px;
+}
+
+.post ul.toc {
+  position: sticky;
+  top: 30px;
+  float: right;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  font-size: 0.95em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 6px;
+  z-index: 100;
+  margin: 0 0 1.5em 2em;
+}
+
+@media (max-width: 1100px) {
+  .post {
+    margin-right: 220px;
+  }
+  .post ul.toc {
+    width: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .post {
+    margin-right: 0;
+  }
+  .post ul.toc {
+    position: static;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em 0;
+    top: auto;
+    z-index: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+</style>
+
+  
+</div>
