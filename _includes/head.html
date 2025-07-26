@@ -26,12 +26,12 @@
 
   <script>
     function ShowOrHide(select='inpress') {
-        // var elem = document.getElementById("btn");
         var x = document.getElementById('inpress');
         var y = document.getElementById('byyear');
         var z = document.getElementById('bytype');
         var w = document.getElementById('bybook');
         var u = document.getElementById('bypatent');
+        var v = document.getElementById('bygroup');
 
 
         var x_btn = document.getElementById("btn_inpress");
@@ -39,10 +39,8 @@
         var z_btn = document.getElementById("btn_bytype");
         var w_btn = document.getElementById("btn_bybook");
         var u_btn = document.getElementById("btn_bypatent");
+        var v_btn = document.getElementById("btn_bygroup");
 
-
-        // document.getElementById(select).display='block';
-        // document.getElementById("btn_"+select).disabled=true;
 
         if (select == 'inpress') {          
             x.style.display = 'block';
@@ -55,12 +53,12 @@
             w_btn.disabled = false;   
             u.style.display = 'none';
             u_btn.disabled = false;  
-            // elem.innerHTML = typetxt;
+            v.style.display = 'none';
+            v_btn.disabled = false;  
         } else if (select == 'byyear'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'block';
-            // y_btn.closest('li').addClass('active');   
             y_btn.disabled = true;
             z.style.display = 'none';
             z_btn.disabled = false;  
@@ -68,7 +66,8 @@
             w_btn.disabled = false;  
             u.style.display = 'none';
             u_btn.disabled = false;   
-            // elem.innerHTML = yeartxt;
+            v.style.display = 'none';
+            v_btn.disabled = false;  
         } else if (select == 'bytype'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
@@ -76,13 +75,13 @@
             y_btn.disabled = false;  
             z.style.display = 'block';
             z_btn.disabled = true;
-            // z_btn.parents('li').addClass('active').siblings().removeClass('active'); 
             w.style.display = 'none';
             w_btn.disabled = false;   
             u.style.display = 'none';
             u_btn.disabled = false;  
-        }
-        else if (select == 'bybook'){          
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bybook'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -93,8 +92,22 @@
             w_btn.disabled = true;  
             u.style.display = 'none';
             u_btn.disabled = false;  
-        }
-        else if (select == 'bypatent'){          
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bypatent'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'block';
+            u_btn.disabled = true;  
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bygroup'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -103,15 +116,14 @@
             z_btn.disabled = false;
             w.style.display = 'none';
             w_btn.disabled = false;   
-            u.style.display = 'block';
-            u_btn.disabled = true;   
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            v.style.display = 'block';
+            v_btn.disabled = true;  
         }
     }
   </script>
 
-
-
-  
 
 
 <script type="text/javascript">

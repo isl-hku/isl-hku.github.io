@@ -17,7 +17,7 @@ joined: 2021
 ## Ph.D. Student
 
 
-<i class="fa fa-building"></i> Meinel 106G, Wyant College of Optical Sciences, University of Arizona, 1630 E. University Blvd., Tucson, AZ 85721-0077, USA
+<i class="fa fa-building"></i> Chow Yei Ching Building, Room 512, Wyant College of Optical Sciences, University of Arizona, 1630 E. University Blvd., Tucson, AZ 85721-0077, USA
 
 
 <hr>

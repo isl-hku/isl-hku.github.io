@@ -6,7 +6,7 @@ email:
 scholar: 
 web: 
 github: 
-# twitter: ni_chen
+twitter: 
 joined: 2021
 ---
 
@@ -17,7 +17,7 @@ joined: 2021
 ## Ph.D. Student
 
 
-<i class="fa fa-building"></i> Meinel 106G, 
+<i class="fa fa-building"></i> Chow Yei Ching Building, Room 512, 
 
 <hr>
 
