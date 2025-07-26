@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bio</title>
+  <meta name="description"
+    content="Ni -- Bio">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://isl-hku.github.io/bio/">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+
+  <script>
+    function ShowOrHide(select='inpress') {
+        // var elem = document.getElementById("btn");
+        var x = document.getElementById('inpress');
+        var y = document.getElementById('byyear');
+        var z = document.getElementById('bytype');
+        var w = document.getElementById('bytalk');
+        var u = document.getElementById('bydiscip');
+
+
+        var x_btn = document.getElementById("btn_inpress");
+        var y_btn = document.getElementById("btn_byyear");
+        var z_btn = document.getElementById("btn_bytype");
+        var w_btn = document.getElementById("btn_bytalk");
+        var u_btn = document.getElementById("btn_bydiscip");
+
+
+        // document.getElementById(select).display='block';
+        // document.getElementById("btn_"+select).disabled=true;
+
+        if (select == 'inpress') {          
+            x.style.display = 'block';
+            x_btn.disabled = true; 
+            y.style.display = 'none';
+            y_btn.disabled = false;   
+            z.style.display = 'none';
+            z_btn.disabled = false;   
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            // elem.innerHTML = typetxt;
+        } else if (select == 'byyear'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'block';
+            // y_btn.closest('li').addClass('active');   
+            y_btn.disabled = true;
+            z.style.display = 'none';
+            z_btn.disabled = false;  
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            // elem.innerHTML = yeartxt;
+        } else if (select == 'bytype'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'block';
+            z_btn.disabled = true;
+            // z_btn.parents('li').addClass('active').siblings().removeClass('active'); 
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bytalk'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'block';
+            w_btn.disabled = true;  
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bydiscip'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'block';
+            u_btn.disabled = true;   
+        }
+    }
+  </script>
+
+
+
+  
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "l0fyrfksvt");
+</script>
+
+
+
+
+  <!-- google search --> 
+  <meta name="google-site-verification" content="zA-pyWCSMDUz2guOFMd9WzdV7NSk1GTXBbDOrCN9FN4" />
+
+</head>
+
+
+  <body text-align="justify">
+    
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging System Lab</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://isl-hku.github.io/index">Home</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
+				<li><a href="https://isl-hku.github.io/research">Research</a></li>
+				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
+				<li><a href="https://isl-hku.github.io/team">Team</a></li>
+				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
+				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
+				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:10px;">
+  <p><img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:10px;" src="https://isl-hku.github.io/assets/images/member/ni.png" data-action="zoom" /></p>
+  <p style="text-align:center;">
+<!-- <a href="mailto:nichen.optics@gmail.com"><i class="fa fa-envelope fa-align-left fa-lg" ></i></a> <a href="https://scholar.google.com/citations?user=adQED6IAAAAJ&sortby=pubdate"><i class="ai ai-google-scholar icon-align-left fa-lg" ></i></a>  -->
+<a href="https://isl-hku.github.io/"><i class="fa fa-globe fa-align-left fa-lg"></i></a> <a href="https://github.com/isl-hku"><i class="fa fa-github fa-align-left fa-lg"></i></a> 
+<a href="https://orcid.org/0000-0002-0663-3867"><i class="ai ai-orcid icon-align-left fa-lg"></i></a>
+<a href="https://twitter.com/ni_chen"><i class="fa fa-twitter fa-align-left fa-lg"></i></a> 
+<a href="https://www.linkedin.com/in/neysachen/"><i class="fa fa-linkedin fa-align-left fa-lg"></i> </a>
+<!-- <a href="https://join.slack.com/t/intelligent-oi/shared_invite/zt-1vajy9hwh-T3A7vPQeNFwlcyfWlaCePw"><i class="fa fa-slack fa-align-left fa-lg"></i> </a> -->
+<!-- <a href="https://strava.com/athletes/24712093"><i class="fab fa-strava fa-align-left fa-lg"></i> </a> -->
+<!-- <a href="https://strava.com/athletes/24712093" class="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-16.png" alt="Strava" /></a> -->
+</p>
+</div>
+
+<h2 id="ni-chen-phd">Ni Chen, Ph.D.</h2>
+
+<p><br /></p>
+
+<!-- #_Transdisciplinary optimist_, #_Diversity & inclusion optimist_, #_INFJ_ -->
+
+<!-- <i class="fa fa-building"></i> Meinel 619, 1630 E. University Blvd., Tucson, AZ 85721-0077, USA -->
+
+<p>Reach out to me through <strong><em>nichen.optics@gmail.com</em></strong> if you have any inquiries or wish to discuss <strong>science</strong>.</p>
+
+<p><br /></p>
+<hr />
+
+<!-- ## Experiences
+- 2023.01 - Present: Associate Research Professor, Wyant College of Optical Sciences, University of Arizona.
+- 2019.11 - 2023.01: Researcher, Visual Computing Center / Physical Sciences and Engineering Division, King Abdullah University of Science and Technology.
+- 2017.09 - 2019.10: Visiting Scholar (17–18) / Brain Korea 21 Assistant Professor (18–19), Department of Electrical and Computer Engineering, Seoul National University.
+- 2016.07 - 2017.09: Assistant / Associate Professor, Shanghai Institute of Optics and Fine Mechanics, Chinese Academy of Sciences.
+- 2014.09 - 2016.05: Research Scientist, Department of Electrical and Electronic Engineering, The University of Hong Kong. -->
+
+<h2 id="education">Education</h2>
+
+<ul>
+  <li>Ph.D., <a href="http://oeqelab.snu.ac.kr/">OEQE Lab</a>, Electrical and Computer Engineering, Seoul National University, Advisor: Prof. <a href="http://oeqelab.snu.ac.kr/PROF">Byoungho Lee</a>.</li>
+  <li>M.E., <a href="http://osp.cbnu.ac.kr/">OIP Lab</a>, Computer and Communication Engineering, Chungbuk National University, Advisors: Prof. <a href="http://osp.cbnu.ac.kr/lab/pro.html">Nam Kim</a> and Prof. <a href="http://sites.google.com/view/3doelab">Jae-Hyeung Park</a>.</li>
+  <li>B.E., Computer Software Engineering, Harbin Institute of Technology (Weihai).</li>
+</ul>
+
+<p><br /></p>
+<hr />
+
+<!-- ## Supervision
+
+Students I supervised / co-supervised
+
+| Name         | Degree       | Research Topics                 | Outputs     |
+| :----------- | :----------- | :------------------------------ | ----------- |
+| Yang Wu      | Ph.D. course | Differentiable Imaging          | TII, LSA    |
+| Haichao Wang | Ph.D. course | Light Field Imaging             | AO          |
+| Jiabao Wang  | Msc. course  | Phase Imaging                   | OLT         |
+| Ao Zhou      | Msc. course  | Fourier Ptychography Microscopy | JOpt, OE    | -->
+
+<!-- <hr> -->
+
+<h2 id="professional-activities">Professional Activities</h2>
+<ul>
+  <li>2025: Program Committee of OPTICA topical meeting, <a href="https://www.optica.org/events/topical_meetings/digital_holography_and_3-d_imaging/">Digital Holography and 3D Imaging (DH)</a></li>
+  <li>2025: Program Committee of <a href="https://www.frontiersinoptics.com/home/">FiO LS Congress: Information Acquisition, Processing and Display</a></li>
+  <li>2024 - : Associate Editor of <a href="https://opg.optica.org/optcon/journal/optcon/about.cfm">Optics Continuum</a></li>
+  <li>2024 - : Associate Editor of <a href="https://www.researching.cn/ai">Advanced Imaging</a></li>
+  <li>2024 - : Guest Editor of Journal of Optics - <a href="https://iopscience.iop.org/collections/jopt-240322-514">Focus Issue on Computational Imaging and Its Applications</a></li>
+  <li>2024: Program Committee of OPTICA topical meeting, <a href="https://www.optica.org/events/topical_meetings/digital_holography_and_3-d_imaging/">Digital Holography and 3D Imaging (DH)</a></li>
+  <li>2024: Program Committee of OPTICA <a href="https://www.optica.org/en-us/events/congress/imaging_and_applied_optics_congress/program/computational_optical_sensing_and_imaging/">Imaging Congress - Computational Optical Sensing and Imaging (COSI)</a></li>
+  <li>2023: Session Chair of <a href="https://www.frontiersinoptics.com/home/">FiO LS Congress: Fabrication, Design and Instrumentation</a></li>
+  <li>2023: Program Committee of OPTICA <a href="https://www.optica.org/en-us/events/congress/imaging_and_applied_optics_congress/program/computational_optical_sensing_and_imaging/">Imaging Congress - Computational Optical Sensing and Imaging (COSI)</a></li>
+  <li>2023: Program Committee of <a href="https://www.optica.org/events/topical_meetings/digital_holography_and_3-d_imaging/">Imaging Congress - Digital Holography and 3D Imaging (DH)</a></li>
+  <li>2022: Session Chair of Advances in Holography of <a href="https://www.optica.org/en-us/events/congress/imaging_and_applied_optics_congress">Computational Optical Sensing and Imaging (COSI)</a></li>
+  <li>2022: Guest Associate Editor of Optics Express - <a href="https://opg.optica.org/oe/journal/oe/feature_announce/avrop.cfm">Augmented and Virtual Reality: Optics &amp; Photonics</a></li>
+  <li>2022: Program Committee of OPTICA topical meeting, <a href="https://www.osa.org/en-us/meetings/topical_meetings/digital_holography_and_3-d_imaging/">Digital Holography and 3D Imaging (DH)</a></li>
+  <li>2021 - 2023: Executive committee of OPTICA Technical Group: <a href="https://www.osa.org/en-us/get_involved/technical_groups/iapd/optics_in_digital_systems_(id)/">Optics in Digital Systems (ID)</a></li>
+  <li>2021.05 -: Guest Associate Editor of Frontiers in Photonics – Research Topic of <a href="https://www.frontiersin.org/research-topics/22890/3d4d-optical-imaging-and-displays">3D/4D Optical Imaging and Displays</a></li>
+  <li>2021: Session Chair of <a href="https://www.osa.org/en-us/meetings/topical_meetings/digital_holography_and_3-d_imaging/">Digital Holography and 3D Imaging</a></li>
+  <li>2021: Program Committee of OSA topical meeting, <a href="https://www.osa.org/en-us/meetings/topical_meetings/digital_holography_and_3-d_imaging/">Digital Holography and 3D Imaging</a></li>
+  <li>2020: Program Committee of OSA topical meeting, <a href="https://www.osa.org/en-us/meetings/topical_meetings/digital_holography_and_3-d_imaging/">Digital Holography and 3D Imaging</a></li>
+  <li>2018.02 - 2020.02: Committee of OSA Technical Group: <a href="https://www.osa.org/en-us/get_involved/technical_groups/iapd/image_sensing_and_pattern_recognition_(ir)/">Image Sensing and Pattern Recognition (IR)</a></li>
+  <li>2017.10: Program Secretary of SPIE Optoelectronic Imaging / Spectroscopy and Signal Processing Technology, Optical Instrument and Technology (OIT’ 2017)</li>
+  <li>2017.09: Program Secretary of Xiangshan science conference: “Computational Optical Imaging – Opportunities and Challenges”</li>
+  <li>2017.06 - : Topic Editor of Acta Optica Sinica</li>
+  <li>2013.05 - : Reviewer for
+    <ul>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/optica.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Biomedical Optical Express, Optics Letters, Optics Express, Applied Optics, Journal of Optical Society of America A</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/ieee.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Transactions on Computational Imaging / Instrumentation and Measurement / Industrial Informatics, Access, Journal of Selected Topics in Quantum Electronics, Photonics Journal</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/nature.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Nature, Scientific Reports</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/IOP.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Report on Progress in Physics</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/aip.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Review of Scientific Instruments</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/wiley.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Laser &amp; Photonics Reviews, ETRI Journal</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/elsevier.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Measurements, Optics and Lasers in Engineering, Optics Communications, Optik, Results in Optics, Applied Physics B, Optics and Laser Technology</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/mdpi.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Applied Science</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/taylor_francis_short.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Journal of Information Display</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/light.png" style="height:36px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00;margin-top: 0px;" /> - Light: Advanced Manufacturing</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/laser_press.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00;margin-top: 0px;" /> - Chinese Journal of Lasers, Acta Optica Sinica</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/nsfc.svg" style="height:26px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - NSFC</li>
+      <li><img src="https://isl-hku.github.io/assets/images/logo/siggraph.png" style="height:36px; border-radius: 0%; box-shadow: 0px 0px 0px 0px #ffffff00; margin-top: 0px;" /> - Siggraph Asia</li>
+    </ul>
+  </li>
+  <li>2009~: Member of Optical Society of Korea (OSK), Optical Society of America (OSA), International Society of Photo-Optical Engineers (SPIE)</li>
+</ul>
+
+<p><br /></p>
+<hr />
+
+<h2 id="honors-and-awards">Honors and Awards</h2>
+
+<ul>
+  <li><a href="https://www.optica.org/en-us/about/newsroom/news_releases/2022/june/optica_announces_2022_class_of_senior_members/">Senior Member of OPTICA</a>, Jun. 2022</li>
+  <li>Finalists (5/300), Resilience Challenge of Winter Enrichment Program (WEP), Jan. 2022</li>
+  <li>Student Paper Award, International Optical Design Conference of OPTICA, Jul. 2021</li>
+  <li>Best Paper Award, Chinese Laser Press, Sep. 2017</li>
+  <li>Special awards, NCRCAPS Lab., Seoul National University, Korea, Dec. 2012</li>
+  <li>Outstanding Poster Paper Award, 12th International Meeting on Information Display, Aug. 2012</li>
+  <li>Outstanding Paper Award, 18th Conference on Optoelectronics and Optical Communication, May 2011</li>
+  <li>Brain Korea 21 Outstanding Master Course Student, Chungbuk National University, Feb. 2010</li>
+  <li>Outstanding Graduates Award, Harbin Institute Technology University, Jul. 2008</li>
+  <li>National Encouragement Scholarship, China, Sep. 2007</li>
+  <li>National Scholarship, China, Mar. 2006</li>
+</ul>
+
+<p><br /></p>
+
+<!-- <figure class="fourth" style="text-align: center;">
+  <img src="https://isl-hku.github.io/assets/images/logo/SNU.svg" style="height: 100px">
+  <img src="https://isl-hku.github.io/assets/images/logo/HIT.svg" style="height: 100px">
+  <img src="https://isl-hku.github.io/assets/images/logo/CBNU.svg" style="height: 100px">
+  <img src="https://isl-hku.github.io/assets/images/logo/CAS.svg" style="height: 100px">
+  <img src="https://isl-hku.github.io/assets/images/logo/HKU.svg" style="height: 100px">
+  <img src="https://isl-hku.github.io/assets/images/logo/KAUST.svg" style="height: 100px">
+  <img src="https://isl-hku.github.io/assets/images/logo/arizona.svg" style="height: 100px">
+</figure> -->
+
+<!-- ## Contact
+
+<div style="text-align:center;">
+<iframe src="https://calendar.google.com/calendar/embed?height=1250&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FRiyadh&mode=WEEK&showCalendars=0&showTitle=0&showNav=1&showPrint=0&showTabs=1&showDate=0&showTz=0&src=Y2hlbm5pQHNudS5hYy5rcg&src=c251LmFjLmtyX3NuMThpZmQ1ODRucGdnMzVqbDBtZG42OGZrQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=a2F1c3QuZWR1LnNhXzgxNnZ0Zzk5OWZwazhjZGtvOWtoZGZhZ2Y4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uY2hpbmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uc2F1ZGlhcmFiaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043&color=%23E67C73&color=%23F6BF26&color=%23bcbcbc&color=%23851D00&color=%23D50000" style="border-width:0" width="1000" height="1150" frameborder="0" scrolling="no">
+</iframe>
+</div> -->
+
+
+        <script type="text/javascript">
+          // revert publication list number
+          var olists = document.getElementsByTagName('ol');
+          for (var i = 0; i < olists.length; i++) { 
+            // if (!olists[i].className.match(/\breversed\b/)) 
+            //   continue; 
+            var items = olists[i].getElementsByTagName('li'); 
+            for(var j = 0; j < items.length; j++) {
+               items[j].setAttribute("value", items.length - j); 
+            } 
+          }
+
+      </script>
+      </div>
+    </div>
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container" style="text-align:center;">
+    &copy; Copyright 2025, Edmund Y. Lam
+    <br>
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
+
+    
+    <!-- | Last updated in July, 2025 -->
+    
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

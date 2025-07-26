@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISL</title>
+  <meta name="description"
+    content="AISI">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://isl-hku.github.io/">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+
+  <script>
+    function ShowOrHide(select='inpress') {
+        // var elem = document.getElementById("btn");
+        var x = document.getElementById('inpress');
+        var y = document.getElementById('byyear');
+        var z = document.getElementById('bytype');
+        var w = document.getElementById('bytalk');
+        var u = document.getElementById('bydiscip');
+
+
+        var x_btn = document.getElementById("btn_inpress");
+        var y_btn = document.getElementById("btn_byyear");
+        var z_btn = document.getElementById("btn_bytype");
+        var w_btn = document.getElementById("btn_bytalk");
+        var u_btn = document.getElementById("btn_bydiscip");
+
+
+        // document.getElementById(select).display='block';
+        // document.getElementById("btn_"+select).disabled=true;
+
+        if (select == 'inpress') {          
+            x.style.display = 'block';
+            x_btn.disabled = true; 
+            y.style.display = 'none';
+            y_btn.disabled = false;   
+            z.style.display = 'none';
+            z_btn.disabled = false;   
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            // elem.innerHTML = typetxt;
+        } else if (select == 'byyear'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'block';
+            // y_btn.closest('li').addClass('active');   
+            y_btn.disabled = true;
+            z.style.display = 'none';
+            z_btn.disabled = false;  
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            // elem.innerHTML = yeartxt;
+        } else if (select == 'bytype'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'block';
+            z_btn.disabled = true;
+            // z_btn.parents('li').addClass('active').siblings().removeClass('active'); 
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bytalk'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'block';
+            w_btn.disabled = true;  
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bydiscip'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'block';
+            u_btn.disabled = true;   
+        }
+    }
+  </script>
+
+
+
+  
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "l0fyrfksvt");
+</script>
+
+
+
+
+  <!-- google search --> 
+  <meta name="google-site-verification" content="zA-pyWCSMDUz2guOFMd9WzdV7NSk1GTXBbDOrCN9FN4" />
+
+</head>
+
+
+  <body text-align="justify">
+    
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging System Lab</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://isl-hku.github.io/index">Home</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
+				<li><a href="https://isl-hku.github.io/research">Research</a></li>
+				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
+				<li><a href="https://isl-hku.github.io/team">Team</a></li>
+				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
+				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
+				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="homeid" class="col-sm-8">
+  <h1> </h1>
+  <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" aria-label="Research Highlights">
+  <!-- Carousel Items -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://isl-hku.github.io/assets/images/slider/doi.png" alt="Differentiable Imaging: Bridging computing and physics" oncontextmenu="return false;" />
+      <div class="carousel-caption">
+        <h3>Differentiable Imaging</h3>
+        <p>Bridging computational and physical domains</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Carousel Controls -->
+  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev" aria-label="Previous slide">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" role="button" data-slide="next" aria-label="Next slide">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Carousel Indicators - Outside the carousel -->
+<ol class="carousel-indicators">
+  <li data-target="#carousel" data-slide-to="0" class="active" aria-label="Slide 1: Differentiable Imaging Overview"></li>
+</ol>
+
+<p><br /></p>
+
+<p>Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Y. Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications. The lab offers various opportunities, including roles for Post-doctoral Fellows, Principal/Senior Researchers, and Graduate Students, catering to individuals with a strong academic background and a passion for innovative research in imaging technologies.</p>
+
+</div>
+
+<!-- <div id="newsid" class="col-sm-4">
+  <div class="well">
+    <h4>Ni Chen</h4>
+    <img src="https://isl-hku.github.io/assets/images/member/ni-bio.jpg" width=98% />
+    <br>
+    <a href="https://scholar.google.com/citations?user=adQED6IAAAAJ&amp;sortby=pubdate" target="_blank"
+        rel="noopener"><img src="https://isl-hku.github.io/assets/images/logo/google_scholar.svg" alt="" width="20"
+            height="20" /></a> <a href="https://github.com/isl-hku" target="_blank" rel="noopener"><img
+            src="https://isl-hku.github.io/assets/images/logo/github.svg" width="20" height="20" /></a> <a
+        href="mailto:nichen@arizona.edu"><img src="https://isl-hku.github.io/assets/images/logo/email.svg"
+            width="20" height="20" /><a>
+            <img title="neysachen" src="https://isl-hku.github.io/assets/images/logo/wechat.svg" width="20"
+                height="20" /> <a href="https://isl-hku.github.io/assets/files/CV/CV.pdf" target="_blank"
+                rel="noopener"><img src="https://isl-hku.github.io/assets/images/logo/cv.svg" width="20"
+                    height="20" /></a>
+</div>
+</div> -->
+
+<div id="newsid" class="col-sm-4">
+  <!-- 
+<div class="well">
+    <h4>News</h4>
+    <hr>
+    
+    2021-04-12, Holo-Flow paper got acepted by <a href='https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.202100008'>Laser and Photonics Reviews</a>! <br> <hr>
+    
+    2021-03-01, Model-based HoloNet got accepted by <a href='https://ieeexplore.ieee.org/document/9369862'>IEEE TCI</a>! <br> <hr>
+    
+    <h4><a href="https://isl-hku.github.io/allnews.html">... see all News</a></h4>
+
+</div> -->
+
+<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-lang="en" data-height="1280" data-dnt="true" href="https://twitter.com/ni_chen?ref_src=twsrc%5Etfw">News</a> 
+
+<a href="https://twitter.com/intent/tweet?button_hashtag=ni_chen&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #ni_chen</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+
+
+
+
+</div>
+
+<style>
+/* Enhanced carousel styling */
+.carousel {
+  /* border-radius: 8px; */
+  overflow: visible;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+  border: none;
+}
+
+.carousel-inner {
+  /* border-radius: 8px; */
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+  border: none;
+}
+
+.carousel-inner .item,
+.carousel-inner .item.active,
+.carousel-inner .item.next,
+.carousel-inner .item.prev {
+  /* Remove all height constraints */
+}
+
+.carousel-inner .item img,
+.carousel-inner .item.active img,
+.carousel-inner .item.next img,
+.carousel-inner .item.prev img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Remove object-fit and all height constraints */
+}
+
+/* Enhanced carousel captions */
+.carousel-caption {
+  background: transparent;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-align: left;
+}
+
+.carousel-caption h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.carousel-caption p {
+  font-size: 1em;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  opacity: 0.9;
+}
+
+/* Enhanced carousel controls */
+.carousel-control {
+  background: rgba(0,0,0,0.4);
+  border: none;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.carousel-control:hover {
+  background: rgba(0,0,0,0.8);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.carousel-control.left {
+  left: 20px;
+}
+
+.carousel-control.right {
+  right: 20px;
+}
+
+.carousel-control .glyphicon {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  position: static;
+  transform: none;
+}
+
+/* Alternative arrow design using CSS */
+.carousel-control::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+}
+
+.carousel-control.left::before {
+  border-width: 8px 12px 8px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 18px;
+}
+
+.carousel-control.right::before {
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent #fff;
+  right: 18px;
+}
+
+/* Hide default glyphicons when using custom arrows */
+.carousel-control .glyphicon {
+  display: none;
+}
+
+/* Mobile optimizations for controls */
+@media (max-width: 768px) {
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  .carousel-control.left {
+    left: 10px;
+  }
+  
+  .carousel-control.right {
+    right: 10px;
+  }
+  
+  .carousel-control.left::before {
+    border-width: 6px 10px 6px 0;
+    left: 14px;
+  }
+  
+  .carousel-control.right::before {
+    border-width: 6px 0 6px 10px;
+    right: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-control {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    border: 2px solid rgba(255,255,255,0.3);
+    position: absolute;
+  }
+  
+  .carousel-control.left {
+    left: 0;
+  }
+  
+  .carousel-control.right {
+    right: 0;
+  }
+  
+  .carousel-control.left::before {
+    border-width: 7px 11px 7px 0;
+    left: 15px;
+  }
+  
+  .carousel-control.right::before {
+    border-width: 7px 0 7px 11px;
+    right: 15px;
+  }
+  
+  .carousel-control:hover {
+    background: rgba(0,0,0,0.8);
+    border-color: rgba(255,255,255,0.6);
+    transform: translateY(-50%) scale(1.05);
+  }
+}
+
+@media (max-width: 360px) {
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-control.left {
+    left: 0;
+  }
+  
+  .carousel-control.right {
+    right: 0;
+  }
+  
+  .carousel-control.left::before {
+    border-width: 6px 9px 6px 0;
+    left: 13px;
+  }
+  
+  .carousel-control.right::before {
+    border-width: 6px 0 6px 9px;
+    right: 13px;
+  }
+}
+
+/* Enhanced carousel indicators */
+.carousel-indicators {
+  position: static;
+  bottom: auto;
+  margin-top: 15px;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: 2px solid rgba(0,0,0,0.8);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.carousel-indicators li.active {
+  background-color: #000;
+  transform: scale(1.2);
+}
+
+.carousel-indicators li:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Improve carousel responsiveness for mobile */
+@media (max-width: 768px) {
+  .carousel-inner {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .carousel-inner .item img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+  
+  .carousel-caption {
+    padding: 15px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.9em;
+  }
+  
+  #homeid {
+    padding: 0 10px;
+  }
+  
+  #newsid {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner {
+    height: auto !important;
+  }
+  
+  .carousel-inner .item img {
+    height: auto !important;
+  }
+  
+  .carousel-caption {
+    padding: 10px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1em;
+    margin-bottom: 3px;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.8em;
+  }
+  
+  .carousel-indicators {
+    margin-top: 10px;
+  }
+  
+  .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
+  
+  .carousel-control .glyphicon {
+    font-size: 18px;
+  }
+}
+
+/* Smooth transitions */
+.carousel-inner .item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-inner .item.active,
+.carousel-inner .item.next,
+.carousel-inner .item.prev {
+  display: block;
+}
+
+/* Loading animation */
+.carousel-inner .item img {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Override Bootstrap carousel defaults */
+.carousel,
+.carousel-inner,
+.carousel-inner .item,
+.carousel-inner .item.active,
+.carousel-inner .item.next,
+.carousel-inner .item.prev {
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+}
+
+.carousel-inner .item img,
+.carousel-inner .item.active img,
+.carousel-inner .item.next img,
+.carousel-inner .item.prev img {
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Ensure carousel container adapts to content */
+.carousel {
+  display: block;
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+</style>
+
+        <script type="text/javascript">
+          // revert publication list number
+          var olists = document.getElementsByTagName('ol');
+          for (var i = 0; i < olists.length; i++) { 
+            // if (!olists[i].className.match(/\breversed\b/)) 
+            //   continue; 
+            var items = olists[i].getElementsByTagName('li'); 
+            for(var j = 0; j < items.length; j++) {
+               items[j].setAttribute("value", items.length - j); 
+            } 
+          }
+
+      </script>
+      </div>
+    </div>
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container" style="text-align:center;">
+    &copy; Copyright 2025, Edmund Y. Lam
+    <br>
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
+
+    
+    <!-- | Last updated in July, 2025 -->
+    
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

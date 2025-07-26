@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vacancies</title>
+  <meta name="description"
+    content="Vacancies">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://isl-hku.github.io/vacancies/">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+
+  <script>
+    function ShowOrHide(select='inpress') {
+        // var elem = document.getElementById("btn");
+        var x = document.getElementById('inpress');
+        var y = document.getElementById('byyear');
+        var z = document.getElementById('bytype');
+        var w = document.getElementById('bytalk');
+        var u = document.getElementById('bydiscip');
+
+
+        var x_btn = document.getElementById("btn_inpress");
+        var y_btn = document.getElementById("btn_byyear");
+        var z_btn = document.getElementById("btn_bytype");
+        var w_btn = document.getElementById("btn_bytalk");
+        var u_btn = document.getElementById("btn_bydiscip");
+
+
+        // document.getElementById(select).display='block';
+        // document.getElementById("btn_"+select).disabled=true;
+
+        if (select == 'inpress') {          
+            x.style.display = 'block';
+            x_btn.disabled = true; 
+            y.style.display = 'none';
+            y_btn.disabled = false;   
+            z.style.display = 'none';
+            z_btn.disabled = false;   
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            // elem.innerHTML = typetxt;
+        } else if (select == 'byyear'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'block';
+            // y_btn.closest('li').addClass('active');   
+            y_btn.disabled = true;
+            z.style.display = 'none';
+            z_btn.disabled = false;  
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            // elem.innerHTML = yeartxt;
+        } else if (select == 'bytype'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'block';
+            z_btn.disabled = true;
+            // z_btn.parents('li').addClass('active').siblings().removeClass('active'); 
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bytalk'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'block';
+            w_btn.disabled = true;  
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bydiscip'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'block';
+            u_btn.disabled = true;   
+        }
+    }
+  </script>
+
+
+
+  
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "l0fyrfksvt");
+</script>
+
+
+
+
+  <!-- google search --> 
+  <meta name="google-site-verification" content="zA-pyWCSMDUz2guOFMd9WzdV7NSk1GTXBbDOrCN9FN4" />
+
+</head>
+
+
+  <body text-align="justify">
+    
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging System Lab</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://isl-hku.github.io/index">Home</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
+				<li><a href="https://isl-hku.github.io/research">Research</a></li>
+				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
+				<li><a href="https://isl-hku.github.io/team">Team</a></li>
+				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
+				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
+				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="gridid" class="col-sm-12">
+  <!-- ![](https://isl-hku.github.io/assets/images/research/work_summary.png){: style="float:middle; border: 10px; display: block; margin-left: auto; margin-right: auto; width:60%; border-radius: 0;"}  -->
+
+<p><br /></p>
+
+<h2 id="post-doctoral-fellow-openings">Post-doctoral Fellow openings</h2>
+<p>Applications are invited for appointment as Post-doctoral Fellow (2 posts), to commence as soon as possible for one year, and renewable upon mutual agreement up to 5 years.</p>
+
+<p>Applicants should possess a Ph.D. degree with background in Electronic Engineering / Computer Vision / Applied Mathematics / Physics / Optical Engineering, and have demonstrated knowledge and experience in computational imaging, optical microscopy, photonic systems, computer vision, and related areas. Technical experience in developing reconstruction algorithms for unconventional imaging systems will be highly desirable. Applicants should be highly self-motivated and have excellent communication skills in written and spoken English as well as the ability to work independently. The appointees will work under the supervision of Prof. Edmund Lam (https://www.eee.hku.hk/~elam/).</p>
+
+<p>A highly competitive salary commensurate with qualifications and experience will be offered, in addition to annual leave and medical benefits. At current rates, salaries tax does not exceed 15% of gross income.</p>
+
+<p>The University only accepts online application for the above posts. Applicants should apply online and upload an up-to-date C.V., and send the same information to Prof. Edmund Lam directly at elam @ eee.hku.hk. Review of applications will start as soon as possible and continue until June 30, 2022, or until the posts are filled, whichever is earlier.</p>
+
+<h2 id="principal--senior-researcher-and-post-doctoral-fellow-openings">Principal / Senior Researcher and Post-doctoral Fellow openings</h2>
+<p>Applications are invited for appointment as Principal / Senior Researcher and Post-doctoral Fellow (multiple posts) in the AI Chip Centre for Emerging Smart Systems (ACCESS), to commence as soon as possible, under the joint supervision of Prof. Edmund Lam and Center Director.</p>
+
+<p>ACCESS (https://inno-access.hk) is a multi-disciplinary center for advancing IC design and design automation technologies to enable novel data-centric computing paradigms supporting a wide range of AI applications. One of its four research programs is on Hardware-Accelerated AI Applications, focusing in particular on computational imaging and vision applications benefitting from AI hardware accelerations to achieve breakthroughs in speed, energy efficiency, and imaging performance.</p>
+
+<p>Applicants should possess a Ph.D. degree with background in Electronic Engineering / Computer Engineering / Computer Science, and have demonstrated knowledge and experience in computational imaging algorithms, reconstruction algorithms, computing hardware, and related areas. Technical experience in the implementation of image reconstruction algorithms will be highly desirable. Applicants should be highly self-motivated and have excellent communication skills in written and spoken English as well as the ability to work independently.</p>
+
+<p>The ideal candidate should have strong R&amp;D capability and superior interpersonal and organizational skills. He/She should be an excellent team-player with a strong sense of responsibility, ability to multi-task and work independently, and a good command of written and spoken English. Outstanding verbal, written and presentation skills are also required. Starting salary will be commensurate with qualifications and experience. Fringe benefits including annual leave, medical and dental benefits will be provided.</p>
+
+<p>For applications together with a full curriculum vitae indicating their current and expected salaries, please send it to Prof. Edmund LAM (elam @ eee.hku.hk), who is the Research Program Coordinator for Hardware-Accelerated AI Applications. Review of applications will begin shortly and continue until the positions are filled. Only shortlisted candidates will be notified.</p>
+
+<h2 id="graduate-student-openings">Graduate Student openings</h2>
+<p>We plan to recruit several graduate students to start in the next academic year (2022–23) and the subsequent year (2023–24). Both Master and PhD applicants are welcome. International students are particularly invited to apply. The university offers opportunities with attractive packages, with generous stipend for 4 years of study:</p>
+
+<p>Hong Kong PhD Fellowship Scheme</p>
+
+<p>HKU Presidential PhD Scholarship</p>
+
+<p>Postgraduate Scholarship</p>
+
+<p>The research work will center on computational imaging, particularly image reconstruction and analytics. You can check the publications of the group for some general impression of what we do here.</p>
+
+<p>To apply, you need to have a bachelor’s degree in electrical and electronic engineering, or equivalent (such as mathematics). A Master degree would be a plus for PhD applicants. You should apply directly to the University through the Graduate School, but if you are interested in working in the above areas, you should put my name as the proposed supervisor and computational imaging as the proposed study area, and I will consider your applications further.</p>
+
+
+</div>
+
+
+        <script type="text/javascript">
+          // revert publication list number
+          var olists = document.getElementsByTagName('ol');
+          for (var i = 0; i < olists.length; i++) { 
+            // if (!olists[i].className.match(/\breversed\b/)) 
+            //   continue; 
+            var items = olists[i].getElementsByTagName('li'); 
+            for(var j = 0; j < items.length; j++) {
+               items[j].setAttribute("value", items.length - j); 
+            } 
+          }
+
+      </script>
+      </div>
+    </div>
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container" style="text-align:center;">
+    &copy; Copyright 2025, Edmund Y. Lam
+    <br>
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
+
+    
+    <!-- | Last updated in July, 2025 -->
+    
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

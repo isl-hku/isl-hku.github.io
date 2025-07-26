@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Ideal Manager for Computational Imaging</title>
+  <meta name="description"
+    content="  Understanding the Cross-Disciplinary Challenge  The Foundation: Optical Hardware Expertise  The Engine: Computational Techniques  The Bridge: Signal and Im...">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://isl-hku.github.io/blog/2022/The-Ideal-Manager-for-Computational-Imaging/">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+
+  <script>
+    function ShowOrHide(select='inpress') {
+        // var elem = document.getElementById("btn");
+        var x = document.getElementById('inpress');
+        var y = document.getElementById('byyear');
+        var z = document.getElementById('bytype');
+        var w = document.getElementById('bytalk');
+        var u = document.getElementById('bydiscip');
+
+
+        var x_btn = document.getElementById("btn_inpress");
+        var y_btn = document.getElementById("btn_byyear");
+        var z_btn = document.getElementById("btn_bytype");
+        var w_btn = document.getElementById("btn_bytalk");
+        var u_btn = document.getElementById("btn_bydiscip");
+
+
+        // document.getElementById(select).display='block';
+        // document.getElementById("btn_"+select).disabled=true;
+
+        if (select == 'inpress') {          
+            x.style.display = 'block';
+            x_btn.disabled = true; 
+            y.style.display = 'none';
+            y_btn.disabled = false;   
+            z.style.display = 'none';
+            z_btn.disabled = false;   
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            // elem.innerHTML = typetxt;
+        } else if (select == 'byyear'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'block';
+            // y_btn.closest('li').addClass('active');   
+            y_btn.disabled = true;
+            z.style.display = 'none';
+            z_btn.disabled = false;  
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            // elem.innerHTML = yeartxt;
+        } else if (select == 'bytype'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'block';
+            z_btn.disabled = true;
+            // z_btn.parents('li').addClass('active').siblings().removeClass('active'); 
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bytalk'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'block';
+            w_btn.disabled = true;  
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+        }
+        else if (select == 'bydiscip'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'block';
+            u_btn.disabled = true;   
+        }
+    }
+  </script>
+
+
+
+  
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "l0fyrfksvt");
+</script>
+
+
+
+
+  <!-- google search --> 
+  <meta name="google-site-verification" content="zA-pyWCSMDUz2guOFMd9WzdV7NSk1GTXBbDOrCN9FN4" />
+
+</head>
+
+
+  <body text-align="justify">
+    
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging System Lab</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://isl-hku.github.io/index">Home</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
+				<li><a href="https://isl-hku.github.io/research">Research</a></li>
+				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
+				<li><a href="https://isl-hku.github.io/team">Team</a></li>
+				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
+				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
+				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container content post">
+  <h2>
+    <center>
+    <strong>The Ideal Manager for Computational Imaging</strong><br/>
+    <small>December 10, 2022 | </small>
+    <small>Edmund Y. Lam</small>
+    </center>
+  </h2>
+<hr> 
+
+
+
+<!-- <img src="  " style="width:40%; float: right; margin-left: 10px;"> -->
+
+<ul class="toc" id="markdown-toc">
+  <li><a href="#understanding-the-cross-disciplinary-challenge" id="markdown-toc-understanding-the-cross-disciplinary-challenge">Understanding the Cross-Disciplinary Challenge</a></li>
+  <li><a href="#the-foundation-optical-hardware-expertise" id="markdown-toc-the-foundation-optical-hardware-expertise">The Foundation: Optical Hardware Expertise</a></li>
+  <li><a href="#the-engine-computational-techniques" id="markdown-toc-the-engine-computational-techniques">The Engine: Computational Techniques</a></li>
+  <li><a href="#the-bridge-signal-and-image-processing" id="markdown-toc-the-bridge-signal-and-image-processing">The Bridge: Signal and Image Processing</a></li>
+  <li><a href="#the-communication-challenge" id="markdown-toc-the-communication-challenge">The Communication Challenge</a></li>
+  <li><a href="#the-imperative-of-continuous-learning" id="markdown-toc-the-imperative-of-continuous-learning">The Imperative of Continuous Learning</a></li>
+  <li><a href="#building-effective-teams" id="markdown-toc-building-effective-teams">Building Effective Teams</a></li>
+  <li><a href="#looking-forward" id="markdown-toc-looking-forward">Looking Forward</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+<p>The field of computational imaging stands at a fascinating crossroads where optical hardware meets computational algorithms and signal processing. As someone who has worked in both computer science and optical engineering departments, I’ve witnessed firsthand how this convergence creates both exciting opportunities and unique challenges. Perhaps the most critical challenge is finding managers who can effectively navigate this interdisciplinary landscape.</p>
+
+<h2 id="understanding-the-cross-disciplinary-challenge">Understanding the Cross-Disciplinary Challenge</h2>
+
+<p>Unlike traditional imaging systems where optics and computation remain separate domains, computational imaging fundamentally interweaves these disciplines. This integration goes beyond simple collaboration—it requires a deep, holistic understanding of how optical design choices affect computational requirements and vice versa.</p>
+
+<p>During my work on “Differentiable Imaging,” I encountered numerous situations where breakthroughs emerged only when optical insights informed algorithmic design, or when computational constraints drove innovative optical solutions. These experiences reinforced my belief that effective leadership in this field demands more than coordinating separate experts; it requires managers who can think fluidly across disciplinary boundaries.</p>
+
+<h2 id="the-foundation-optical-hardware-expertise">The Foundation: Optical Hardware Expertise</h2>
+
+<p>Every computational imaging system begins with light and optics. A manager who understands the subtleties of optical hardware can make crucial decisions that ripple through the entire system design. This knowledge encompasses more than just selecting lenses or sensors—it involves understanding how optical aberrations can be computationally corrected, how diffractive elements can encode information for later processing, and how physical constraints translate into computational opportunities.</p>
+
+<p>Consider, for instance, the trade-off between optical complexity and computational load. A manager with deep optical knowledge can guide their team toward solutions that elegantly balance these factors, perhaps choosing a simpler optical design that leverages sophisticated algorithms rather than pursuing optical perfection at prohibitive cost.</p>
+
+<h2 id="the-engine-computational-techniques">The Engine: Computational Techniques</h2>
+
+<p>The computational aspect of imaging has evolved far beyond simple image enhancement. Modern computational imaging employs techniques from machine learning, optimization theory, and inverse problems to extract information that traditional imaging systems could never capture. A manager versed in these techniques can recognize when a problem calls for deep learning versus classical optimization, or when physics-based models might outperform data-driven approaches.</p>
+
+<p>This computational expertise becomes particularly crucial when optimizing system performance. Understanding algorithmic complexity, memory requirements, and computational bottlenecks allows a manager to make informed decisions about hardware selection and system architecture. Moreover, it enables them to guide their team through the inevitable challenges of implementing theoretical algorithms in real-world systems.</p>
+
+<h2 id="the-bridge-signal-and-image-processing">The Bridge: Signal and Image Processing</h2>
+
+<p>Signal and image processing techniques form the bridge between raw sensor data and meaningful visual information. This domain encompasses everything from noise reduction and image reconstruction to feature extraction and visualization. A manager with strong signal processing foundations can evaluate whether poor image quality stems from optical limitations, algorithmic issues, or signal processing choices.</p>
+
+<p>This expertise proves invaluable when debugging complex systems. Is that artifact due to sensor noise, optical aberrations, or reconstruction errors? A knowledgeable manager can guide their team through systematic troubleshooting, identifying root causes rather than applying band-aid solutions.</p>
+
+<h2 id="the-communication-challenge">The Communication Challenge</h2>
+
+<p>Throughout my career, I’ve observed a persistent communication gap between the optical and computational communities. Optical engineers often speak in terms of point spread functions and aberration coefficients, while computer scientists discuss convergence rates and computational complexity. This linguistic divide can create significant barriers to effective collaboration.</p>
+
+<p>A manager who speaks both languages becomes an invaluable translator, helping team members appreciate perspectives from other disciplines. They can explain to an optical engineer why certain computational constraints matter, or help a computer scientist understand why physical limitations can’t simply be coded away. This translation goes beyond mere terminology—it involves conveying the underlying thought processes and priorities of each discipline.</p>
+
+<h2 id="the-imperative-of-continuous-learning">The Imperative of Continuous Learning</h2>
+
+<p>The rapid evolution of computational imaging presents another layer of complexity. New optical technologies emerge regularly, from metalenses to single-photon detectors. Simultaneously, computational techniques advance at breakneck speed, with new machine learning architectures and optimization methods appearing monthly. Related fields like computer graphics, medical imaging, and autonomous vehicles continuously contribute new ideas and requirements.</p>
+
+<p>This dynamic landscape demands managers who embrace lifelong learning. They must stay current not only within their core expertise but also across adjacent fields. Reading papers from diverse conferences, attending interdisciplinary workshops, and maintaining connections across different research communities becomes essential. The manager who stops learning risks leading their team with outdated assumptions and missed opportunities.</p>
+
+<h2 id="building-effective-teams">Building Effective Teams</h2>
+
+<p>Beyond technical expertise, computational imaging managers must excel at building and nurturing cross-disciplinary teams. This involves creating environments where experts from different backgrounds feel valued and heard. It means establishing communication norms that encourage questions across disciplinary boundaries and celebrate the insights that emerge from such exchanges.</p>
+
+<p>Successful managers in this field often implement regular cross-training sessions, where team members teach each other fundamental concepts from their domains. They encourage pair programming between optical and computational researchers, fostering knowledge transfer through hands-on collaboration. Most importantly, they model intellectual curiosity and humility, demonstrating that expertise in one area doesn’t diminish the value of learning from others.</p>
+
+<h2 id="looking-forward">Looking Forward</h2>
+
+<p>As computational imaging continues to evolve, the need for well-rounded managers will only intensify. Emerging areas like quantum imaging, neural sensors, and differentiable optics will demand even tighter integration between physical and computational design. Managers who can navigate this complexity while fostering innovation will shape the future of how we capture and process visual information.</p>
+
+<p>The path to becoming such a manager isn’t easy. It requires dedication to understanding multiple disciplines deeply, patience to bridge communication gaps, and humility to continuously learn. Yet for those willing to embrace this challenge, the opportunity to lead at the forefront of imaging technology offers immense rewards—both intellectual and practical.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The ideal computational imaging manager embodies a unique combination of technical breadth, communication skills, and adaptive learning. They must understand optical hardware well enough to make informed design decisions, grasp computational techniques deeply enough to optimize algorithms, and appreciate signal processing sufficiently to ensure system performance. Beyond these technical requirements, they must excel at bridging communication gaps and fostering collaborative environments where cross-disciplinary innovation thrives.</p>
+
+<p>As our imaging needs become more sophisticated—from autonomous vehicles requiring real-time 3D perception to medical devices demanding molecular-level resolution—the role of such managers becomes increasingly critical. Those who can successfully integrate knowledge across disciplines while maintaining the agility to adapt to rapid technological change will not just manage teams; they will drive the innovations that define the future of computational imaging.</p>
+
+<p>The journey toward becoming this ideal manager is ongoing, marked by continuous learning and persistent curiosity. Yet it’s precisely this dynamic nature that makes computational imaging such an exciting field to lead. Every challenge presents an opportunity to deepen cross-disciplinary understanding, and every breakthrough reinforces the power of integrated thinking. For those ready to embrace this multifaceted role, the future of computational imaging awaits.</p>
+
+<h2 id="references">References</h2>
+<ol>
+  <li>Ni Chen, Liangcai Cao, Ting-Chung Poon, Byoungho Lee, Edmund Y. Lam, “<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118">Differentiable Imaging: A New Tool for Computational Optical Imaging</a>,” Advanced Physcics Research 2(2), 2023.</li>
+</ol>
+
+
+<hr>
+ 
+<script src="https://giscus.app/client.js"
+  data-repo="isl-hku/isl-hku.github.io"
+  data-repo-id="R_kgDOMYTlZQ"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOMYTlZc4CmMrx"
+  data-mapping="url"
+  data-strict="0"
+  data-reactions-enabled="0"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+<style>
+.post img, .content img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .post img, .content img {
+    max-width: 98vw !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .post table, .content table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.post {
+  position: relative;
+  margin-right: 320px;
+}
+
+.post ul.toc {
+  position: sticky;
+  top: 30px;
+  float: right;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  font-size: 0.95em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 6px;
+  z-index: 100;
+  margin: 0 0 1.5em 2em;
+}
+
+@media (max-width: 1100px) {
+  .post {
+    margin-right: 220px;
+  }
+  .post ul.toc {
+    width: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .post {
+    margin-right: 0;
+  }
+  .post ul.toc {
+    position: static;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em 0;
+    top: auto;
+    z-index: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+</style>
+
+  
+</div>
+
+
+        <script type="text/javascript">
+          // revert publication list number
+          var olists = document.getElementsByTagName('ol');
+          for (var i = 0; i < olists.length; i++) { 
+            // if (!olists[i].className.match(/\breversed\b/)) 
+            //   continue; 
+            var items = olists[i].getElementsByTagName('li'); 
+            for(var j = 0; j < items.length; j++) {
+               items[j].setAttribute("value", items.length - j); 
+            } 
+          }
+
+      </script>
+      </div>
+    </div>
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container" style="text-align:center;">
+    &copy; Copyright 2025, Edmund Y. Lam
+    <br>
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
+
+    
+    <!-- | Last updated in July, 2025 -->
+    
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
