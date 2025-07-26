@@ -67,7 +67,8 @@ toc: true
 <h4>Conference Papers</h4>
 {% bibliography -f conf -q @conference[groups={{ group }}] %}
 
-<hr> <!-- Separator between keyword sections -->
+<hr> 
+<br>
 {% endfor %}
 </div>
 
