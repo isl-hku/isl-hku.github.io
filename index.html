@@ -33,15 +33,15 @@
         var x = document.getElementById('inpress');
         var y = document.getElementById('byyear');
         var z = document.getElementById('bytype');
-        var w = document.getElementById('bytalk');
-        var u = document.getElementById('bydiscip');
+        var w = document.getElementById('bybook');
+        var u = document.getElementById('bypatent');
 
 
         var x_btn = document.getElementById("btn_inpress");
         var y_btn = document.getElementById("btn_byyear");
         var z_btn = document.getElementById("btn_bytype");
-        var w_btn = document.getElementById("btn_bytalk");
-        var u_btn = document.getElementById("btn_bydiscip");
+        var w_btn = document.getElementById("btn_bybook");
+        var u_btn = document.getElementById("btn_bypatent");
 
 
         // document.getElementById(select).display='block';
@@ -85,7 +85,7 @@
             u.style.display = 'none';
             u_btn.disabled = false;  
         }
-        else if (select == 'bytalk'){          
+        else if (select == 'bybook'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -97,7 +97,7 @@
             u.style.display = 'none';
             u_btn.disabled = false;  
         }
-        else if (select == 'bydiscip'){          
+        else if (select == 'bypatent'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -168,469 +168,180 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div id="homeid" class="col-sm-8">
-  <h1> </h1>
-  <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" aria-label="Research Highlights">
-  <!-- Carousel Items -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://isl-hku.github.io/assets/images/slider/doi.png" alt="Differentiable Imaging: Bridging computing and physics" oncontextmenu="return false;" />
-      <div class="carousel-caption">
-        <h3>Differentiable Imaging</h3>
-        <p>Bridging computational and physical domains</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Carousel Controls -->
-  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev" aria-label="Previous slide">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel" role="button" data-slide="next" aria-label="Next slide">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<!-- Carousel Indicators - Outside the carousel -->
-<ol class="carousel-indicators">
-  <li data-target="#carousel" data-slide-to="0" class="active" aria-label="Slide 1: Differentiable Imaging Overview"></li>
-</ol>
-
-<p><br /></p>
+        <div id="gridid" class="col-sm-12">
+  <p><br /></p>
 
 <p>Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Y. Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications. The lab offers various opportunities, including roles for Post-doctoral Fellows, Principal/Senior Researchers, and Graduate Students, catering to individuals with a strong academic background and a passion for innovative research in imaging technologies.</p>
 
-</div>
+<div class="container content post">
+  <h2>
+    <center>
+    <!-- <strong>ISL</strong><br/>
+    <small> | </small>
+    <small>Edmund Y. Lam</small> -->
+    </center>
+  </h2>
+  <hr />
 
-<!-- <div id="newsid" class="col-sm-4">
-  <div class="well">
-    <h4>Ni Chen</h4>
-    <img src="https://isl-hku.github.io/assets/images/member/ni-bio.jpg" width=98% />
-    <br>
-    <a href="https://scholar.google.com/citations?user=adQED6IAAAAJ&amp;sortby=pubdate" target="_blank"
-        rel="noopener"><img src="https://isl-hku.github.io/assets/images/logo/google_scholar.svg" alt="" width="20"
-            height="20" /></a> <a href="https://github.com/isl-hku" target="_blank" rel="noopener"><img
-            src="https://isl-hku.github.io/assets/images/logo/github.svg" width="20" height="20" /></a> <a
-        href="mailto:nichen@arizona.edu"><img src="https://isl-hku.github.io/assets/images/logo/email.svg"
-            width="20" height="20" /><a>
-            <img title="neysachen" src="https://isl-hku.github.io/assets/images/logo/wechat.svg" width="20"
-                height="20" /> <a href="https://isl-hku.github.io/assets/files/CV/CV.pdf" target="_blank"
-                rel="noopener"><img src="https://isl-hku.github.io/assets/images/logo/cv.svg" width="20"
-                    height="20" /></a>
-</div>
+  <p><img src="  " style="width:40%; float: right; margin-left: 10px;" /></p>
+
+  <div class="content list">
+
+    <div class="list-item">
+      <div class="row" style="margin-bottom: 0px; padding-bottom:0px;">
+        <!-- <div class="col-sm-4">
+<img src="/assets/images/post/uafp.gif" style="width:100%;">
 </div> -->
 
-<div id="newsid" class="col-sm-4">
-  <!-- 
-<div class="well">
-    <h4>News</h4>
-    <hr>
-    
-    2021-04-12, Holo-Flow paper got acepted by <a href='https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.202100008'>Laser and Photonics Reviews</a>! <br> <hr>
-    
-    2021-03-01, Model-based HoloNet got accepted by <a href='https://ieeexplore.ieee.org/document/9369862'>IEEE TCI</a>! <br> <hr>
-    
-    <h4><a href="https://isl-hku.github.io/allnews.html">... see all News</a></h4>
+        <!-- <div class="col-sm-8"> -->
+        <h3 class="post-title"><a href="/blog/2025/UA-FP-published-in-LSA/">Uncertainty-aware Fourier Ptychography is published in LSA</a></h3>
+        <p class="list-post-title"> July 7, 2025</p>
+        <p><img src="/assets/images/post/uafp.gif" style="width:50%; float: right; margin-left: 10px; margin-top:10px;" /></p>
+        <p class="list-detail">
+  
+    The Uncertainty-Aware Fourier Ptychography (UA-FP) framework marks a transformative milestone in computational imaging, revolutionizing the way we address system uncertainties. UA-FP breaks free from the traditional constraints of computational imaging, which historically required elaborate calibration processes and costly high-end optical components. By contrast, this new approach offers a highly robust and flexible solution. It can maintain reliable performance even when confronted with substantial physical imperfections, setting a new standard for the field. The core innovation of UA-FP resides in its unique ability to optimize both the reconstructed image and system uncertainty parameters within a unified mathematical framework. This holistic approach directly confronts the fundamental challenge in Fourier ptychography—accurately modeling real-world imaging systems to enable effective inverse problem solving. Leveraging advanced…
+  
+</p>
+        <!-- </div> -->
+      </div>
+    </div>
+    <hr />
 
+    <div class="list-item">
+      <div class="row" style="margin-bottom: 0px; padding-bottom:0px;">
+        <!-- <div class="col-sm-4">
+<img src="/assets/images/post/cube.png" style="width:100%;">
 </div> -->
 
-<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a class="twitter-timeline" data-lang="en" data-height="1280" data-dnt="true" href="https://twitter.com/ni_chen?ref_src=twsrc%5Etfw">News</a> 
+        <!-- <div class="col-sm-8"> -->
+        <h3 class="post-title"><a href="/blog/2025/CUBE-Training-Free-Event-Based-Video-Generation/">Professor Edmund Lam Delivers Keynote on Computational Neuromorphic Imaging at Optica Imaging Congress</a></h3>
+        <p class="list-post-title"> February 13, 2025</p>
+        <p><img src="/assets/images/post/cube.png" style="width:50%; float: right; margin-left: 10px; margin-top:10px;" /></p>
+        <p class="list-detail">
+  
+    Controllable Synthesis Using Edge Data and Text Prompts We are excited to announce a new framework called CUBE (Controllable, Unsupervised, Based on Events), developed by researchers at the University of Hong Kong (HKU). This work has been accepted for Oral Presentation at ICIP 2024 and also invited to present at a WACV workshop. Why Event Cameras? Event cameras capture only intensity changes at each pixel, making them ideal for high-speed, high dynamic range, and low-power imaging. While this sparse data provides precise edge information, generating photo-realistic or even semantically controllable videos from raw events has been a longstanding challenge—until now. Key Idea: Combining Event Edges and Text Prompts CUBE bridges event streams and text-guided diffusion models to produce controllable videos…
+  
+</p>
+        <!-- </div> -->
+      </div>
+    </div>
+    <hr />
 
-<a href="https://twitter.com/intent/tweet?button_hashtag=ni_chen&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #ni_chen</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <div class="list-item">
+      <div class="row" style="margin-bottom: 0px; padding-bottom:0px;">
+        <!-- <div class="col-sm-4">
+<img src="/assets/images/post/2024-cosi.jpg" style="width:100%;">
+</div> -->
 
+        <!-- <div class="col-sm-8"> -->
+        <h3 class="post-title"><a href="/blog/2024/Imaging-Congress-copy/">Professor Edmund Lam Delivers Keynote on Computational Neuromorphic Imaging at Optica Imaging Congress</a></h3>
+        <p class="list-post-title"> August 6, 2024</p>
+        <p><img src="/assets/images/post/2024-cosi.jpg" style="width:50%; float: right; margin-left: 10px; margin-top:10px;" /></p>
+        <p class="list-detail">
+  
+    At the recent Optica Imaging Congress, Professor Edmund Lam from the University of Hong Kong delivered an insightful plenary talk on the advances in computational neuromorphic imaging. His presentation highlighted the use of event sensors to capture rapid changes in pixel intensities, which are crucial for applications ranging from environmental monitoring to biomedicine. The session provided a deep dive into both the technical developments and historical evolution of imaging technologies, showcasing the collaborative and international efforts in this dynamic field.
 
+  
+</p>
+        <!-- </div> -->
+      </div>
+    </div>
+    <hr />
 
+  </div>
 
+  <hr />
 
-</div>
+  <!-- <script src="https://giscus.app/client.js"
+  data-repo="isl-hku/isl-hku.github.io"
+  data-repo-id="R_kgDOMYTlZQ"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOMYTlZc4CmMrx"
+  data-mapping="url"
+  data-strict="0"
+  data-reactions-enabled="0"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script> -->
 
-<style>
-/* Enhanced carousel styling */
-.carousel {
-  /* border-radius: 8px; */
-  overflow: visible;
-  margin-bottom: 30px;
+  <style>
+.post img, .content img {
+  max-width: 100% !important;
+  height: auto !important;
   display: block;
-  position: relative;
-  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
-  border: none;
-}
-
-.carousel-inner {
-  /* border-radius: 8px; */
-  position: relative;
-  width: 100%;
-  overflow: visible;
-  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
-  border: none;
-}
-
-.carousel-inner .item,
-.carousel-inner .item.active,
-.carousel-inner .item.next,
-.carousel-inner .item.prev {
-  /* Remove all height constraints */
-}
-
-.carousel-inner .item img,
-.carousel-inner .item.active img,
-.carousel-inner .item.next img,
-.carousel-inner .item.prev img {
-  display: block;
-  width: 100%;
-  height: auto;
-  /* Remove object-fit and all height constraints */
-}
-
-/* Enhanced carousel captions */
-.carousel-caption {
-  background: transparent;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  text-align: left;
-}
-
-.carousel-caption h3 {
-  font-size: 1.5em;
-  font-weight: 600;
-  margin-bottom: 8px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-
-.carousel-caption p {
-  font-size: 1em;
-  margin-bottom: 0;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-  opacity: 0.9;
-}
-
-/* Enhanced carousel controls */
-.carousel-control {
-  background: rgba(0,0,0,0.4);
-  border: none;
-  transition: all 0.3s ease;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.8;
-}
-
-.carousel-control:hover {
-  background: rgba(0,0,0,0.8);
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.carousel-control:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
-.carousel-control.left {
-  left: 20px;
-}
-
-.carousel-control.right {
-  right: 20px;
-}
-
-.carousel-control .glyphicon {
-  font-size: 20px;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  position: static;
-  transform: none;
-}
-
-/* Alternative arrow design using CSS */
-.carousel-control::before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  position: absolute;
-}
-
-.carousel-control.left::before {
-  border-width: 8px 12px 8px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 18px;
-}
-
-.carousel-control.right::before {
-  border-width: 8px 0 8px 12px;
-  border-color: transparent transparent transparent #fff;
-  right: 18px;
-}
-
-/* Hide default glyphicons when using custom arrows */
-.carousel-control .glyphicon {
-  display: none;
-}
-
-/* Mobile optimizations for controls */
-@media (max-width: 768px) {
-  .carousel-control {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-  }
-  
-  .carousel-control.left {
-    left: 10px;
-  }
-  
-  .carousel-control.right {
-    right: 10px;
-  }
-  
-  .carousel-control.left::before {
-    border-width: 6px 10px 6px 0;
-    left: 14px;
-  }
-  
-  .carousel-control.right::before {
-    border-width: 6px 0 6px 10px;
-    right: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-control {
-    width: 44px;
-    height: 44px;
-    margin: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(255,255,255,0.3);
-    position: absolute;
-  }
-  
-  .carousel-control.left {
-    left: 0;
-  }
-  
-  .carousel-control.right {
-    right: 0;
-  }
-  
-  .carousel-control.left::before {
-    border-width: 7px 11px 7px 0;
-    left: 15px;
-  }
-  
-  .carousel-control.right::before {
-    border-width: 7px 0 7px 11px;
-    right: 15px;
-  }
-  
-  .carousel-control:hover {
-    background: rgba(0,0,0,0.8);
-    border-color: rgba(255,255,255,0.6);
-    transform: translateY(-50%) scale(1.05);
-  }
-}
-
-@media (max-width: 360px) {
-  .carousel-control {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .carousel-control.left {
-    left: 0;
-  }
-  
-  .carousel-control.right {
-    right: 0;
-  }
-  
-  .carousel-control.left::before {
-    border-width: 6px 9px 6px 0;
-    left: 13px;
-  }
-  
-  .carousel-control.right::before {
-    border-width: 6px 0 6px 9px;
-    right: 13px;
-  }
-}
-
-/* Enhanced carousel indicators */
-.carousel-indicators {
-  position: static;
-  bottom: auto;
-  margin-top: 15px;
-  text-align: center;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
   margin-left: auto;
   margin-right: auto;
 }
-
-.carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  border: 2px solid rgba(0,0,0,0.8);
-  background-color: transparent;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.carousel-indicators li.active {
-  background-color: #000;
-  transform: scale(1.2);
-}
-
-.carousel-indicators li:hover {
-  background-color: rgba(0,0,0,0.5);
-}
-
-/* Improve carousel responsiveness for mobile */
 @media (max-width: 768px) {
-  .carousel-inner {
+  .post img, .content img {
+    max-width: 98vw !important;
     width: 100% !important;
     height: auto !important;
   }
-  
-  .carousel-inner .item img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain;
-  }
-  
-  .carousel-caption {
-    padding: 15px;
-  }
-  
-  .carousel-caption h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  .carousel-caption p {
-    font-size: 0.9em;
-  }
-  
-  #homeid {
-    padding: 0 10px;
-  }
-  
-  #newsid {
-    margin-top: 20px;
+  .post table, .content table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
-
-@media (max-width: 480px) {
-  .carousel-inner {
-    height: auto !important;
-  }
-  
-  .carousel-inner .item img {
-    height: auto !important;
-  }
-  
-  .carousel-caption {
-    padding: 10px;
-  }
-  
-  .carousel-caption h3 {
-    font-size: 1em;
-    margin-bottom: 3px;
-  }
-  
-  .carousel-caption p {
-    font-size: 0.8em;
-  }
-  
-  .carousel-indicators {
-    margin-top: 10px;
-  }
-  
-  .carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    margin: 0 3px;
-  }
-  
-  .carousel-control .glyphicon {
-    font-size: 18px;
-  }
-}
-
-/* Smooth transitions */
-.carousel-inner .item {
-  transition: transform 0.6s ease-in-out;
-}
-
-.carousel-inner .item.active,
-.carousel-inner .item.next,
-.carousel-inner .item.prev {
-  display: block;
-}
-
-/* Loading animation */
-.carousel-inner .item img {
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Override Bootstrap carousel defaults */
-.carousel,
-.carousel-inner,
-.carousel-inner .item,
-.carousel-inner .item.active,
-.carousel-inner .item.next,
-.carousel-inner .item.prev {
-  height: auto !important;
-  min-height: auto !important;
-  max-height: none !important;
-}
-
-.carousel-inner .item img,
-.carousel-inner .item.active img,
-.carousel-inner .item.next img,
-.carousel-inner .item.prev img {
-  height: auto !important;
-  min-height: auto !important;
-  max-height: none !important;
-  object-fit: contain !important;
-  object-position: center !important;
-}
-
-/* Ensure carousel container adapts to content */
-.carousel {
-  display: block;
+.post {
   position: relative;
+  margin-right: 320px;
 }
 
-.carousel-inner {
-  position: relative;
-  width: 60%;
-  overflow: hidden;
+/* .post ul.toc {
+  position: sticky;
+  top: 30px;
+  float: right;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  font-size: 0.95em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 6px;
+  z-index: 100;
+  margin: 0 0 1.5em 2em;
+} */
+
+@media (max-width: 1100px) {
+  .post {
+    margin-right: 220px;
+  }
+  .post ul.toc {
+    width: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .post {
+    margin-right: 0;
+  }
+  .post ul.toc {
+    position: static;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em 0;
+    top: auto;
+    z-index: auto;
+    max-height: none;
+    overflow: visible;
+  }
 }
 </style>
+
+</div>
+
+</div>
+
 
         <script type="text/javascript">
           // revert publication list number
@@ -651,7 +362,7 @@
     
 <footer class="sticky-bottom mt-5">
   <div class="container" style="text-align:center;">
-    &copy; Copyright 2025, Edmund Y. Lam
+    &copy; Copyright 2025, ISL
     <br>
     Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
 

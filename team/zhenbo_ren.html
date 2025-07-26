@@ -33,15 +33,15 @@
         var x = document.getElementById('inpress');
         var y = document.getElementById('byyear');
         var z = document.getElementById('bytype');
-        var w = document.getElementById('bytalk');
-        var u = document.getElementById('bydiscip');
+        var w = document.getElementById('bybook');
+        var u = document.getElementById('bypatent');
 
 
         var x_btn = document.getElementById("btn_inpress");
         var y_btn = document.getElementById("btn_byyear");
         var z_btn = document.getElementById("btn_bytype");
-        var w_btn = document.getElementById("btn_bytalk");
-        var u_btn = document.getElementById("btn_bydiscip");
+        var w_btn = document.getElementById("btn_bybook");
+        var u_btn = document.getElementById("btn_bypatent");
 
 
         // document.getElementById(select).display='block';
@@ -85,7 +85,7 @@
             u.style.display = 'none';
             u_btn.disabled = false;  
         }
-        else if (select == 'bytalk'){          
+        else if (select == 'bybook'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -97,7 +97,7 @@
             u.style.display = 'none';
             u_btn.disabled = false;  
         }
-        else if (select == 'bydiscip'){          
+        else if (select == 'bypatent'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -169,23 +169,24 @@
     <div class="container-fluid">
       <div class="row">
         <div class="container content page">
-  <div class="profile-img-container">
-    <img class="img-responsive profile-img" src="https://isl-hku.github.io/assets/images/member/zbren.jpg" data-action="zoom">
-    <br>
-    <p style="text-align:center;">
-      
-      
-      <a href="https://scholar.google.com/citations?user=ofE-yWwAAAAJ"><i class="ai ai-google-scholar icon-align-left fa-lg" ></i></a>
-      
-      
-      
-      
-      
-      
-    </p>
-  </div>
-  <h2 class="page-title">Zhenbo Ren</h2>
-  <h2 id="phd-student">Ph.D. Student</h2>
+<div style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;">
+<img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;" src="https://isl-hku.github.io/assets/images/member/zbren.jpg" data-action="zoom">
+<br>
+<p style="text-align:center;">
+
+
+<a href="https://scholar.google.com/citations?user=ofE-yWwAAAAJ"><i class="ai ai-google-scholar icon-align-left fa-lg" ></i></a>
+
+
+
+
+
+
+
+</p>
+</div>
+<h2 class="page-title">Zhenbo Ren</h2>
+<h2 id="phd-student">Ph.D. Student</h2>
 
 <p><i class="fa fa-building"></i></p>
 
@@ -199,31 +200,6 @@
 
 
 </div>
-
-<style>
-.profile-img-container {
-  max-width: 220px;
-  margin: 20px auto 5px auto;
-  text-align: center;
-}
-.profile-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-}
-@media (max-width: 768px) {
-  .profile-img-container {
-    float: none !important;
-    margin: 20px auto 10px auto;
-    width: 100%;
-    max-width: 90vw;
-  }
-  .profile-img {
-    max-width: 90vw;
-  }
-}
-</style>
 
 
         <script type="text/javascript">
@@ -245,7 +221,7 @@
     
 <footer class="sticky-bottom mt-5">
   <div class="container" style="text-align:center;">
-    &copy; Copyright 2025, Edmund Y. Lam
+    &copy; Copyright 2025, ISL
     <br>
     Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
 

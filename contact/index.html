@@ -33,15 +33,15 @@
         var x = document.getElementById('inpress');
         var y = document.getElementById('byyear');
         var z = document.getElementById('bytype');
-        var w = document.getElementById('bytalk');
-        var u = document.getElementById('bydiscip');
+        var w = document.getElementById('bybook');
+        var u = document.getElementById('bypatent');
 
 
         var x_btn = document.getElementById("btn_inpress");
         var y_btn = document.getElementById("btn_byyear");
         var z_btn = document.getElementById("btn_bytype");
-        var w_btn = document.getElementById("btn_bytalk");
-        var u_btn = document.getElementById("btn_bydiscip");
+        var w_btn = document.getElementById("btn_bybook");
+        var u_btn = document.getElementById("btn_bypatent");
 
 
         // document.getElementById(select).display='block';
@@ -85,7 +85,7 @@
             u.style.display = 'none';
             u_btn.disabled = false;  
         }
-        else if (select == 'bytalk'){          
+        else if (select == 'bybook'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -97,7 +97,7 @@
             u.style.display = 'none';
             u_btn.disabled = false;  
         }
-        else if (select == 'bydiscip'){          
+        else if (select == 'bypatent'){          
             x.style.display = 'none';
             x_btn.disabled = false;  
             y.style.display = 'none';
@@ -170,6 +170,12 @@
       <div class="row">
         <h2 id="contact-us">Contact us</h2>
 
+<center>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1845.9263257843604!2d114.13311547374447!3d22.28357079848779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403ff85af39c74f%3A0xf773f27a71da981d!2sThe%20Univeristy%20of%20Hong%20Kong%20Chow%20Yei%20Ching%20Building!5e0!3m2!1sen!2s!4v1753498045411!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</center>
+
 <p>The Univeristy of Hong Kong Chow Yei Ching Building, Lung Fu Shan, Hong Kong</p>
 
 <p>Imaging Systems Laboratory</p>
@@ -181,7 +187,6 @@
 <p>Pok Fu Lam Road</p>
 
 <p>Hong Kong</p>
-
 
 
         <script type="text/javascript">
@@ -203,7 +208,7 @@
     
 <footer class="sticky-bottom mt-5">
   <div class="container" style="text-align:center;">
-    &copy; Copyright 2025, Edmund Y. Lam
+    &copy; Copyright 2025, ISL
     <br>
     Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
 

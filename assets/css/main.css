@@ -8,14 +8,14 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
 
 html {
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 
 body {
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   font-size: 16px;
   height: 100%;
   position: relative;
@@ -142,7 +142,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   font-size: 1em;
 }
 
@@ -328,7 +328,7 @@ th {
 }
 
 @font-face {
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   src: url("../assets/fonts/glyphicons-halflings-regular.eot");
   src: url("../assets/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../assets/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../assets/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
@@ -7598,7 +7598,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7732,7 +7732,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8046,7 +8046,7 @@ button.close {
   width: 20px;
   height: 20px;
   line-height: 1;
-  font-family: sans-serif !important;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
 }
 
 .carousel-control .icon-prev:before {
@@ -9045,7 +9045,7 @@ button.close {
     /* background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% 70%; */
-    background-color: #77a88dc4;
+    background-color: #6dbc2f;
   }
 
 
@@ -9247,7 +9247,7 @@ button.close {
   .profile .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: sans-serif !important;
+    font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
     font-size: 1.2rem;
   }
 
@@ -9390,7 +9390,7 @@ button.close {
     height: 55px;
     bottom: 0px;
     margin-bottom: 0px;
-    background: #77a88dc4;
+    background: #6dbc2f;
     position: absolute;
     bottom: 0px;
     color: white;

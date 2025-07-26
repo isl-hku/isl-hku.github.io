@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research</title>
+  <title>Professor Edmund Lam Delivers Keynote on Computational Neuromorphic Imaging at Optica Imaging Congress</title>
   <meta name="description"
-    content="Research">
+    content="Controllable Synthesis Using Edge Data and Text PromptsWe are excited to announce a new framework called CUBE (Controllable, Unsupervised, Based on Events), ...">
   <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
-  <link rel="canonical" href="https://isl-hku.github.io/research/">
+  <link rel="canonical" href="https://isl-hku.github.io/blog/2025/CUBE-Training-Free-Event-Based-Video-Generation/">
   <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
 
 
@@ -168,49 +168,185 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div id="gridid" class="col-sm-12">
-  <!-- ![](https://isl-hku.github.io/assets/images/research/work_summary.png){: style="float:middle; border: 10px; display: block; margin-left: auto; margin-right: auto; width:60%; border-radius: 0;"}  -->
-
-<p><br /></p>
-
-<p>Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications. The lab offers various opportunities, including roles for Post-doctoral Fellows, Principal/Senior Researchers, and Graduate Students, catering to individuals with a strong academic background and a passion for innovative research in imaging technologies.</p>
-
-<h2 id="neuromorphic-imaging">Neuromorphic Imaging</h2>
-
-<p>Neuromorphic imaging is a novel area that the lab explores. It involves the use of imaging systems that mimic the human brain’s neural structure and processing methods. This field is particularly relevant for developing advanced vision systems that can efficiently process visual information, potentially leading to breakthroughs in areas like autonomous systems and robotics.</p>
-
-<h2 id="digital-holography">Digital Holography</h2>
-
-<p>The lab has a strong focus on digital holography, a technique that captures and reconstructs holograms digitally. This includes advancements in optical scanning holography, polarization holographic spectrometry, and holographic 3D particle reconstruction. The lab’s work in this area contributes to a deeper understanding and enhanced application of holography in various fields.</p>
-
-<h2 id="microplastics-detection">Microplastics Detection</h2>
-
-<p>The lab is actively engaged in the detection and assessment of microplastic pollution, a growing environmental concern. This involves utilizing advanced imaging techniques like digital holography combined with deep learning for efficient and accurate identification and classification of microplastics in various environments.</p>
-
-<h2 id="wellbeing-and-health">Wellbeing and Health</h2>
-
-<p>Research in this area encompasses a broad range of technologies aimed at improving health and wellbeing. This includes biomedical microscopy, eye imaging, and optical coherence tomography. The lab is involved in developing advanced imaging techniques and algorithms that have significant implications for medical diagnostics and treatment.</p>
-
-<h2 id="differentiable-imaging">Differentiable Imaging</h2>
-
-<p>Differentiable imaging represents a foundational paradigm in computational imaging. Leveraging differentiable programming, it effectively bridges the gaps among core system components, enabling authentic co-design to move from concept to practical implementation.</p>
-
-<ul>
-  <li>
-    <p>Ni Chen, Liangcai Cao, T.-C. Poon, Byoungho Lee, Edmund Y. Lam, ”Differentiable Imaging: a new tool for computational optical imaging,” Advanced Physics Research 2(3), 2023.</p>
-  </li>
-  <li>
-    <p>Ni Chen, David J. Brady, Edmund Y. Lam, ”Differentiable Imaging: Progress, Challenges, and Outlook,” Advanced Devices &amp; Instrumentation, 2025.</p>
-  </li>
-  <li>
-    <p>Ni Chen, Yang Wu, Chao Tan, Liangcai Cao, Jun Wang, Edmund Y. Lam, ”Uncertainty-Aware Fourier Ptychography,” Light: Science &amp; Applications 14 (236), 2025. </p>
-  </li>
-  <li>
-    <p>Ni Chen, Edmund Y. Lam, ”Differentiable pixel super resolution lensless imaging,” Optics Letters 50(5), 2025.</p>
-  </li>
-</ul>
+        <div class="container content post">
+  <h2>
+    <center>
+    <strong>Professor Edmund Lam Delivers Keynote on Computational Neuromorphic Imaging at Optica Imaging Congress</strong><br/>
+    <small>February 13, 2025 | </small>
+    <small>Edmund Y. Lam</small>
+    </center>
+  </h2>
+<hr> 
 
 
+
+<!-- <img src="  " style="width:40%; float: right; margin-left: 10px;"> -->
+
+<p>Controllable Synthesis Using Edge Data and Text Prompts</p>
+
+<p>We are excited to announce a new framework called CUBE (Controllable, Unsupervised, Based on Events), developed by researchers at the University of Hong Kong (HKU). This work has been accepted for Oral Presentation at ICIP 2024 and also invited to present at a WACV workshop.</p>
+
+<p>Why Event Cameras?</p>
+
+<p>Event cameras capture only intensity changes at each pixel, making them ideal for high-speed, high dynamic range, and low-power imaging. While this sparse data provides precise edge information, generating photo-realistic or even semantically controllable videos from raw events has been a longstanding challenge—until now.</p>
+
+<p>Key Idea: Combining Event Edges and Text Prompts</p>
+
+<p>CUBE bridges event streams and text-guided diffusion models to produce controllable videos without requiring specialized training. First, it extracts the edges from event data. Then, it applies a pre-trained (no extra training needed) diffusion model to translate these edges, guided by user text prompts, into photo-realistic video frames.</p>
+
+<ol>
+  <li>Edge Extraction</li>
+</ol>
+
+<p>Given an event stream (\varepsilon = {e_i}) with each event (e_i) as ((x_i, y_i, s_i, p_i)), we form edge maps over (V) time segments. The edge map (\mathbf{I}_j) for the (j)-th segment is computed by:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\mathbf{I}<em>j(x,y) = \sum</em>{i,; e_i \in \varepsilon_j} \frac{</td>
+      <td>p_i</td>
+      <td>,\delta(x - x_i),\delta(y - y_i)}{N},$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where (\delta) is the Kronecker delta, (p_i) is event polarity ((\pm 1)), and (N) is the total number of events in that segment. This yields a crisp edge map representing where and when changes occurred.</p>
+
+<ol>
+  <li>Diffusion-Based Video Generation</li>
+</ol>
+
+<p>Using the edge map (\mathbf{I}) and a text prompt (\tau), CUBE employs a latent diffusion process. At timestep (t), the denoising can be represented as:</p>
+
+<p>[<br />
+\mathbf{z}<em>{t \to 0}<br />
+\;=\;<br />
+\frac{\mathbf{z}_t - \sqrt{1 - \alpha_t} \,\epsilon</em>{\theta}\bigl(\mathbf{z}_t,\; t,\; \mathbf{I},\; \tau\bigr)}{\sqrt{\alpha_t}},<br />
+]</p>
+
+<p>where (\mathbf{z}<em>t) is the latent representation at diffusion step (t), and (\epsilon</em>{\theta}) is the denoising model (pre-trained on large text-image datasets)</p>
+
+<p>The reconstructed frames are then interpolated for temporal smoothness, leading to a fully controllable video output—simply specify text prompts (e.g., “a person juggling apples in a Renaissance painting style”) to guide the final appearance and context.</p>
+
+<p>Results and Impact</p>
+
+<p>High-Quality &amp; Consistent Videos: CUBE significantly outperforms existing approaches in terms of visual realism, motion smoothness, and prompt accuracy.</p>
+
+<p>No Large-Scale Training Needed: By building on existing diffusion backbones, the system sidesteps expensive dataset collection and training.</p>
+
+<p>Broad Applicability: Potential uses range from creative video synthesis (film, gaming) to high-speed vision applications (robotics, surveillance), where event cameras thrive.</p>
+
+<p>Looking Ahead</p>
+
+<p>Future directions include fusing texture cues (beyond edges) to enrich details, domain adaptation for real-time scenarios, and further optimization to accelerate event-driven video generation on resource-limited devices.</p>
+
+<p>Reference and Code</p>
+
+<p>Paper: “Controllable Unsupervised Event-based Video Generation” – Accepted at [ICIP 2024]</p>
+
+<p>Code: GitHub – IndigoPurple/CUBE</p>
+
+<p>If you reference this work, please cite:</p>
+
+<p>@inproceedings{zhao2024controllable,<br />
+title={CONTROLLABLE UNSUPERVISED EVENT-BASED VIDEO GENERATION},<br />
+author={Zhao, Yaping and Zhang, Pei and Wang, Chutian and Lam, Edmund Y.},<br />
+booktitle={2024 IEEE International Conference on Image Processing (ICIP)},<br />
+year={2024}<br />
+}</p>
+
+<p>Stay tuned for more updates on CUBE, and feel free to explore our open-source repository to try out controllable event-based video generation for yourself!</p>
+
+
+<hr>
+ 
+<script src="https://giscus.app/client.js"
+  data-repo="isl-hku/isl-hku.github.io"
+  data-repo-id="R_kgDOMYTlZQ"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOMYTlZc4CmMrx"
+  data-mapping="url"
+  data-strict="0"
+  data-reactions-enabled="0"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+<style>
+.post img, .content img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .post img, .content img {
+    max-width: 98vw !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .post table, .content table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.post {
+  position: relative;
+  margin-right: 320px;
+}
+
+.post ul.toc {
+  position: sticky;
+  top: 30px;
+  float: right;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  font-size: 0.95em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 6px;
+  z-index: 100;
+  margin: 0 0 1.5em 2em;
+}
+
+@media (max-width: 1100px) {
+  .post {
+    margin-right: 220px;
+  }
+  .post ul.toc {
+    width: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .post {
+    margin-right: 0;
+  }
+  .post ul.toc {
+    position: static;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em 0;
+    top: auto;
+    z-index: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+</style>
+
+  
 </div>
 
 
