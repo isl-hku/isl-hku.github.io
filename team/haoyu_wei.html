@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Professor Edmund Lam Delivers Keynote on Computational Neuromorphic Imaging at Optica Imaging Congress</title>
+  <title>Haoyu_wei</title>
   <meta name="description"
-    content="Controllable Synthesis Using Edge Data and Text PromptsWe are excited to announce a new framework called CUBE (Controllable, Unsupervised, Based on Events), ...">
+    content="Ph.D. Student">
   <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
-  <link rel="canonical" href="https://isl-hku.github.io/blog/2025/CUBE-Training-Free-Event-Based-Video-Generation/">
+  <link rel="canonical" href="https://isl-hku.github.io/team/haoyu_wei">
   <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
 
 
@@ -168,171 +168,33 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="container content post">
-  <h2>
-    <center>
-    <strong>Professor Edmund Lam Delivers Keynote on Computational Neuromorphic Imaging at Optica Imaging Congress</strong><br/>
-    <small>February 13, 2025 | </small>
-    <small>Edmund Y. Lam</small>
-    </center>
-  </h2>
-<hr> 
+        <div class="container content page">
+<div style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;">
+<img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;" src="https://isl-hku.github.io/assets/images/member/hywei.jpg" data-action="zoom">
+<br>
+<p style="text-align:center;">
 
 
 
-<!-- <img src="  " style="width:40%; float: right; margin-left: 10px;"> -->
-
-<p>Controllable Synthesis Using Edge Data and Text Prompts</p>
-
-<p>We are excited to announce a new framework called CUBE (Controllable, Unsupervised, Based on Events), developed by researchers at the University of Hong Kong (HKU). This work has been accepted for Oral Presentation at ICIP 2024 and also invited to present at a WACV workshop.</p>
-
-<p>Why Event Cameras?</p>
-
-<p>Event cameras capture only intensity changes at each pixel, making them ideal for high-speed, high dynamic range, and low-power imaging. While this sparse data provides precise edge information, generating photo-realistic or even semantically controllable videos from raw events has been a longstanding challenge—until now.</p>
-
-<p>Key Idea: Combining Event Edges and Text Prompts</p>
-
-<p>CUBE bridges event streams and text-guided diffusion models to produce controllable videos without requiring specialized training. First, it extracts the edges from event data. Then, it applies a pre-trained (no extra training needed) diffusion model to translate these edges, guided by user text prompts, into photo-realistic video frames.</p>
-
-<ol>
-  <li>Edge Extraction</li>
-</ol>
-
-<p>Given an event stream (\varepsilon = {e_i}) with each event (e_i) as ((x_i, y_i, s_i, p_i)), we form edge maps over (V) time segments. The edge map (\mathbf{I}_j) for the (j)-th segment is computed by:</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>$\mathbf{I}<em>j(x,y) = \sum</em>{i,; e_i \in \varepsilon_j} \frac{</td>
-      <td>p_i</td>
-      <td>,\delta(x - x_i),\delta(y - y_i)}{N},$</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>where (\delta) is the Kronecker delta, (p_i) is event polarity ((\pm 1)), and (N) is the total number of events in that segment. This yields a crisp edge map representing where and when changes occurred.</p>
-
-<ol>
-  <li>Diffusion-Based Video Generation</li>
-</ol>
-
-<p>Using the edge map (\mathbf{I}) and a text prompt (\tau), CUBE employs a latent diffusion process. At timestep (t), the denoising can be represented as:</p>
-
-<p>[<br />
-\mathbf{z}<em>{t \to 0}<br />
-\;=\;<br />
-\frac{\mathbf{z}_t - \sqrt{1 - \alpha_t} \,\epsilon</em>{\theta}\bigl(\mathbf{z}_t,\; t,\; \mathbf{I},\; \tau\bigr)}{\sqrt{\alpha_t}},<br />
-]</p>
-
-<p>where (\mathbf{z}<em>t) is the latent representation at diffusion step (t), and (\epsilon</em>{\theta}) is the denoising model (pre-trained on large text-image datasets)</p>
-
-<p>The reconstructed frames are then interpolated for temporal smoothness, leading to a fully controllable video output—simply specify text prompts (e.g., “a person juggling apples in a Renaissance painting style”) to guide the final appearance and context.</p>
-
-<p>Results and Impact</p>
-
-<p>High-Quality &amp; Consistent Videos: CUBE significantly outperforms existing approaches in terms of visual realism, motion smoothness, and prompt accuracy.</p>
-
-<p>No Large-Scale Training Needed: By building on existing diffusion backbones, the system sidesteps expensive dataset collection and training.</p>
-
-<p>Broad Applicability: Potential uses range from creative video synthesis (film, gaming) to high-speed vision applications (robotics, surveillance), where event cameras thrive.</p>
-
-<p>Looking Ahead</p>
-
-<p>Future directions include fusing texture cues (beyond edges) to enrich details, domain adaptation for real-time scenarios, and further optimization to accelerate event-driven video generation on resource-limited devices.</p>
-
-<p>Reference and Code</p>
-
-<p>Paper: “Controllable Unsupervised Event-based Video Generation” – Accepted at [ICIP 2024]</p>
-
-<p>Code: GitHub – IndigoPurple/CUBE</p>
-
-<p>If you reference this work, please cite:</p>
-
-<p>@inproceedings{zhao2024controllable,<br />
-title={CONTROLLABLE UNSUPERVISED EVENT-BASED VIDEO GENERATION},<br />
-author={Zhao, Yaping and Zhang, Pei and Wang, Chutian and Lam, Edmund Y.},<br />
-booktitle={2024 IEEE International Conference on Image Processing (ICIP)},<br />
-year={2024}<br />
-}</p>
-
-<p>Stay tuned for more updates on CUBE, and feel free to explore our open-source repository to try out controllable event-based video generation for yourself!</p>
 
 
-<hr>
- 
 
 
-<style>
-.post img, .content img {
-  max-width: 100% !important;
-  height: auto !important;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 768px) {
-  .post img, .content img {
-    max-width: 98vw !important;
-    width: 100% !important;
-    height: auto !important;
-  }
-  .post table, .content table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-.post {
-  position: relative;
-  margin-right: 320px;
-}
 
-.post ul.toc {
-  position: sticky;
-  top: 30px;
-  float: right;
-  width: 280px;
-  max-height: 80vh;
-  overflow-y: auto;
-  background: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  padding: 1em;
-  font-size: 0.95em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  border-radius: 6px;
-  z-index: 100;
-  margin: 0 0 1.5em 2em;
-}
+</p>
+</div>
+<h2 class="page-title">Haoyu Wei</h2>
+<h2 id="phd-student">Ph.D. Student</h2>
 
-@media (max-width: 1100px) {
-  .post {
-    margin-right: 220px;
-  }
-  .post ul.toc {
-    width: 200px;
-  }
-}
+<p><i class="fa fa-building"></i> Meinel 106G,</p>
 
-@media (max-width: 900px) {
-  .post {
-    margin-right: 0;
-  }
-  .post ul.toc {
-    position: static;
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    margin: 1em 0;
-    top: auto;
-    z-index: auto;
-    max-height: none;
-    overflow: visible;
-  }
-}
-</style>
+<hr />
 
-  
+<h2 id="experiences">Experiences</h2>
+
+<h2 id="education">Education</h2>
+
+
 </div>
 
 
