@@ -1,5 +1,5 @@
 ---
-name: Jingqian Wu
+name: Haosen Liu
 position: gradstudent
 avatar: hsliu.jpg
 email: haosenliu0803@gmail.com
