@@ -9045,7 +9045,7 @@ button.close {
     /* background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% 70%; */
-    background-color: #6dbc2f;
+    background-color: #00261dd6;
   }
 
 
@@ -9390,7 +9390,7 @@ button.close {
     height: 55px;
     bottom: 0px;
     margin-bottom: 0px;
-    background: #6dbc2f;
+    background: #00261dd6;
     position: absolute;
     bottom: 0px;
     color: white;
