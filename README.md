@@ -1,16 +1,21 @@
-# Lab Website Content Management Guide
+# Lab Website Management Guide
+
 This guide helps lab members update the website with new publications, member profiles, and news. No coding experience is required—follow the steps below!
 
-1. Adding/Updating Publications
+## Adding/Updating Publications
 Publications are managed through BibTeX files. Follow these steps to add new papers or update existing ones:
 
-​       Locate the BibTeX folder: Go to the _bibliography folder in the website repository.
-Choose the right file:
+- Locate the BibTeX folder: Go to the _bibliography folder in the website repository.
+  Choose the right file:
 
-- Add journal papers to journal.bib
-- Add conference papers to conf.bib
-- Add patents to others.bib
-- Add preprints to journal.bib (with @misc type)
+  - Add journal papers to journal.bib
+
+  - Add conference papers to conf.bib
+
+  - Add patents to others.bib
+
+  - Add preprints to journal.bib (with @misc type)
+
 
 - Format your entry: Use standard BibTeX format. Include a groups field to tag the paper with relevant keywords (e.g., groups = {computational imaging}).
 
@@ -28,21 +33,21 @@ Example:
 
 Save and push: Commit your changes and push to the repository. The website will auto-update in 2 minutes.
 
-2. Creating Your Member Profile
-    All lab members should create their own profile page. Here’s how:
-  
-    - Prepare your photo:
-      Use a square headshot (e.g., 400x400 pixels)
-  
-    - Save it as firstname_lastname.jpg (e.g., john_doe.jpg)
-      Upload it to the assets/images/member/ folder
-  
-    - Create your profile file:
-  
-      - Go to the _people folder
-  
-      - Create a new file named firstname_lastname.md (match the photo filename!)
-  - Copy the template below and fill in your details:
+## Creating Your Member Profile
+Here’s how:
+
+  - Prepare your photo:
+    Use a square headshot (e.g., 400x400 pixels)
+
+  - Save it as firstname_lastname.jpg (e.g., john_doe.jpg)
+    Upload it to the assets/images/member/
+
+  - Create your profile file:
+
+    - Go to the _team folder
+
+    - Create a new file named firstname_lastname.md (match the photo filename!)
+- Copy the template below and fill in your details:
 
 ---
 ```markdown
@@ -91,35 +96,46 @@ Save and push: Commit the new file and photo, then push to the repository. Your 
 
 
 
-3. Adding Lab News
+## Adding Lab News
 Share lab updates, paper acceptances, conferences, or other announcements:
 Steps:
+
 - Open the news file: Go to _posts/
 - Add a new md file, name it as YYYY-MM-DD-xxxxx  <!-- e.g., 2024-06-15 -->
-  
+- Upload banner image to the assets/images/post/
 
-Save and push: Commit your changes. The news will appear on the homepage and "News" page immediately.
+Example:
 
-4. Troubleshooting Common Issues
-  "Permission denied" errors when running scripts:
-  Run this command in your terminal:
+```markdown
+---
+layout: post
+title: "Uncertainty-aware Fourier Ptychography is published in LSA"
+description: 
+categories: publication
+header-img: xxx.gif
+lang: en
+---
 
-  ```bash
-  chmod a+x ./script/deploy
-  ```
 
-  "env: bash\r: No such file or directory" error:
-  This happens due to line break issues. Fix it in VS Code:
+Blablabla.....
 
-  - Open the file with the error
-  - Click "CRLF" in the bottom-right corner
-  - Select "LF" to convert line breaks
-  - Save the file
 
-5. Final Notes
-  All changes go live automatically after pushing to the repository (no need for extra steps)
-  Double-check filenames (e.g., photo and profile filenames must match exactly)
-  For help, ask the lab website manager or check past entries as examples
+| <img src="/assets/images/post/yyy.gif" width="70%"> |
+| :--------------------------------------------------: |
+|                 caption                  |
+```
+
+
+
+Save and push: Commit your changes. The news will appear on the homepage page.
+
+
+
+## Final Notes
+
+All changes go live automatically after pushing to the repository (no need for extra steps)
+Double-check filenames (e.g., photo and profile filenames must match exactly)
+For help, ask the lab website manager or check past entries as examples
 
 
 
