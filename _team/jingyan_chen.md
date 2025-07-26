@@ -2,12 +2,12 @@
 name: Jingyan Chen
 position: gradstudent
 avatar: jychen.jpg
-email: 
+email: jingyuan0110@outlook.com
 scholar: 
 web: 
 github: 
-# twitter: ni_chen
-joined: 2021
+twitter:
+joined: 2023
 ---
 
 
@@ -17,11 +17,10 @@ joined: 2021
 ## Ph.D. Student
 
 
-<i class="fa fa-building"></i> Meinel 106G, 
+<i class="fa fa-building"></i>  Chow Yei Ching Building, Room 512 
 
 <hr>
 
-## Experiences
 
 
 ## Education
