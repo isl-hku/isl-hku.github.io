@@ -59,13 +59,13 @@ toc: true
 <br>
 
 {% for group in all_groups %}
-<h3 id="{{ group | slugify }}">#{{ group }}</h3>
+<h3 id="{{ group | slugify }}"># <strong>{{ group }} </strong></h3>
 
 <h4>Journal Papers</h4>
 {% bibliography -f journal -q @article[groups={{ group }}] %}
 
 <h4>Conference Papers</h4>
-{% bibliography -f conf -q @conference[groups={{ group }}] %}
+{% bibliography -f conf -q @inproceedings[groups={{ group }}] %}
 
 <hr> 
 <br>
@@ -88,10 +88,10 @@ toc: true
 {% bibliography -f journal -q @article[key!=Liu2025JOpt && key!=CPChen2023OE] %}
 
 ## Conference
-{% bibliography -f conf -q @conference %}
+{% bibliography -f conf -q @inproceedings %}
 
 ## Editorials
-{% bibliography -f journal -q @article[key=Liu2025JOpt || key=CPChen2023OE] %}
+{% bibliography -f others -q @editorial %}
 </div>
 
 <br>
