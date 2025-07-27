@@ -13,7 +13,7 @@ joined: 2020
 
 ---
 
-<i class="fa fa-building"></i> CYC 512 (e.g., "RIC 1481")<br>
+<i class="fa fa-building"></i> CYC 512 <br>
 
 <hr>
 
