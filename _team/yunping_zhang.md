@@ -1,5 +1,6 @@
 ---
 name: Yunping Zhang
+layout: profile
 position: gradstudent
 avatar: yunping_zhang.jpg
 email: yp000925@connect.hku.hk
@@ -11,7 +12,7 @@ github:
 joined: 2020
 ---
 
----
+
 
 <i class="fa fa-building"></i> CYC 512 <br>
 
@@ -19,7 +20,7 @@ joined: 2020
 
 ### Bio
 
-My name is Yunping (Sherry), currently a final year PhD candidate from the department of Electrical and Electronic Engineering at the University of Hong Kong , supervised by Prof.Edmund Y. Lam . I successfully completed my PhD program in Fall 2024 and was honored to receive the Dissertation Year Fellowship ,which will conclude in Fall 2025.
+My name is Yunping (Sherry), currently a final year PhD candidate from the department of Electrical and Electronic Engineering at the University of Hong Kong, supervised by Prof.Edmund Y. Lam. I successfully completed my PhD program in Fall 2024 and was honored to receive the Dissertation Year Fellowship, which will conclude in Fall 2025.
 
 <hr>
 

@@ -11,7 +11,7 @@ permalink: /research/
 
 <br>
 
-Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications. The lab offers various opportunities, including roles for Post-doctoral Fellows, Principal/Senior Researchers, and Graduate Students, catering to individuals with a strong academic background and a passion for innovative research in imaging technologies.
+Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications. 
 
 
 
@@ -39,12 +39,3 @@ Research in this area encompasses a broad range of technologies aimed at improvi
 
 Differentiable imaging represents a foundational paradigm in computational imaging. Leveraging differentiable programming, it effectively bridges the gaps among core system components, enabling authentic co-design to move from concept to practical implementation.
 
-- Ni Chen, Liangcai Cao, T.-C. Poon, Byoungho Lee, Edmund Y. Lam, "Differentiable Imaging: a new tool for computational optical imaging," Advanced Physics Research 2(3), 2023.
-
-- Ni Chen, David J. Brady, Edmund Y. Lam, "Differentiable Imaging: Progress, Challenges, and Outlook," Advanced Devices & Instrumentation, 2025.
-
-- Ni Chen, Yang Wu, Chao Tan, Liangcai Cao, Jun Wang, Edmund Y. Lam, "Uncertainty-Aware Fourier Ptychography," Light: Science & Applications 14 (236), 2025. 
-
-- Ni Chen, Edmund Y. Lam, "Differentiable pixel super resolution lensless imaging," Optics Letters 50(5), 2025.
-
-  

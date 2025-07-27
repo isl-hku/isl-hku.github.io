@@ -34,7 +34,7 @@ toc: true
 <br>
 
 {% assign this_year = "now" | date: "%Y" %}
-{% assign years = (1999..this_year) | reverse %}
+{% assign years = (1998..this_year) | reverse %}
 
 <script>var byyeartext = "year"; var bytypetext = "type";</script>
 

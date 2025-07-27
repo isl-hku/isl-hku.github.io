@@ -3,6 +3,7 @@
 This guide helps lab members update the website with new publications, member profiles, and news. No coding experience is required—follow the steps below!
 
 ## Adding/Updating Publications
+
 Publications are managed through BibTeX files. Follow these steps to add new papers or update existing ones:
 
 - Locate the BibTeX folder: Go to the _bibliography folder in the website repository.
@@ -10,16 +11,17 @@ Publications are managed through BibTeX files. Follow these steps to add new pap
 
   - Add journal papers to journal.bib
 
+  - Add preprints to journal.bib (with @misc type)
+
   - Add conference papers to conf.bib
 
   - Add patents to others.bib
 
-  - Add preprints to journal.bib (with @misc type)
+- Format your entry: Use standard BibTeX format. 
 
+Include a groups field to tag the paper with relevant keywords (e.g., groups = {computational imaging}).
 
-- Format your entry: Use standard BibTeX format. Include a groups field to tag the paper with relevant keywords (e.g., groups = {computational imaging}).
-
-Example:
+You can also include fileds like note, website, github, and any other media report links. Here is an example:
 
 ```bibtex
 @article{Doe2024,
@@ -27,14 +29,20 @@ Example:
   title = {New Advances in Lensless Imaging},
   journal = {Optics Express},
   year = {2024},
-  groups = {lensless imaging}  <!-- Must match one of the keywords in "By Key Words" tab -->
+  note = {Invited paper},
+  award = {},
+  groups = {lensless imaging},  <!-- Match one of the keywords in "By Key Words" tab -->
+  project ={},
+  code = {},
+  news = {},
+  eurekalert = {},
+  wechat ={},
 }
 ```
 
-Save and push: Commit your changes and push to the repository. The website will auto-update in 2 minutes.
+Commit your changes and push to the repository. The website will auto-update in 2 minutes.
 
 ## Creating Your Member Profile
-Here’s how:
 
   - Prepare your photo:
     Use a square headshot (e.g., 400x400 pixels)
@@ -50,27 +58,26 @@ Here’s how:
 - Copy the template below and fill in your details:
 
 ---
+
 ```markdown
 ---
 name: Your Full Name  <!-- e.g., "John Doe" -->
 position: your role  <!-- e.g., "phdstudent", "postdoc", "researchstaff" -->
 avatar: firstname_lastname.jpg  <!-- Match your photo filename -->
-twitter: your_twitter_handle (optional)
-avatar: elam.jpg
-twitter:
+twitter: your_twitter_id 
+avatar: xxxx.jpg
 linkedin: xxxx <!-- ID only -->
-email: elam@eee.hku.hk
+email: 
 scholar: https://scholar.google.com/citations?user=MvOSTcUAAAAJ
 web: 
-orcid: 0000-0001-6268-950X
+orcid: 0000-0000-0000-0000
 github: xxx   <!-- ID only -->
 joined: 2023  <!-- e.g., 2024 -->
 ---
 
 
----
-
-<i class="fa fa-building"></i> Your Office Location (e.g., "RIC 1481")<br>
+<i class="fa fa-building"></i> Your Office Location (e.g., "RIC 1481")
+<br>
 
 <hr>
 
@@ -92,7 +99,9 @@ A short description of your background (e.g., education, previous research, inte
 
 ---
 
-Save and push: Commit the new file and photo, then push to the repository. Your profile will appear on the "People" page automatically.
+Save and push: Commit the new file and photo, then push to the repository. 
+
+Your profile will appear on the "People" page automatically.
 
 
 
@@ -109,10 +118,10 @@ Example:
 ```markdown
 ---
 layout: post
-title: "Uncertainty-aware Fourier Ptychography is published in LSA"
+title: "some title"
 description: 
 categories: publication
-header-img: xxx.gif
+header-img: banner.jpg
 lang: en
 ---
 
@@ -126,15 +135,15 @@ Blablabla.....
 ```
 
 
-
 Save and push: Commit your changes. The news will appear on the homepage page.
-
 
 
 ## Final Notes
 
 All changes go live automatically after pushing to the repository (no need for extra steps)
+
 Double-check filenames (e.g., photo and profile filenames must match exactly)
+
 For help, ask the lab website manager or check past entries as examples
 
 

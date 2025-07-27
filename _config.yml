@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Imaging Systems Lab
 first_name: Edmund Y. 
@@ -48,8 +41,6 @@ blog_name: Post  # your blog must have a name for it to show up in the nav bar
 blog_description:
 permalink: /blog/:year/:title/
 
-# disqus:
-#   identifier: "neysachen"
 
 markdown: kramdown # to show TOC
 # Markdown Processing
@@ -164,9 +155,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   # - jekyll-remote-theme # add this line to the plugins list if you already have one
-
-
-
 
 
 

@@ -9,19 +9,19 @@ lang: en
 
 
 
-Our latest review paper on Differentiable Imaging, just published in Advanced Devices & Instrumentation. https://lnkd.in/gswu4_xC
+Our latest review paper on Differentiable Imaging, just published in Advanced Devices & Instrumentation. [https://doi.org/10.34133/adi.0117](https://doi.org/10.34133/adi.0117)
 
 Computational imaging necessitates holistic co-design spanning optical architectures, reconstruction algorithms, hardware specifications, economic constraints, and computational performance. Conventional techniques face significant challenges in modeling and simultaneously optimizing these tightly coupled, multidisciplinary variables.
 
 Drawing inspiration from backprop's transformative impact on deep learning (recognized with the 2018 Turing Award and 2024 Nobel Prize in Physics), and supported by preliminary results, we introduced "Differentiable Imaging" in late 2022. This approach constructs "neural network architectures" that explicitly model both optical systems and inverse solvers, unified through automatic differentiation:
 
-📄 Ni Chen, Liangcai Cao, Ting-Chung Poon, Byoungho Lee, Edmund Lam, "Differentiable Imaging: A New Tool for Computational Optical Imaging," Advanced Physics Research, 2023. [https://lnkd.in/gdNyXf6r](https://lnkd.in/gdNyXf6r)
+📄 Ni Chen, Liangcai Cao, Ting-Chung Poon, Byoungho Lee, Edmund Lam, "Differentiable Imaging: A New Tool for Computational Optical Imaging," Advanced Physics Research, 2023. [https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118](https://onlinelibrary.wiley.com/doi/full/10.1002/apxr.202200118)
 
 
 
-| <img src="/assets/images/post/digital_twin.png" width="80%"> |
+| <img src="/assets/images/post/digital_twin.png" width="65%"> |
 | :--------------------------------------------------: |
-|                 Digital-Twin Equipped Computational Imaging                |
+|       Digital-Twin-Equipped Computational Imaging         |
 
 
 
@@ -33,4 +33,4 @@ While still in its early stages, we're excited to see where Differentiable Imagi
 
 📄 Ni Chen, David Brady, Edmund Lam, "Differentiable Imaging: progress, challenges, and outlook," Advanced Devices & Instrumentation 6 (0117), July, 2025. 
 
-🌐 Project page of Differentiable Imaging: [https://lnkd.in/guuKhzaF](https://lnkd.in/guuKhzaF)
+🌐 Project page of Differentiable Imaging: [https://ni-chen.github.io/Differentiable-Imaging/](https://ni-chen.github.io/Differentiable-Imaging/)
