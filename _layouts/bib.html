@@ -63,14 +63,14 @@
         <!-- {% if entry.ifactor != "" %}
         [IF: <b style="color:#2465bb;">{{entry.ifactor}}</b>].
         {% endif %}  -->
-      {% elsif entry.type == "conference" %}
+      {% elsif entry.type == "conference" or entry.type == "inproceedings"  %}
         <em>In {{entry.booktitle}}</em>,
         {% if entry.address %}
           {{entry.address}},
         {% endif %}
-        <!-- {% if entry.month %}
+        {% if entry.month %}
         <span style="text-transform:capitalize">{{entry.month}}. </span>
-        {% endif %} -->
+        {% endif %}
         {% if entry.year %}
           {{entry.year}}.
         {% endif %}
@@ -79,9 +79,9 @@
         {% if entry.address %}
           {{entry.address}},
         {% endif %}
-        <!-- {% if entry.month %}
+        {% if entry.month %}
         <span style="text-transform:capitalize">{{entry.month}}. </span>
-        {% endif %} -->
+        {% endif %}
         {% if entry.year %}
           {{entry.year}}.
         {% endif %}

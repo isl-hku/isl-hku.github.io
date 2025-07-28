@@ -32,11 +32,11 @@ Founding Member, [Asian Society for Engineering Education](https://www.asiasee.o
 Chow Yei Ching Building, Room 504
 Department of Electrical and Electronic Engineering,
 The University of Hong Kong, Pokfulam, Hong Kong.
-Email: elam @ eee.hku.hk
+
 
 <!-- Personal Homepage: https://www.eee.hku.hk/~elam
 LinkedIn Profile: https://www.linkedin.com/in/eymlam/ -->
-SPIE Profile: https://spie.org/profile/Edmund.Lam-23476
+<!-- SPIE Profile: https://spie.org/profile/Edmund.Lam-23476 -->
 
 
 

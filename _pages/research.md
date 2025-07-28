@@ -35,7 +35,10 @@ The lab is actively engaged in the detection and assessment of microplastic poll
 Research in this area encompasses a broad range of technologies aimed at improving health and wellbeing. This includes biomedical microscopy, eye imaging, and optical coherence tomography. The lab is involved in developing advanced imaging techniques and algorithms that have significant implications for medical diagnostics and treatment.
 
 
-## Differentiable Imaging
+## [Differentiable Imaging](https://ni-chen.github.io/Differentiable-Imaging/)
 
 Differentiable imaging represents a foundational paradigm in computational imaging. Leveraging differentiable programming, it effectively bridges the gaps among core system components, enabling authentic co-design to move from concept to practical implementation.
 
+
+
+<br>
