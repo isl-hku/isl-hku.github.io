@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaiqiang_wang</title>
+  <meta name="description"
+    content="### Research Interests- Computational imaging and artificial intelligence">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
+  <link rel="canonical" href="https://isl-hku.github.io/team/kaiqiang_wang">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+
+  <script>
+    function ShowOrHide(select='inpress') {
+        var x = document.getElementById('inpress');
+        var y = document.getElementById('byyear');
+        var z = document.getElementById('bytype');
+        var w = document.getElementById('bybook');
+        var u = document.getElementById('bypatent');
+        var v = document.getElementById('bygroup');
+
+
+        var x_btn = document.getElementById("btn_inpress");
+        var y_btn = document.getElementById("btn_byyear");
+        var z_btn = document.getElementById("btn_bytype");
+        var w_btn = document.getElementById("btn_bybook");
+        var u_btn = document.getElementById("btn_bypatent");
+        var v_btn = document.getElementById("btn_bygroup");
+
+
+        if (select == 'inpress') {          
+            x.style.display = 'block';
+            x_btn.disabled = true; 
+            y.style.display = 'none';
+            y_btn.disabled = false;   
+            z.style.display = 'none';
+            z_btn.disabled = false;   
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'byyear'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'block';
+            y_btn.disabled = true;
+            z.style.display = 'none';
+            z_btn.disabled = false;  
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bytype'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'block';
+            z_btn.disabled = true;
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bybook'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'block';
+            w_btn.disabled = true;  
+            u.style.display = 'none';
+            u_btn.disabled = false;  
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bypatent'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;  
+            u.style.display = 'block';
+            u_btn.disabled = true;  
+            v.style.display = 'none';
+            v_btn.disabled = false;  
+        } else if (select == 'bygroup'){          
+            x.style.display = 'none';
+            x_btn.disabled = false;  
+            y.style.display = 'none';
+            y_btn.disabled = false;  
+            z.style.display = 'none';
+            z_btn.disabled = false;
+            w.style.display = 'none';
+            w_btn.disabled = false;   
+            u.style.display = 'none';
+            u_btn.disabled = false;   
+            v.style.display = 'block';
+            v_btn.disabled = true;  
+        }
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "l0fyrfksvt");
+</script>
+
+
+
+
+  <!-- google search --> 
+  <meta name="google-site-verification" content="zA-pyWCSMDUz2guOFMd9WzdV7NSk1GTXBbDOrCN9FN4" />
+
+</head>
+
+  <body text-align="justify">
+    
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging Systems Lab</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://isl-hku.github.io/index">Home</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
+				<li><a href="https://isl-hku.github.io/research">Research</a></li>
+				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
+				<li><a href="https://isl-hku.github.io/team">Team</a></li>
+				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
+				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
+				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
+				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container content page">
+<div style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;">
+<img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;" src="https://isl-hku.github.io/assets/images/member/kqwang.jpg" data-action="zoom">
+<br>
+<p style="text-align:center;">
+
+<a href="mailto:kqwang@nwpu.edu.cn"><i class="fa fa-envelope fa-align-left fa-lg"></i></a> 
+
+
+<a href="https://scholar.google.com/citations?user=K_TBJDUAAAAJ"><i class="ai ai-google-scholar icon-align-left fa-lg" ></i></a>
+
+
+<a href="https://teacher.nwpu.edu.cn/en/kqwang"><i class="fa fa-globe fa-align-left fa-lg"></i></a> 
+
+
+<a href="https://github.com/kqwang"><i class="fa fa-github fa-align-left fa-lg"></i></a>
+
+
+
+
+
+</p>
+</div>
+<h2 class="page-title">Kaiqiang Wang</h2>
+### Research Interests
+- Computational imaging and artificial intelligence
+
+</div>
+
+
+        <script type="text/javascript">
+          // revert publication list number
+          var olists = document.getElementsByTagName('ol');
+          for (var i = 0; i < olists.length; i++) { 
+            // if (!olists[i].className.match(/\breversed\b/)) 
+            //   continue; 
+            var items = olists[i].getElementsByTagName('li'); 
+            for(var j = 0; j < items.length; j++) {
+               items[j].setAttribute("value", items.length - j); 
+            } 
+          }
+
+      </script>
+      </div>
+    </div>
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container" style="text-align:center;">
+    &copy; Copyright 2025, ISL
+    <br>
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank">Jekyll Scholar</a>
+
+    
+    <!-- | Last updated in July, 2025 -->
+    
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
