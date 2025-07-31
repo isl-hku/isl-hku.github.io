@@ -12,6 +12,3 @@ joined: 2023
 left: 2024
 current: NWPU
 ---
-
-### Research Interests
-- Computational imaging and artificial intelligence
