@@ -8,7 +8,6 @@ web: https://teacher.nwpu.edu.cn/en/kqwang
 github: kqwang
 twitter: 
 previous: postdoc
-joined: 2023
-left: 2024
+
 current: NWPU
 ---
