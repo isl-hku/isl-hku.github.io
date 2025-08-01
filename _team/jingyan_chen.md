@@ -8,6 +8,7 @@ web:
 github: 
 twitter:
 joined: 2023
+left: ""
 ---
 
 

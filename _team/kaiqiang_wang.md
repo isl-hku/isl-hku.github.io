@@ -1,13 +1,12 @@
 ---
 name: Kaiqiang Wang
-position: alumni
+position: postdoc
 avatar: kqwang.jpg
 email: kqwang@nwpu.edu.cn
 scholar: https://scholar.google.com/citations?user=K_TBJDUAAAAJ
 web: https://teacher.nwpu.edu.cn/en/kqwang
 github: kqwang
 twitter: 
-previous: postdoc
 joined: 2023
 left: 2024
 current: NWPU

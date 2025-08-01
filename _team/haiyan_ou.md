@@ -1,7 +1,6 @@
 ---
 name: Haiyan Ou
-position: alumni  
-previous: postdoc  
+position: postdoc  
 avatar: hyou.jpg 
 email: 
 scholar:  

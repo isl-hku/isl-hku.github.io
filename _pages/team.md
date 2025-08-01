@@ -6,48 +6,39 @@ excerpt: "Team"
 title: "Team"
 ---
 
-{% assign people_sorted = site.team | sort: 'joined'  %}
-{% assign role_array = "pi|researcher|postdoc|gradstudent|intern|visiting|others|alumni" | split: "|" %}
+{% assign people_sorted = site.team | sort: 'joined' %}
+{% assign role_array = "pi|researcher|postdoc|gradstudent|intern|visiting|others" | split: "|" %}
+
 
 <h2>Current members</h2>
 <div style="align:left;">
 {% for role in role_array %}
-{% assign people_in_role = people_sorted | where: 'position', role %}
+{% assign role_members = people_sorted | where: "position", role | where_exp: "item", "item.left == nil or item.left == ''" %}
 
-{% if role != 'alumni' %}
-{% for profile in people_sorted %}
-{% if profile.position contains role %}
-
+{% if role_members.size > 0 %}
+{% for profile in role_members %}
 <div class="list-item-people">
 <hr>
 <p class="list-post-title">
 {% if profile.avatar %}
-<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail"  src="{{ site.url }}{{site.baseurl}}/assets/images/member/{{profile.avatar}}"></a>
+<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail" src="{{ site.url }}{{site.baseurl}}/assets/images/member/{{profile.avatar}}"></a>
 {% else %}
-<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail"  src="{{ site.url }}{{site.baseurl}}/assets/images/member/bio.jpg"></a>
+<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail" src="{{ site.url }}{{site.baseurl}}/assets/images/member/bio.jpg"></a>
 {% endif %}
 </p>
 <p>
 <a class="name" href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}">{{ profile.name }}</a>  
 <br>
 <span>
-{% if profile.position=='pi' %}
-{% assign pos = 'PI' %}
-{% elsif profile.position=='researcher' %}
-{% assign pos = 'Research Faculty' %}
-{% elsif profile.position=='postdoc' %}
-{% assign pos = 'Postdoc' %}
-{% elsif profile.position=='gradstudent' %}
-{% assign pos = 'Graduate student' %}
-{% elsif profile.position=='visiting' %}
-{% assign pos = 'Visiting' %}
-{% elsif profile.position=='intern' %}
-{% assign pos = 'Intern' %}
-{% elsif profile.position=='others' %}
-{% assign pos = 'Others' %}
-{% endif %}
-{{ pos }} 
-<!-- {{ pos }} since {{ profile.joined }} -->
+{% case role %}
+{% when 'pi' %}PI
+{% when 'researcher' %}Research Faculty
+{% when 'postdoc' %}Postdoc
+{% when 'gradstudent' %}Graduate student
+{% when 'intern' %}Intern
+{% when 'visiting' %}Visiting
+{% when 'others' %}Others
+{% endcase %}
 </span>  
 </p>
 <p style="text-align:left;">
@@ -74,54 +65,44 @@ title: "Team"
 {% endif %}
 </p>
 </div>
+{% endfor %}
 {% endif %}
 {% endfor %}
-
-{% endif %}
-{% endfor %}
-
 </div>
 
 <br>
 <hr>
 
 <h2>Alumni</h2>
-
+<div style="align:left;">
 {% for role in role_array %}
-{% assign people_in_role = people_sorted | where: 'position', role %}
+{% assign role_alumni = people_sorted | where: "position", role | where_exp: "item", "item.left != nil and item.left != ''" %}
 
-{% if role == 'alumni' %}
-
-{% for profile in people_sorted %}
-{% if profile.position contains role %}
-
+{% if role_alumni.size > 0 %}
+{% for profile in role_alumni %}
 <div class="list-item-people">
 <hr>
 <p class="list-post-title">
 {% if profile.avatar %}
-<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail"  src="{{ site.url }}{{site.baseurl}}/assets/images/member/{{profile.avatar}}"></a>
+<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail" src="{{ site.url }}{{site.baseurl}}/assets/images/member/{{profile.avatar}}"></a>
 {% else %}
-<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail"  src="{{ site.url }}{{site.baseurl}}/assets/images/member/bio.jpg"></a>
+<a href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail" src="{{ site.url }}{{site.baseurl}}/assets/images/member/bio.jpg"></a>
 {% endif %}
 </p>
 <p>
 <a class="name" href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}">{{ profile.name }}</a> 
 <br> 
 <span>
-{% if profile.previous=='pi' %}
-{% assign pos = 'PI' %}
-{% elsif profile.previous=='researcher' %}
-{% assign pos = 'Researcher' %}
-{% elsif profile.previous=='postdoc' %}
-{% assign pos = 'Postdoc' %}
-{% elsif profile.previous=='gradstudent' %}
-{% assign pos = 'Graduate Student' %}
-{% elsif profile.previous=='visiting' %}
-{% assign pos = 'Visiting' %}
-{% elsif profile.previous=='others' %}
-{% assign pos = 'Others' %}
-{% endif %}
-{{ pos }} ({{ profile.joined }}~{{ profile.left }})
+{% case role %}
+{% when 'pi' %}PI
+{% when 'researcher' %}Research Faculty
+{% when 'postdoc' %}Postdoc
+{% when 'gradstudent' %}Graduate student
+{% when 'intern' %}Intern
+{% when 'visiting' %}Visiting
+{% when 'others' %}Others
+{% endcase %}
+({{ profile.joined }}~{{ profile.left }})
 </span> 
 <br>
 Current: <span>{{ profile.current }}</span> 
@@ -150,33 +131,9 @@ Current: <span>{{ profile.current }}</span>
 {% endif %}
 </p>
 </div>    
+{% endfor %}
 {% endif %}
 {% endfor %}
-
-{% endif %}
-{% endfor %}
+</div>
 
 <br><br>
-
-<hr>
-
-
-<!-- ## Former Members of DISP
-
-
-| Name                        | Role                  | Year |
-| --------------------------- | --------------------- | ---- |
-| Steve Feller                | AWARE project manager |      |
-| Leah Goldsmith              | group administrator   |      |
-| Dr. Mehadi Hassan           |                       |      |
-| Dr. Ruoyu Zhu               |                       |      |
-| Dr. Daniel Marks            |                       |      |
-| Dr. Joel Greenberg          | CAXI program leader   |      |
-| Dr. Ken MacCabe             |                       |      |
-| Paul Vosburgh               | instrument maker      |      |
-
-
-
-
-
- -->
