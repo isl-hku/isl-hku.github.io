@@ -1,7 +1,7 @@
 ---
 name: Yunfei Tian
 position: gradstudent
-avatar: jqwu.jpg
+avatar: yunfei_tian.jpg
 email: 
 scholar: 
 web: 

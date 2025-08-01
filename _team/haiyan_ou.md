@@ -15,7 +15,6 @@ current: UESTC  # More specific than just "UESTC" for clarity
 <i class="fa fa-building"></i> Chow Yei Ching Building, Room 512  <!-- Lab location during their time -->
 
 <hr>
+Dr. Haiyan Ou, an expert in Optical Engineering, completed her doctoral studies at Zhejiang University, contributing to advancements in optical technologies.
 
-## Education
-- PhD in Electrical Engineering, XYZ University, 2012  
-- MSc in Optics, ABC University, 2009  
+

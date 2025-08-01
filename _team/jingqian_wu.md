@@ -1,7 +1,7 @@
 ---
 name: Jingqian Wu
 position: gradstudent
-avatar: jqwu.jpg
+avatar: jingqian_wu.jpg
 email: 
 scholar: 
 web: 

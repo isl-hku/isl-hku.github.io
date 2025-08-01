@@ -1,7 +1,7 @@
 ---
 name: Shuo Li
 position: gradstudent
-avatar: jqwu.jpg
+avatar: shuo_li.jpg
 email: 
 scholar: 
 web: 
