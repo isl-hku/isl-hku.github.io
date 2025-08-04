@@ -1,15 +1,15 @@
 ---
 name: Dr. Jun Ke
 position: postdoc
-avatar: jun_ke.bmp
+avatar: jun_ke.jpg
 email: 
 scholar: 
 web: 
 github: 
 twitter: 
-joined: 
+joined: 2010
 left: 2012
-current: 
+current: BIT
 ---
 
 

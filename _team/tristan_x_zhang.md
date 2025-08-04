@@ -9,7 +9,7 @@ github:
 twitter: 
 joined: 
 left: 2008
-current: 
+current:  Institute of Automation
 ---
 
 

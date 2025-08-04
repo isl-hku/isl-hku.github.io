@@ -7,7 +7,7 @@ scholar:
 web: 
 github: 
 twitter: 
-joined: 
+joined: 2018
 left: 2023
 current: 
 ---
@@ -16,4 +16,5 @@ current:
 <hr>
 
 ## Education
-Dr. Peiyan Guan completed her PhD in Electrical and Electronic Engineering at HKU. Her academic background includes a B.Eng. in Electronic Science and Engineering from Nanjing University.
+
+Peiyan Guan received the B.S. degree in communication engineering from Nanjing University, Nanjing, China, in 2018. He is currently pursuing the Ph.D. degree with the Department of Electrical and Electronic Engineering, The University of Hong Kong, Hong Kong.,His research interests include hyperspectral image analysis, self-supervised learning, representation learning, and multimodal learning.

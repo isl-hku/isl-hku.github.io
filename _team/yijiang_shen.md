@@ -9,7 +9,7 @@ github:
 twitter: 
 joined: 
 left: 2010
-current: 
+current: GUT
 ---
 
 

@@ -9,7 +9,7 @@ github:
 twitter: 
 joined: 
 left: 2017
-current: 
+current: Huawei
 ---
 
 

@@ -7,13 +7,14 @@ scholar:
 web: 
 github: 
 twitter: 
-joined: 
-left: 2023
-current: 
+joined: 2018
+left: 2022
+current: Shanghai University
 ---
 
 
 <hr>
 
 ## Education
-Dr. Zhou Ge completed his PhD in Electrical and Electronic Engineering at HKU. He holds a B.S. in Communication Engineering from Fudan University and an M.S. in Electrical and Electronic Engineering from Imperial College London.
+
+Zhou Ge received the B.S. degree from Fudan University in 2014, the M.S. degree from Imperial College London in 2015, and the Ph.D. degree from The University of Hong Kong in 2022. He is currently an Assistant Professor with the School of Mechatronic Engineering and Automation, Shanghai University. His research interests include neuromorphic imaging, optical metrology, and digital holography.

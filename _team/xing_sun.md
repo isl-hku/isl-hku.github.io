@@ -9,7 +9,7 @@ github:
 twitter: 
 joined: 
 left: 2019
-current: 
+current: Tencent Youtu Lab
 ---
 
 

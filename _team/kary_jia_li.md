@@ -7,9 +7,9 @@ scholar:
 web: 
 github: 
 twitter: 
-joined: 
+joined: 2010
 left: 2014
-current: 
+current: Shenzhen University
 ---
 
 

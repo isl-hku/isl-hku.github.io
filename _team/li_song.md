@@ -7,9 +7,9 @@ scholar:
 web: 
 github: 
 twitter: 
-joined: 
+joined: 2019
 left: 2023
-current: 
+current: NWSUAF
 ---
 
 

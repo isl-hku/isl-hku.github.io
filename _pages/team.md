@@ -80,7 +80,7 @@ title: "Team"
 
 {% if role_alumni.size > 0 %}
 {% for profile in role_alumni %}
-<div class="list-item-people">
+<div class="list-item-people" style="height: 340px !important;">
 <hr>
 <p class="list-post-title">
 {% if profile.avatar %}

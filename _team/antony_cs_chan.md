@@ -7,7 +7,7 @@ scholar:
 web: 
 github: 
 twitter: 
-joined: 
+joined: 2014
 left: 2018
 current: 
 ---
