@@ -73,7 +73,7 @@ title: "Team"
 <br>
 <hr>
 
-<h2>Alumni</h2>
+<!-- <h2>Alumni</h2>
 <div style="align:left;">
 {% for role in role_array %}
 {% assign role_alumni = people_sorted | where: "position", role | where_exp: "item", "item.left != nil and item.left != ''" %}
@@ -134,6 +134,6 @@ Current: <span>{{ profile.current }}</span>
 {% endfor %}
 {% endif %}
 {% endfor %}
-</div>
+</div> -->
 
 <br><br>
