@@ -124,7 +124,7 @@ scholar:
   first: Edmund Y.
   last: Lam
 
-  sort_by: none
+  sort_by: [year, month]
   order: descending
 
   # group_by: year
