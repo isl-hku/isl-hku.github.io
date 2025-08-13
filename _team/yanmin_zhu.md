@@ -1,8 +1,8 @@
 ---
 name: Yanmin Zhu
-position: researcher
-avatar: ymzhu.jpg
-email: nichen@eee.hku.hk
+position: Research Assistant Professor
+avatar: yanmin_zhu.jpg
+email: ymzhu@hku.hk
 scholar: 
 web: 
 github: 
@@ -14,7 +14,7 @@ left: ""
 
 
 
-## Associate Research Professor
+## Research Assistant Professor
 
 <i class="fa fa-building"></i> Chow Yei Ching Building, Room 512
  
@@ -22,12 +22,13 @@ left: ""
 <hr>
 
 ## Experiences
-- 2023.01~Present: Associate Research Professor, Wyant College of Optical Sciences, University of Arizona.
+- 2024.08~Present: Research Assistant Professor, Electrical and Electronic Engineering, University of Hong Kong.
+- 2023.10~2024.07: Postdoctoral Associate, Mechanical Engineering, Massachusetts Institute of Technology.
 
 
 ## Education
 
-- Ph.D., [OEQE Lab](http://oeqelab.snu.ac.kr/), Electrical and Computer Engineering, Seoul National University, Advisor: Prof. [Byoungho Lee](http://oeqelab.snu.ac.kr/PROF).
-- M.E., [OIP Lab](http://osp.cbnu.ac.kr/), Computer and Communication Engineering, Chungbuk National University, Advisors: Prof. [Nam Kim](http://osp.cbnu.ac.kr/lab/pro.html) and Prof. [Jae-Hyeung Park](https://sites.google.com/view/3diplab).
-- B.E., Computer Software Engineering, Harbin Institute of Technology (Weihai).
+- Ph.D., Electrical and Electronic Engineering, The University of Hong Kong, Advisor: Prof. Edmund Y. Lam.
+- M.Sc., Optics and Photonics, Imperial College London, Advisors: Prof. Christopher Dunsby and Prof. Mark Weil.
+- B.E., Electrical and Electronic Engineering, Catholic University of Leuven.
 
