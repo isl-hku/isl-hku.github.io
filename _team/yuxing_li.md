@@ -1,14 +1,14 @@
 ---
-name: Yu Xing Li
+name: Yuxing Li
 position: postdoc
 avatar: yxli.jpg
-email: 
+email: yuxingli@hku.hk
 linkedin: 
 scholar: 
 web: 
-github: 
+github: https://github.com/yuxingli-HKU
 twitter: 
-joined: 2023
+joined: 2022
 left: ""
 ---
 
