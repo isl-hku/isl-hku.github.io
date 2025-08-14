@@ -4,7 +4,6 @@ position: PhD student
 avatar: shuo_li.jpg
 email: shuoli_eee@connect.hku.hk
 scholar: https://scholar.google.com/citations?user=_6xqJPcAAAAJ&hl
-web: 
 github: https://github.com/shuoli199909
 # twitter: ni_chen
 joined: 2024
@@ -21,9 +20,6 @@ left: ""
 <i class="fa fa-building"></i> Chow Yei Ching Building, Room 512, 
 
 <hr>
-
-## Experiences
-
 
 ## Education
 - Ph.D., Electrical and Electronic Engineering, The University of Hong Kong, Advisor: Prof. Edmund Y. Lam.
