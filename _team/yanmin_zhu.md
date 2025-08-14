@@ -1,12 +1,13 @@
 ---
 name: Yanmin Zhu
-position: Research Assistant Professor
+layout: profile
+position: researcher
 avatar: yanmin_zhu.jpg
 email: ymzhu@hku.hk
 scholar: 
 web: 
 github: 
-# twitter: ni_chen
+twitter: 
 joined: 2024
 left: ""
 ---
