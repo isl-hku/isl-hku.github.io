@@ -1,6 +1,6 @@
 ---
 name: Shuo Li
-position: PhD student
+position: gradstudent
 avatar: shuo_li.jpg
 email: shuoli_eee@connect.hku.hk
 scholar: https://scholar.google.com/citations?user=_6xqJPcAAAAJ&hl
