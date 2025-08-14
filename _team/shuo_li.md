@@ -1,13 +1,13 @@
 ---
 name: Shuo Li
-position: gradstudent
+position: PhD student
 avatar: shuo_li.jpg
-email: 
-scholar: 
+email: shuoli_eee@connect.hku.hk
+scholar: https://scholar.google.com/citations?user=_6xqJPcAAAAJ&hl
 web: 
-github: 
+github: https://github.com/shuoli199909
 # twitter: ni_chen
-joined: 2021
+joined: 2024
 left: ""
 ---
 
@@ -26,5 +26,7 @@ left: ""
 
 
 ## Education
-
+- Ph.D., Electrical and Electronic Engineering, The University of Hong Kong, Advisor: Prof. Edmund Y. Lam.
+- M.Sc., Information Technology and Electrical Engineering, ETH Zürich, Advisors: Prof. Klaas P. Prüssmann, Prof. Luc Van Gool, Prof. Carlo Menon, and Prof. Mohamed Elgendi.
+- B.E., Optoelectronic Information Science and Engineering, Tianjin University.
 
