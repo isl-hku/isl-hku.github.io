@@ -4,8 +4,8 @@ position: gradstudent
 avatar: shuo_li.jpg
 email: shuoli_eee@connect.hku.hk
 scholar: https://scholar.google.com/citations?user=_6xqJPcAAAAJ&hl
-github: https://github.com/shuoli199909
-# twitter: ni_chen
+linkedin: shuo-li-a6a8a8286
+github: shuoli199909
 joined: 2024
 left: ""
 ---
