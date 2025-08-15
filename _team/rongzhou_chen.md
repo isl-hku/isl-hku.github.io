@@ -6,7 +6,7 @@ email: lachen@connect.hku.hk
 scholar: https://scholar.google.com/citations?user=Kdqr_AcAAAAJ&hl=en
 web: https://lazying.art
 github: lachlanchen
-# twitter: ni_chen
+twitter: 
 joined: 2021
 left: ""
 ---

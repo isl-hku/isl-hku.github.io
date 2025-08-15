@@ -6,8 +6,8 @@ email: yunfei.tian@connect.hku.hk
 scholar: 
 web: 
 github: robbie194
-# twitter: ni_chen
-joined: Oct, 2024
+twitter: 
+joined: 2024
 left: ""
 ---
 
