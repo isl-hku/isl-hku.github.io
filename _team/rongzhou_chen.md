@@ -3,7 +3,7 @@ name: Rongzhou Chen
 position: gradstudent
 avatar: rzchen.png
 email: lachen@connect.hku.hk
-scholar: 
+scholar: https://scholar.google.com/citations?user=Kdqr_AcAAAAJ&hl=en
 web: https://lazying.art
 github: lachlanchen
 # twitter: ni_chen
