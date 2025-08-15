@@ -2,12 +2,12 @@
 name: Yunfei Tian
 position: gradstudent
 avatar: yunfei_tian.jpg
-email: 
+email: yunfei.tian@connect.hku.hk
 scholar: 
 web: 
-github: 
+github: https://github.com/robbie194
 # twitter: ni_chen
-joined: 2021
+joined: Oct, 2024
 left: ""
 ---
 
