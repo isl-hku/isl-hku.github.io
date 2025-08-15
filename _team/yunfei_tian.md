@@ -5,7 +5,7 @@ avatar: yunfei_tian.jpg
 email: yunfei.tian@connect.hku.hk
 scholar: 
 web: 
-github: https://github.com/robbie194
+github: robbie194
 # twitter: ni_chen
 joined: Oct, 2024
 left: ""

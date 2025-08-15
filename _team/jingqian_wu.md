@@ -5,7 +5,7 @@ avatar: jingqian_wu.jpg
 email: jingqianwu@connect.hku.hk
 scholar: https://scholar.google.com/citations?user=dinpqugAAAAJ&hl=en
 web: https://wujingqian.github.io/
-github: https://github.com/Wujingqian
+github: Wujingqian
 twitter: 
 joined: Jan, 2024
 left: ""
