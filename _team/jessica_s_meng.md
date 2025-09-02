@@ -1,6 +1,6 @@
 ---
 name: Sihan Meng
-position: phdstudent
+position: gradstudent
 avatar: jessica_meng.jpg
 twitter: 
 avatar:
