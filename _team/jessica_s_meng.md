@@ -15,21 +15,18 @@ left:
 ---
 
 
-<i class="fa fa-building"></i> Your Office Location (e.g., "RIC 1481")
+<i class="fa fa-building"></i> Your Office Location 
 <br>
 
 <hr>
 
 ### Bio
 
-A short description of your background (e.g., education, previous research, interests). Keep it brief!
+Graduated from Statistics and Worked in AI and Robotics 
 
 <hr>
 
 ### Research Interests
 
-- Area 1 (e.g., "Computational imaging")
-- Area 2 (e.g., "Deep learning for microscopy")
-- Area 3
 
 ### Others
