@@ -3,7 +3,6 @@ name: Sihan Meng
 position: gradstudent
 avatar: jessica_s_meng.jpg
 twitter: 
-avatar:jessica_s_meng.jpg
 linkedin: https://www.linkedin.com/in/sihanmeng/
 email: jessicameng@connect.hku.hk
 scholar: 
