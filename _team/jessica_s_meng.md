@@ -1,9 +1,9 @@
 ---
 name: Sihan Meng
 position: gradstudent
-avatar: jessica_meng.jpg
+avatar: jessica_s_meng.jpg
 twitter: 
-avatar:
+avatar:jessica_s_meng.jpg
 linkedin: https://www.linkedin.com/in/sihanmeng/
 email: jessicameng@connect.hku.hk
 scholar: 
