@@ -138,6 +138,38 @@ Blablabla.....
 
 Save and push: Commit your changes. The news will appear on the homepage page.
 
+## Updating the News sidebar and All News archive
+
+We use a small data file to drive the sidebar and the All News archive page. This lets you add lightweight announcements without writing a full post.
+
+Where to edit:
+
+- Data file: `_data/news.yml`
+- Images for news items (avatars): `assets/images/news/`
+
+Add a news item:
+
+```yaml
+- date: 2025-07-07              # YYYY-MM-DD
+  headline: "Your short headline"
+  link: "https://example.com/page"  # optional; if omitted, headline shows as plain text
+  avatar: sample.jpg            # optional; place the image in assets/images/news/
+  summary: "One or two sentences describing the news."  # optional but recommended
+```
+
+Guidelines:
+
+- Date format must be `YYYY-MM-DD`.
+- Place the avatar image in `assets/images/news/`. Use a descriptive filename (e.g., `project_name.jpg`).
+- Keep summary short (1–3 sentences). If no summary is provided and `link` exists, the site will auto-fetch a short summary from the link for the All News page.
+- Sources are not shown on All News (no host/favicon line; no “Visit source” link).
+
+Recommended image sizes:
+
+- Avatars (news thumbnails): around 600–1200px wide JPG/PNG. The site will scale them (All News floats to the right at ~30–40% width).
+
+
+
 
 ## Final Notes
 
