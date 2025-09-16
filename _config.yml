@@ -5,7 +5,7 @@ last_name: Lam
 email: elam@eee.hku.hk
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: 
-url: https://isl-hku.github.io
+url: https://isl.eee.hku.hk
 last_updated: true # set to true if you want to display last updated in the footer
 future : true
 

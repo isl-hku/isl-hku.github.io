@@ -2,7 +2,7 @@
 name: Ni Chen
 layout: profile
 position: researcher
-avatar: nichen.png
+avatar: nichen.jpg
 email: nichen@eee.hku.hk
 linkedin: ni-chan
 scholar: https://scholar.google.com/citations?user=adQED6IAAAAJ

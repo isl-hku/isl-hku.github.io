@@ -17,18 +17,6 @@ toc: true
 <li class="">
 <a data-toggle="tab"><button id="btn_byyear" onclick="ShowOrHide('byyear')">By Year</button></a>
 </li>
-<li class="">
-<a data-toggle="tab"><button id="btn_bybook" onclick="ShowOrHide('bybook')">Book / Book Chapters</button></a>
-</li>
-<li class="">
-<a data-toggle="tab"><button id="btn_bypatent" onclick="ShowOrHide('bypatent')">Patents</button></a>
-</li>
-<li class="">
-<a data-toggle="tab"><button id="btn_bygroup" onclick="ShowOrHide('bygroup')">By Key Words</button></a>
-</li>
-<li class="">
-<a data-toggle="tab"><button id="btn_inpress" onclick="ShowOrHide('inpress')">Preprint</button></a>
-</li>
 </ul>
 
 <br>
@@ -51,36 +39,6 @@ toc: true
 {% bibliography -f others -q @patent %}
 </div>
 
-<!-- Display by Key Words (with in-page links) -->
-<div id="bygroup" style="display:none;">
-<strong>All keywords:</strong> \| 
-{% assign all_groups = "AI and deep learning, biomedical microscopy, compressed sensing, computational imaging, computational lithography, digital holography, education technology, electronic imaging, eye imaging, lensless imaging, light field, machine vision and automation, magnetic resonance imaging, metasurface, microplastics, neuromorphic imaging, optical coherence tomography, speckle, super-resolution" | split: ", " %}{% for group in all_groups %}<a href="#{{ group | slugify }}">{{ group }}</a> \| {% endfor %}
-
-<br>
-
-{% for group in all_groups %}
-<h3 id="{{ group | slugify }}"># <strong>{{ group }} </strong></h3>
-
-<h4>Journal Papers</h4>
-{% bibliography -f journal -q @article[groups={{ group }}] %}
-
-<h4>Conference Papers</h4>
-{% bibliography -f conf -q @inproceedings[groups={{ group }}] %}
-
-<hr> 
-<br>
-{% endfor %}
-</div>
-
-<!-- Books / Book Chapters -->
-<div id="bybook" style="display:none;">
-{% bibliography -f book -q @book %}
-</div>
-
-<!-- Preprints -->
-<div id="inpress" style="display:none;">
-{% bibliography -f journal -q @misc %}
-</div>
 
 <!-- Display by Type (Default) -->
 <div id="bytype" style="display:block;">

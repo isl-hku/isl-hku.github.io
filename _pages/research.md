@@ -11,7 +11,7 @@ permalink: /research/
 
 <br>
 
-Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications. 
+<!-- Imaging Systems Laboratory at the University of Hong Kong, led by Prof. Edmund Lam, is dedicated to advanced research in computational imaging, combining aspects of electronic engineering, computer vision, and optical engineering. Its primary interests lie in the development of novel algorithms for unconventional imaging systems and leveraging AI in imaging applications.  -->
 
 
 
