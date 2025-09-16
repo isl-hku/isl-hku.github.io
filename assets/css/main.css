@@ -11,6 +11,34 @@ html {
   font-family: Optima, Candara, Calibri, Arial, sans-serif!important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+/* ===============================
+   ISL: Center main navbar items
+   =============================== */
+/* Center the top-level page tabs (Research, Publications, Team, etc.) */
+@media (min-width: 768px) {
+  /* Center the nav list within the available navbar width */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  /* Make the nav list inline-block and drop Bootstrap's floats */
+  .navbar .navbar-nav,
+  .navbar .navbar-nav.navbar-right {
+    float: none !important;
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  /* Increase navbar height and nudge menu down to avoid overlapping centered brand */
+  .navbar {
+    min-height: 86px;
+  }
+  .navbar .navbar-nav {
+    margin-top: 36px;
+  }
+}
 }
 
 
@@ -5358,7 +5386,7 @@ tbody.collapse.in {
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
-  float: right;
+  float: center;
 }
 
 @media (max-device-width: 480px) and (orientation: landscape) {
@@ -5702,7 +5730,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #333333;
+  color: #706f6f;
   background-color: transparent;
 }
 
@@ -5716,7 +5744,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-  color: #333333;
+  color: #777676;
   background-color: transparent;
 }
 
@@ -9067,7 +9095,7 @@ button.close {
     float: right !important;
     margin-right: 0px;
     padding-bottom: 0px;
-    padding-top: 50px
+    padding-top: 80px
   }
 
   p.byline {
@@ -9089,9 +9117,9 @@ button.close {
     overflow: hidden;
     display: block;
     position: relative;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
 
   /* Home, News */
@@ -9385,9 +9413,9 @@ button.close {
   footer.sticky-bottom {
     border-top: 1px solid #e8e8e8;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: 80%;
-    height: 55px;
+    height: 100px;
     bottom: 0px;
     margin-bottom: 0px;
     background: #00261dd6;
@@ -9786,4 +9814,29 @@ button.close {
 
 #markdown-toc li.toctree-l2:first-child {
   display: none;
+}
+
+/* ===============================
+   ISL: Center the navbar brand
+   =============================== */
+/* Ensure the brand can be centered relative to the full navbar width */
+.navbar .container,
+.navbar .container-fluid {
+  position: relative;
+}
+
+/* Center the brand on desktop only to avoid mobile toggle overlap */
+@media (min-width: 768px) {
+  .navbar-brand {
+    float: none;                 /* override Bootstrap's float: left */
+    position: absolute;          /* position relative to container */
+    left: 50%;
+    transform: translateX(-50%); /* horizontal centering */
+    text-align: center;
+    white-space: nowrap;         /* keep the title on one line */
+  }
+
+  .navbar-nav {
+    margin: 0; /* avoid extra shifts when brand is centered */
+  }
 }
