@@ -1,19 +1,33 @@
-<!-- 
-<div class="well">
-    <h4>News</h4>
-    <hr>
-    {% for article in site.data.news limit:9 %}
-    {{ article.date }}, {{ article.headline }} <br> <hr>
-    {% endfor %}
-    <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
+<div class="news-block">
+<h3>News</h3>
+<hr>
+{% assign items = site.data.news | sort: 'date' | reverse %}
+{% for article in items limit: 8 %}
+{% assign matched_post = site.posts | where: 'title', article.headline | first %}
+{% if article.link and article.link != '' %}
+    {% assign href = article.link %}
+{% elsif matched_post %}
+    {% assign href = site.baseurl | append: matched_post.url %}
+{% else %}
+    {% assign href = nil %}
+{% endif %}
 
-</div> -->
-
-<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a class="twitter-timeline" data-lang="en" data-height="1280" data-dnt="true" href="https://twitter.com/ni_chen?ref_src=twsrc%5Etfw">News</a> 
-
-<a href="https://twitter.com/intent/tweet?button_hashtag=ni_chen&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #ni_chen</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-
-
+<div class="news-item" style="margin-bottom: 18px; overflow: auto;">
+    <div style=" margin-bottom: 6px;">
+    {{ article.date }}
+    <br>
+    {% if href %}
+    <a href="{{ href }}">{{ article.headline }}</a>
+    {% else %}
+    {{ article.headline }}
+    {% endif %}
+    </div>
+</div>
+<hr>
+{% endfor %}
+<div style="text-align:right; margin-top: 8px;">
+<a href="{{ site.baseurl }}/allnews.html">See all news →</a>
+</div>
+</div>
 
 

@@ -19,7 +19,7 @@ Drawing inspiration from backprop's transformative impact on deep learning (reco
 
 
 
-| <img src="/assets/images/post/digital_twin.png" width="65%"> |
+| <img src="/assets/images/news/digital_twin.png" width="65%"> |
 | :--------------------------------------------------: |
 |       Digital-Twin-Equipped Computational Imaging         |
 

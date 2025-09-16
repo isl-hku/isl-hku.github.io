@@ -1,15 +1,35 @@
-# - date: 22. Feb. 2021
-#   headline: "TCI paper got accepted <a href='https://www.nature.com/articles/s41567-020-01041-x'>Nature Physics</a>! See also coverage by Dorine Schenk in <a href='https://www.nrc.nl/nieuws/2020/09/28/slome-elektronen-maken-grafeen-supergeleidend-a4013840'  >NRC</a>"
 
+- date: 2025-08-12
+  headline: "Prof. Lam delivered Invited Talk at CIOP Conference 2025"
+  type: post
+  link: ""
+  avatar: 2025_ciop.jpg
+  summary: "Prof. Edmund Lam delivered an invited talk at CIOP 2025 on advanced deep learning in digital holography, highlighting ISL's work in end-to-end learning and physics-integrated networks."
 
+- date: 2025-07-07
+  headline: "Uncertainty-aware Fourier Ptychography is published in LSA"
+  type: post
+  link: "https://doi.org/10.1038/s41377-025-01915-w"
+  avatar: uafp.gif
+  summary: "Our differentiable imaging framework handles misalignments, aberrations, and low-quality data in a unified, fully differentiable pipeline for Fourier ptychography."
 
+- date: 2025-07-04
+  headline: "Review paper on Differentiable Imaging is published in ADI"
+  type: post
+  link: ""
+  avatar: digital_twin.png
+  summary: "A comprehensive review of differentiable imaging, outlining progress, challenges, and the outlook toward digital-twin-equipped computational imaging systems."
 
+- date: 2025-02-13
+  headline: "Controllable Synthesis Using Edge Data and Text Prompts"
+  type: post
+  link: ""
+  avatar: cube.png
+  summary: "CUBE generates controllable videos from event-camera edge streams guided by text prompts using pre-trained diffusion models—no additional training required."
 
-
-- date: 2021-04-12
-  headline: ""
-  summary: 
-  avatar: 
-
-
-
+- date: 2024-08-06
+  headline: "Professor Lam Delivers Keynote on Computational Neuromorphic Imaging at COSI"
+  type: post
+  link: ""
+  avatar: 2024-cosi.jpg
+  summary: "Plenary talk at Optica Imaging Congress on event-sensor-based computational neuromorphic imaging and the evolution of imaging technologies."

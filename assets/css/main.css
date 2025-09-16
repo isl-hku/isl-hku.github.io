@@ -9872,3 +9872,29 @@ button.close {
     margin: 0; /* avoid extra shifts when brand is centered */
   }
 }
+
+/* ===============================
+   ISL: Homepage two-column layout
+   =============================== */
+.home-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.home-left {
+  flex: 1 1 auto;
+  min-width: 0; /* prevent overflow from long content */
+}
+.home-right {
+  flex: 0 0 300px; /* narrower sidebar width */
+  max-width: 300px;
+}
+@media (max-width: 991.98px) {
+  .home-row {
+    display: block; /* stack on smaller screens */
+  }
+  .home-right {
+    margin-top: 16px;
+  }
+}
+

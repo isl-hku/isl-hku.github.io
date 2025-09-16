@@ -23,7 +23,7 @@ Traditional computational imaging systems struggle with real-world uncertainties
 
 
 
-| <img src="/assets/images/post/uafp.gif" width="70%"> |
+| <img src="/assets/images/news/uafp.gif" width="70%"> |
 | :--------------------------------------------------: |
 |                 Framework of the UA-FP                  |
 
