@@ -8,13 +8,13 @@
   <title>Jingqian_wu</title>
   <meta name="description"
     content="Ph.D. Student">
-  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
-  <link rel="canonical" href="https://isl-hku.github.io/team/jingqian_wu">
-  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://isl.eee.hku.hk/assets/css/main.css">
+  <link rel="canonical" href="https://isl.eee.hku.hk/team/jingqian_wu">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl.eee.hku.hk/assets/images/favicon.ico">
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://isl.eee.hku.hk/assets/fonts/font-awesome/css/font-awesome.min.css">
   
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -28,102 +28,26 @@
   </script>
 
   <script>
-    function ShowOrHide(select='inpress') {
-        var x = document.getElementById('inpress');
-        var y = document.getElementById('byyear');
-        var z = document.getElementById('bytype');
-        var w = document.getElementById('bybook');
-        var u = document.getElementById('bypatent');
-        var v = document.getElementById('bygroup');
-
-
-        var x_btn = document.getElementById("btn_inpress");
-        var y_btn = document.getElementById("btn_byyear");
-        var z_btn = document.getElementById("btn_bytype");
-        var w_btn = document.getElementById("btn_bybook");
-        var u_btn = document.getElementById("btn_bypatent");
-        var v_btn = document.getElementById("btn_bygroup");
-
-
-        if (select == 'inpress') {          
-            x.style.display = 'block';
-            x_btn.disabled = true; 
-            y.style.display = 'none';
-            y_btn.disabled = false;   
-            z.style.display = 'none';
-            z_btn.disabled = false;   
-            w.style.display = 'none';
-            w_btn.disabled = false;   
-            u.style.display = 'none';
-            u_btn.disabled = false;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'byyear'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'block';
-            y_btn.disabled = true;
-            z.style.display = 'none';
-            z_btn.disabled = false;  
-            w.style.display = 'none';
-            w_btn.disabled = false;  
-            u.style.display = 'none';
-            u_btn.disabled = false;   
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bytype'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'block';
-            z_btn.disabled = true;
-            w.style.display = 'none';
-            w_btn.disabled = false;   
-            u.style.display = 'none';
-            u_btn.disabled = false;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bybook'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'none';
-            z_btn.disabled = false;
-            w.style.display = 'block';
-            w_btn.disabled = true;  
-            u.style.display = 'none';
-            u_btn.disabled = false;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bypatent'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'none';
-            z_btn.disabled = false;
-            w.style.display = 'none';
-            w_btn.disabled = false;  
-            u.style.display = 'block';
-            u_btn.disabled = true;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bygroup'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'none';
-            z_btn.disabled = false;
-            w.style.display = 'none';
-            w_btn.disabled = false;   
-            u.style.display = 'none';
-            u_btn.disabled = false;   
-            v.style.display = 'block';
-            v_btn.disabled = true;  
+    function ShowOrHide(select = 'inpress') {
+      var sections = ['inpress', 'byyear', 'bytype', 'bybook', 'bypatent', 'bygroup'];
+      // Toggle sections: show the selected one, hide others (only if they exist)
+      sections.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) {
+          el.style.display = (id === select) ? 'block' : 'none';
         }
+      });
+
+      // Toggle buttons' disabled state if buttons exist
+      var buttonIds = ['btn_inpress', 'btn_byyear', 'btn_bytype', 'btn_bybook', 'btn_bypatent', 'btn_bygroup'];
+      buttonIds.forEach(function (bid) {
+        var btn = document.getElementById(bid);
+        if (btn) {
+          // button id is expected as 'btn_' + section id
+          var target = bid.replace('btn_', '');
+          btn.disabled = (target === select);
+        }
+      });
     }
   </script>
 
@@ -158,20 +82,20 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging Systems Lab</a>
+			<a class="navbar-brand" href="https://isl.eee.hku.hk/">Imaging Systems Lab</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://isl-hku.github.io/index">Home</a></li>
-				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
-				<li><a href="https://isl-hku.github.io/research">Research</a></li>
-				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
-				<li><a href="https://isl-hku.github.io/team">Team</a></li>
-				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
-				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
-				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
-				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
-				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+				<li><a href="https://isl.eee.hku.hk/index">Home</a></li>
+				<!-- <li><a href="https://isl.eee.hku.hk/bio">Bio</a></li> -->
+				<li><a href="https://isl.eee.hku.hk/research">Research</a></li>
+				<li><a href="https://isl.eee.hku.hk/publications">Publications</a></li>
+				<li><a href="https://isl.eee.hku.hk/team">Team</a></li>
+				<li><a href="https://isl.eee.hku.hk/course">Courses</a></li>
+				<!-- <li><a href="https://isl.eee.hku.hk/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl.eee.hku.hk/posts">Posts</a></li> -->
+				<li><a href="https://isl.eee.hku.hk/vacancies">Vacancies</a></li>
+				<li><a href="https://isl.eee.hku.hk/contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -181,7 +105,7 @@
       <div class="row">
         <div class="container content page">
 <div style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;">
-<img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;" src="https://isl-hku.github.io/assets/images/member/jingqian_wu.jpg" data-action="zoom">
+<img style="width:200px; float: right; margin-left:15px; margin-bottom:5px; margin-right:0px; margin-top:20px;" src="https://isl.eee.hku.hk/assets/images/member/jingqian_wu.jpg" data-action="zoom">
 <br>
 <p style="text-align:center;">
 
@@ -248,7 +172,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+<script src="https://isl.eee.hku.hk/assets/js/bootstrap.min.js"></script>
 
   </body>
 

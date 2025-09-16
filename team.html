@@ -8,13 +8,13 @@
   <title>Team</title>
   <meta name="description"
     content="Team">
-  <link rel="stylesheet" href="https://isl-hku.github.io/assets/css/main.css">
-  <link rel="canonical" href="https://isl-hku.github.io/team">
-  <link rel="shortcut icon" type="image/x-icon" href="https://isl-hku.github.io/assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://isl.eee.hku.hk/assets/css/main.css">
+  <link rel="canonical" href="https://isl.eee.hku.hk/team">
+  <link rel="shortcut icon" type="image/x-icon" href="https://isl.eee.hku.hk/assets/images/favicon.ico">
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://isl-hku.github.io/assets/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://isl.eee.hku.hk/assets/fonts/font-awesome/css/font-awesome.min.css">
   
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -28,102 +28,26 @@
   </script>
 
   <script>
-    function ShowOrHide(select='inpress') {
-        var x = document.getElementById('inpress');
-        var y = document.getElementById('byyear');
-        var z = document.getElementById('bytype');
-        var w = document.getElementById('bybook');
-        var u = document.getElementById('bypatent');
-        var v = document.getElementById('bygroup');
-
-
-        var x_btn = document.getElementById("btn_inpress");
-        var y_btn = document.getElementById("btn_byyear");
-        var z_btn = document.getElementById("btn_bytype");
-        var w_btn = document.getElementById("btn_bybook");
-        var u_btn = document.getElementById("btn_bypatent");
-        var v_btn = document.getElementById("btn_bygroup");
-
-
-        if (select == 'inpress') {          
-            x.style.display = 'block';
-            x_btn.disabled = true; 
-            y.style.display = 'none';
-            y_btn.disabled = false;   
-            z.style.display = 'none';
-            z_btn.disabled = false;   
-            w.style.display = 'none';
-            w_btn.disabled = false;   
-            u.style.display = 'none';
-            u_btn.disabled = false;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'byyear'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'block';
-            y_btn.disabled = true;
-            z.style.display = 'none';
-            z_btn.disabled = false;  
-            w.style.display = 'none';
-            w_btn.disabled = false;  
-            u.style.display = 'none';
-            u_btn.disabled = false;   
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bytype'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'block';
-            z_btn.disabled = true;
-            w.style.display = 'none';
-            w_btn.disabled = false;   
-            u.style.display = 'none';
-            u_btn.disabled = false;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bybook'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'none';
-            z_btn.disabled = false;
-            w.style.display = 'block';
-            w_btn.disabled = true;  
-            u.style.display = 'none';
-            u_btn.disabled = false;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bypatent'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'none';
-            z_btn.disabled = false;
-            w.style.display = 'none';
-            w_btn.disabled = false;  
-            u.style.display = 'block';
-            u_btn.disabled = true;  
-            v.style.display = 'none';
-            v_btn.disabled = false;  
-        } else if (select == 'bygroup'){          
-            x.style.display = 'none';
-            x_btn.disabled = false;  
-            y.style.display = 'none';
-            y_btn.disabled = false;  
-            z.style.display = 'none';
-            z_btn.disabled = false;
-            w.style.display = 'none';
-            w_btn.disabled = false;   
-            u.style.display = 'none';
-            u_btn.disabled = false;   
-            v.style.display = 'block';
-            v_btn.disabled = true;  
+    function ShowOrHide(select = 'inpress') {
+      var sections = ['inpress', 'byyear', 'bytype', 'bybook', 'bypatent', 'bygroup'];
+      // Toggle sections: show the selected one, hide others (only if they exist)
+      sections.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) {
+          el.style.display = (id === select) ? 'block' : 'none';
         }
+      });
+
+      // Toggle buttons' disabled state if buttons exist
+      var buttonIds = ['btn_inpress', 'btn_byyear', 'btn_bytype', 'btn_bybook', 'btn_bypatent', 'btn_bygroup'];
+      buttonIds.forEach(function (bid) {
+        var btn = document.getElementById(bid);
+        if (btn) {
+          // button id is expected as 'btn_' + section id
+          var target = bid.replace('btn_', '');
+          btn.disabled = (target === select);
+        }
+      });
     }
   </script>
 
@@ -158,20 +82,20 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="https://isl-hku.github.io/">Imaging Systems Lab</a>
+			<a class="navbar-brand" href="https://isl.eee.hku.hk/">Imaging Systems Lab</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://isl-hku.github.io/index">Home</a></li>
-				<!-- <li><a href="https://isl-hku.github.io/bio">Bio</a></li> -->
-				<li><a href="https://isl-hku.github.io/research">Research</a></li>
-				<li><a href="https://isl-hku.github.io/publications">Publications</a></li>
-				<li><a href="https://isl-hku.github.io/team">Team</a></li>
-				<li><a href="https://isl-hku.github.io/course">Courses</a></li>
-				<!-- <li><a href="https://isl-hku.github.io/resource">Resource</a></li> -->
-				<!-- <li><a href="https://isl-hku.github.io/posts">Posts</a></li> -->
-				<li><a href="https://isl-hku.github.io/vacancies">Vacancies</a></li>
-				<li><a href="https://isl-hku.github.io/contact">Contact</a></li>
+				<li><a href="https://isl.eee.hku.hk/index">Home</a></li>
+				<!-- <li><a href="https://isl.eee.hku.hk/bio">Bio</a></li> -->
+				<li><a href="https://isl.eee.hku.hk/research">Research</a></li>
+				<li><a href="https://isl.eee.hku.hk/publications">Publications</a></li>
+				<li><a href="https://isl.eee.hku.hk/team">Team</a></li>
+				<li><a href="https://isl.eee.hku.hk/course">Courses</a></li>
+				<!-- <li><a href="https://isl.eee.hku.hk/resource">Resource</a></li> -->
+				<!-- <li><a href="https://isl.eee.hku.hk/posts">Posts</a></li> -->
+				<li><a href="https://isl.eee.hku.hk/vacancies">Vacancies</a></li>
+				<li><a href="https://isl.eee.hku.hk/contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -188,11 +112,11 @@
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/edmund_lam"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/elam.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/edmund_lam"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/elam.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/edmund_lam">Edmund Y. Lam</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/edmund_lam">Edmund Y. Lam</a>  
 <br />
 <span>
 PI
@@ -225,11 +149,11 @@ PI
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/ni_chen"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/nichen.png" /></a>
+<a href="https://isl.eee.hku.hk/team/ni_chen"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/nichen.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/ni_chen">Ni Chen</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/ni_chen">Ni Chen</a>  
 <br />
 <span>
 Research Faculty
@@ -262,11 +186,11 @@ Research Faculty
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yanmin_zhu"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yanmin_zhu.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yanmin_zhu"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yanmin_zhu.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yanmin_zhu">Yanmin Zhu</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yanmin_zhu">Yanmin Zhu</a>  
 <br />
 <span>
 Research Faculty
@@ -291,11 +215,11 @@ Research Faculty
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yuxing_li"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yxli.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yuxing_li"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yxli.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yuxing_li">Yuxing Li</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yuxing_li">Yuxing Li</a>  
 <br />
 <span>
 Postdoc
@@ -322,11 +246,11 @@ Postdoc
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/shuo_zhu"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/shuozhu.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/shuo_zhu"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/shuozhu.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/shuo_zhu">Shuo Zhu</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/shuo_zhu">Shuo Zhu</a>  
 <br />
 <span>
 Postdoc
@@ -349,11 +273,11 @@ Postdoc
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yunping_zhang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yunping_zhang.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yunping_zhang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yunping_zhang.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yunping_zhang">Yunping Zhang</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yunping_zhang">Yunping Zhang</a>  
 <br />
 <span>
 Graduate student
@@ -384,11 +308,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/haitao_nie"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/htnie.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/haitao_nie"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/htnie.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/haitao_nie">Haitao Nie</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/haitao_nie">Haitao Nie</a>  
 <br />
 <span>
 Graduate student
@@ -411,11 +335,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/haoyu_wei"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/hywei.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/haoyu_wei"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/hywei.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/haoyu_wei">Haoyu Wei</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/haoyu_wei">Haoyu Wei</a>  
 <br />
 <span>
 Graduate student
@@ -446,11 +370,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/rongzhou_chen"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/rzchen.png" /></a>
+<a href="https://isl.eee.hku.hk/team/rongzhou_chen"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/rzchen.png" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/rongzhou_chen">Rongzhou Chen</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/rongzhou_chen">Rongzhou Chen</a>  
 <br />
 <span>
 Graduate student
@@ -481,11 +405,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yaping_zhao"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/ypzhao.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yaping_zhao"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/ypzhao.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yaping_zhao">Yaping Zhao</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yaping_zhao">Yaping Zhao</a>  
 <br />
 <span>
 Graduate student
@@ -508,11 +432,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yuqing_cao"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yqcao.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yuqing_cao"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yqcao.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yuqing_cao">Yuqing Cao</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yuqing_cao">Yuqing Cao</a>  
 <br />
 <span>
 Graduate student
@@ -535,11 +459,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/chutian_wang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/ctwang.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/chutian_wang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/ctwang.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/chutian_wang">Chutian Wang</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/chutian_wang">Chutian Wang</a>  
 <br />
 <span>
 Graduate student
@@ -570,11 +494,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/haosen_liu"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/hsliu.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/haosen_liu"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/hsliu.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/haosen_liu">Haosen Liu</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/haosen_liu">Haosen Liu</a>  
 <br />
 <span>
 Graduate student
@@ -605,11 +529,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/jingyan_chen"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/jychen.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/jingyan_chen"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/jychen.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/jingyan_chen">Jingyan Chen</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/jingyan_chen">Jingyan Chen</a>  
 <br />
 <span>
 Graduate student
@@ -634,11 +558,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/shuo_li"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/shuo_li.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/shuo_li"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/shuo_li.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/shuo_li">Shuo Li</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/shuo_li">Shuo Li</a>  
 <br />
 <span>
 Graduate student
@@ -669,11 +593,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yunfei_tian"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yunfei_tian.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yunfei_tian"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yunfei_tian.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yunfei_tian">Yunfei Tian</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yunfei_tian">Yunfei Tian</a>  
 <br />
 <span>
 Graduate student
@@ -700,11 +624,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/jessica_s_meng"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/jessica_s_meng.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/jessica_s_meng"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/jessica_s_meng.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/jessica_s_meng">Sihan Meng</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/jessica_s_meng">Sihan Meng</a>  
 <br />
 <span>
 Graduate student
@@ -733,11 +657,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yzuhe_zhang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yuzhe.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/yzuhe_zhang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yuzhe.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/yzuhe_zhang">Yuzhe Zhang</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/yzuhe_zhang">Yuzhe Zhang</a>  
 <br />
 <span>
 Graduate student
@@ -770,11 +694,11 @@ Graduate student
 
     <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/jingqian_wu"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/jingqian_wu.jpg" /></a>
+<a href="https://isl.eee.hku.hk/team/jingqian_wu"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/jingqian_wu.jpg" /></a>
 
 </p>
     <p>
-<a class="name" href="https://isl-hku.github.io/team/jingqian_wu">Jingqian Wu</a>  
+<a class="name" href="https://isl.eee.hku.hk/team/jingqian_wu">Jingqian Wu</a>  
 <br />
 <span>
 Graduate student
@@ -824,11 +748,11 @@ Graduate student
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/wei_xiang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/wei_xiang.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/wei_xiang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/wei_xiang.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/wei_xiang">Dr. Wei Xiang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/wei_xiang">Dr. Wei Xiang</a> 
 <br> 
 <span>
 Postdoc
@@ -853,11 +777,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/jun_ke"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/jun_ke.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/jun_ke"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/jun_ke.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/jun_ke">Dr. Jun Ke</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/jun_ke">Dr. Jun Ke</a> 
 <br> 
 <span>
 Postdoc
@@ -882,11 +806,11 @@ Current: <span>BIT</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/haiyan_ou"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/hyou.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/haiyan_ou"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/hyou.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/haiyan_ou">Haiyan Ou</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/haiyan_ou">Haiyan Ou</a> 
 <br> 
 <span>
 Postdoc
@@ -911,11 +835,11 @@ Current: <span>UESTC</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/chul_lee"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/chul_lee.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/chul_lee"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/chul_lee.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/chul_lee">Dr. Chul Lee</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/chul_lee">Dr. Chul Lee</a> 
 <br> 
 <span>
 Postdoc
@@ -940,11 +864,11 @@ Current: <span>Dongguk University</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/ni_chen_pd"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/ni_chen_pd.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/ni_chen_pd"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/ni_chen_pd.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/ni_chen_pd">Dr. Ni Chen</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/ni_chen_pd">Dr. Ni Chen</a> 
 <br> 
 <span>
 Postdoc
@@ -979,11 +903,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/zhenhua_zhou"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/zhenhua_zhou.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/zhenhua_zhou"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/zhenhua_zhou.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/zhenhua_zhou">Dr. Zhenhua Zhou</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/zhenhua_zhou">Dr. Zhenhua Zhou</a> 
 <br> 
 <span>
 Postdoc
@@ -1008,11 +932,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/jianqing_huang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/jq_huang.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/jianqing_huang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/jq_huang.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/jianqing_huang">Jianqing Huang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/jianqing_huang">Jianqing Huang</a> 
 <br> 
 <span>
 Postdoc
@@ -1037,11 +961,11 @@ Current: <span>Xiamen University</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/kaiqiang_wang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/kqwang.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/kaiqiang_wang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/kqwang.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/kaiqiang_wang">Kaiqiang Wang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/kaiqiang_wang">Kaiqiang Wang</a> 
 <br> 
 <span>
 Postdoc
@@ -1080,11 +1004,11 @@ Current: <span>NWPU</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/annie_m_tang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/annie_m_tang.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/annie_m_tang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/annie_m_tang.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/annie_m_tang">Dr. Annie M. Tang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/annie_m_tang">Dr. Annie M. Tang</a> 
 <br> 
 <span>
 Graduate student
@@ -1109,11 +1033,11 @@ Current: <span>Hospital Authority</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/helen_n_jia"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/helen_n_jia.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/helen_n_jia"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/helen_n_jia.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/helen_n_jia">Dr. Helen N. Jia</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/helen_n_jia">Dr. Helen N. Jia</a> 
 <br> 
 <span>
 Graduate student
@@ -1138,11 +1062,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/jiachen_li"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/jiachen_li.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/jiachen_li"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/jiachen_li.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/jiachen_li">Dr. Jiachen Li</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/jiachen_li">Dr. Jiachen Li</a> 
 <br> 
 <span>
 Graduate student
@@ -1167,11 +1091,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/kyle_h_cheng"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/kyle_h_cheng.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/kyle_h_cheng"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/kyle_h_cheng.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/kyle_h_cheng">Dr. Kyle H. Cheng</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/kyle_h_cheng">Dr. Kyle H. Cheng</a> 
 <br> 
 <span>
 Graduate student
@@ -1196,11 +1120,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/tristan_x_zhang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/tristan_x_zhang.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/tristan_x_zhang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/tristan_x_zhang.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/tristan_x_zhang">Dr. Tristan X. Zhang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/tristan_x_zhang">Dr. Tristan X. Zhang</a> 
 <br> 
 <span>
 Graduate student
@@ -1225,11 +1149,11 @@ Current: <span>Institute of Automation</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/wen_lv"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/wen_lv.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/wen_lv"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/wen_lv.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/wen_lv">Dr. Wen Lv</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/wen_lv">Dr. Wen Lv</a> 
 <br> 
 <span>
 Graduate student
@@ -1254,11 +1178,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/xiaofei_wu"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/xiaofei_wu.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/xiaofei_wu"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/xiaofei_wu.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/xiaofei_wu">Dr. Xiaofei Wu</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/xiaofei_wu">Dr. Xiaofei Wu</a> 
 <br> 
 <span>
 Graduate student
@@ -1283,11 +1207,11 @@ Current: <span>Huawei</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/xing_sun"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/xing_sun.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/xing_sun"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/xing_sun.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/xing_sun">Dr. Xing Sun</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/xing_sun">Dr. Xing Sun</a> 
 <br> 
 <span>
 Graduate student
@@ -1312,11 +1236,11 @@ Current: <span>Tencent Youtu Lab</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/yijiang_shen"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/yijiang_shen.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/yijiang_shen"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/yijiang_shen.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/yijiang_shen">Dr. Yijiang Shen</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/yijiang_shen">Dr. Yijiang Shen</a> 
 <br> 
 <span>
 Graduate student
@@ -1341,11 +1265,11 @@ Current: <span>GUT</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/zhimin_xu"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/zhimin_xu.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/zhimin_xu"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/zhimin_xu.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/zhimin_xu">Dr. Zhimin Xu</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/zhimin_xu">Dr. Zhimin Xu</a> 
 <br> 
 <span>
 Graduate student
@@ -1370,11 +1294,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/fuqin_deng"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/fuqin_deng.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/fuqin_deng"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/fuqin_deng.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/fuqin_deng">Dr. Fuqin Deng</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/fuqin_deng">Dr. Fuqin Deng</a> 
 <br> 
 <span>
 Graduate student
@@ -1399,11 +1323,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/kary_jia_li"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/kary_jia_li.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/kary_jia_li"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/kary_jia_li.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/kary_jia_li">Dr. Kary Jia Li</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/kary_jia_li">Dr. Kary Jia Li</a> 
 <br> 
 <span>
 Graduate student
@@ -1428,11 +1352,11 @@ Current: <span>Shenzhen University</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/antony_cs_chan"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/antony_cs_chan.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/antony_cs_chan"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/antony_cs_chan.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/antony_cs_chan">Dr. Antony C.S. Chan</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/antony_cs_chan">Dr. Antony C.S. Chan</a> 
 <br> 
 <span>
 Graduate student
@@ -1457,11 +1381,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/zhenbo_ren"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/zbren.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/zhenbo_ren"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/zbren.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/zhenbo_ren">Zhenbo Ren</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/zhenbo_ren">Zhenbo Ren</a> 
 <br> 
 <span>
 Graduate student
@@ -1492,11 +1416,11 @@ Current: <span>NWPU</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/nan_meng"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/nan_meng.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/nan_meng"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/nan_meng.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/nan_meng">Dr. Nan Meng</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/nan_meng">Dr. Nan Meng</a> 
 <br> 
 <span>
 Graduate student
@@ -1521,11 +1445,11 @@ Current: <span>HKU</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/tianjiao_zeng"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/tianjiao_zeng.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/tianjiao_zeng"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/tianjiao_zeng.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/tianjiao_zeng">Dr. Tianjiao Zeng</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/tianjiao_zeng">Dr. Tianjiao Zeng</a> 
 <br> 
 <span>
 Graduate student
@@ -1550,11 +1474,11 @@ Current: <span>UESTC</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/peiyan_guan"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/peiyan_guan.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/peiyan_guan"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/peiyan_guan.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/peiyan_guan">Dr. Peiyan Guan</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/peiyan_guan">Dr. Peiyan Guan</a> 
 <br> 
 <span>
 Graduate student
@@ -1579,11 +1503,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/zhou_ge"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/zhou_ge.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/zhou_ge"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/zhou_ge.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/zhou_ge">Dr. Zhou Ge</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/zhou_ge">Dr. Zhou Ge</a> 
 <br> 
 <span>
 Graduate student
@@ -1608,11 +1532,11 @@ Current: <span>Shanghai University</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/li_song"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/li_song.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/li_song"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/li_song.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/li_song">Dr. Li Song</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/li_song">Dr. Li Song</a> 
 <br> 
 <span>
 Graduate student
@@ -1637,11 +1561,11 @@ Current: <span>NWSUAF</span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/pei_zhang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/pei_zhang.png"></a>
+<a href="https://isl.eee.hku.hk/team/pei_zhang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/pei_zhang.png"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/pei_zhang">Dr. Pei Zhang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/pei_zhang">Dr. Pei Zhang</a> 
 <br> 
 <span>
 Graduate student
@@ -1670,11 +1594,11 @@ Current: <span></span>
 <hr>
 <p class="list-post-title">
 
-<a href="https://isl-hku.github.io/team/shansi_zhang"><img class="profile-thumbnail" src="https://isl-hku.github.io/assets/images/member/shansi_zhang.jpg"></a>
+<a href="https://isl.eee.hku.hk/team/shansi_zhang"><img class="profile-thumbnail" src="https://isl.eee.hku.hk/assets/images/member/shansi_zhang.jpg"></a>
 
 </p>
 <p>
-<a class="name" href="https://isl-hku.github.io/team/shansi_zhang">Dr. Shansi Zhang</a> 
+<a class="name" href="https://isl.eee.hku.hk/team/shansi_zhang">Dr. Shansi Zhang</a> 
 <br> 
 <span>
 Graduate student
@@ -1751,7 +1675,7 @@ Current: <span></span>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://isl-hku.github.io/assets/js/bootstrap.min.js"></script>
+<script src="https://isl.eee.hku.hk/assets/js/bootstrap.min.js"></script>
 
   </body>
 
