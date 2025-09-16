@@ -39,6 +39,29 @@ html {
     margin-top: 36px;
   }
 }
+
+/* ===============================
+  ISL: HKU logo in header (all pages)
+  =============================== */
+/* Show HKU logo on desktop to avoid crowding on small screens */
+@media (min-width: 768px) {
+  .navbar-header .navbar-logo.hku-logo img {
+    height: 120px;          /* adjust as needed */
+    width: auto;
+    vertical-align: middle;
+    margin-top: 0px !important;
+  }
+  .navbar-header .navbar-logo.hku-logo {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-header .navbar-logo.hku-logo {
+    display: none; /* hide on small screens */
+  }
 }
 
 
