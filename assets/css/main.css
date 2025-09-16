@@ -45,6 +45,15 @@ html {
   =============================== */
 /* Show HKU logo on desktop to avoid crowding on small screens */
 @media (min-width: 768px) {
+  /* Overlay the logo so it doesn't push brand/nav */
+  .navbar-header .navbar-logo.hku-logo {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    display: block;
+    margin: 0;
+    z-index: 2;
+  }
   .navbar-header .navbar-logo.hku-logo img {
     height: 120px;          /* adjust as needed */
     width: auto;
