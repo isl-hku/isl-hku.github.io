@@ -25,7 +25,7 @@ Neuromorphic imaging is a novel area that the lab explores. It involves the use 
 The lab has a strong focus on digital holography, a technique that captures and reconstructs holograms digitally. This includes advancements in optical scanning holography, polarization holographic spectrometry, and holographic 3D particle reconstruction. The lab's work in this area contributes to a deeper understanding and enhanced application of holography in various fields.
 
 
-## Microplastics Detection
+## [Microplastics Detection](https://www.eee.hku.hk/combatmp/index.html)
 
 The lab is actively engaged in the detection and assessment of microplastic pollution, a growing environmental concern. This involves utilizing advanced imaging techniques like digital holography combined with deep learning for efficient and accurate identification and classification of microplastics in various environments.
 
