@@ -2,25 +2,14 @@
 <h3>News</h3>
 <hr>
 {% assign items = site.data.news | sort: 'date' | reverse %}
-{% for article in items limit: 8 %}
-{% assign matched_post = site.posts | where: 'title', article.headline | first %}
-{% if article.link and article.link != '' %}
-    {% assign href = article.link %}
-{% elsif matched_post %}
-    {% assign href = site.baseurl | append: matched_post.url %}
-{% else %}
-    {% assign href = nil %}
-{% endif %}
+{% for article in items limit: 10 %}
 
-<div class="news-item" style="margin-bottom: 18px; overflow: auto;">
-    <div style=" margin-bottom: 6px;">
+
+<div class="news-item" style="margin-bottom: 0px; overflow: auto;">
+    <div style=" margin-bottom: 0px;">
     {{ article.date }}
     <br>
-    {% if href %}
-    <a href="{{ href }}">{{ article.headline }}</a>
-    {% else %}
-    {{ article.headline }}
-    {% endif %}
+    <a href="{{ site.baseurl }}/allnews.html#news-{{ article.date | append: '-' | append: article.headline | slugify }}">{{ article.headline }}</a>
     </div>
 </div>
 <hr>

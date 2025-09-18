@@ -37,8 +37,12 @@ Research in this area encompasses a broad range of technologies aimed at improvi
 
 ## [Differentiable Imaging](https://ni-chen.github.io/Differentiable-Imaging/)
 
+<a href="https://en.wikipedia.org/wiki/Differentiable_imaging" target="_blank" rel="noopener">
+	<img src="https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" style="width: 100px; height: 100px; float: right; margin-left: 12px; margin-bottom: 6px;" />
+</a>
+
 Differentiable imaging represents a foundational paradigm in computational imaging. Leveraging differentiable programming, it effectively bridges the gaps among core system components, enabling authentic co-design to move from concept to practical implementation.
 
-
+<div style="clear: both;"></div>
 
 <br>

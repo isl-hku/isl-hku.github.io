@@ -14,11 +14,11 @@ permalink: /allnews.html
 .news-entry { overflow: auto; }
 .news-image-right {
 	float: right;
-	width: 30%;
+	width: 40%;
 	height: auto;
 	margin-left: 12px;
 	margin-bottom: 6px;
-  margin-top: -35px;
+    margin-top: -10px;
 }
 @media (max-width: 767px) {
 	.news-image-right { float: none; width: 100%; margin: 8px 0 10px 0; }
@@ -37,7 +37,7 @@ permalink: /allnews.html
 {% assign current_year = year %}
 <li class="news-year-divider"><h3 class="news-year" id="y{{ current_year }}">{{ current_year }}</h3></li>
 {% endif %}
-<li class="news-entry">
+<li class="news-entry" id="news-{{ article.date | append: '-' | append: article.headline | slugify }}">
 <div class="news-meta text-sm"><time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date }}</time></div>
 {% if article.headline %}
 <h4 class="news-title" >
