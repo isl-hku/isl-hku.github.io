@@ -1,11 +1,11 @@
 ---
 name: Shuo Zhu
 position: postdoc
-avatar: shuozhu.jpg
-email: 
+avatar: shuo_zhu.jpg
+email: zhushuo@hku.hk
 linkedin: 
-scholar: 
-web: 
+scholar: https://scholar.google.com.hk/citations?user=uR0gBNcAAAAJ&hl=en
+web: https://www.researchgate.net/profile/Shuo-Zhu-4
 github: 
 twitter: 
 joined: 2023
