@@ -6,7 +6,7 @@ email: meiluzhu@hku.hk
 linkedin: 
 scholar: https://scholar.google.com.hk/citations?user=CZeoHU0AAAAJ&hl=zh-CN
 web: https://meiluzhu.github.io/
-github: https://github.com/meiluzhu
+github: meiluzhu
 twitter: 
 joined: 2025
 left: ""
