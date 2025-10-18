@@ -6,7 +6,7 @@ email: wangzw.eee.hku.hk
 linkedin: 
 scholar: https://scholar.google.com.hk/citations?user=wkuxFQcAAAAJ&hl=zh-CN
 web: https://warren-wzw.github.io/HomePage/#
-github: https://github.com/warren-wzw
+github: warren-wzw
 twitter: 
 joined: 2025
 left: ""
