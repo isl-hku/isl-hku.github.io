@@ -1,6 +1,6 @@
 ---
 name: Zhiwei Wang
-position: visiting student
+position: visiting
 avatar: zhiwei_wang.jpg
 email: wangzw.eee.hku.hk
 linkedin: 
