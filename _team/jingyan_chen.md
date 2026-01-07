@@ -2,7 +2,7 @@
 name: Jingyan Chen
 position: gradstudent
 avatar: jychen.jpg
-email: jingyuan0110@outlook.com
+email: jingyan0110@outlook.com
 scholar: 
 web: 
 github: 
