@@ -15,7 +15,7 @@ permalink: /research/
 
 
 
-## [Neuromorphic Imaging](https://github.com/ChutianWong/CNI_web)
+## [Neuromorphic Imaging](https://github.com/ChutianWong/CNI_web/)
 
 Neuromorphic imaging is a novel area that the lab explores. It involves the use of imaging systems that mimic the human brain's neural structure and processing methods. This field is particularly relevant for developing advanced vision systems that can efficiently process visual information, potentially leading to breakthroughs in areas like adaptive optics, wavefront sensing, industrial inspection, autonomous systems and robotics.
 
@@ -47,4 +47,5 @@ Differentiable imaging represents a foundational paradigm in computational imagi
 
 
 <br>
+
 
