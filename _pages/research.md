@@ -17,7 +17,7 @@ permalink: /research/
 
 ## Neuromorphic Imaging
 
-Neuromorphic imaging is a novel area that the lab explores. It involves the use of imaging systems that mimic the human brain's neural structure and processing methods. This field is particularly relevant for developing advanced vision systems that can efficiently process visual information, potentially leading to breakthroughs in areas like autonomous systems and robotics.
+Neuromorphic imaging is a novel area that the lab explores. It involves the use of imaging systems that mimic the human brain's neural structure and processing methods. This field is particularly relevant for developing advanced vision systems that can efficiently process visual information, potentially leading to breakthroughs in areas like adaptive optics, wavefront sensing, industrial inspection, autonomous systems and robotics.
 
 
 ## Digital Holography
@@ -44,5 +44,6 @@ Research in this area encompasses a broad range of technologies aimed at improvi
 Differentiable imaging represents a foundational paradigm in computational imaging. Leveraging differentiable programming, it effectively bridges the gaps among core system components, enabling authentic co-design to move from concept to practical implementation.
 
 <div style="clear: both;"></div>
+
 
 <br>
