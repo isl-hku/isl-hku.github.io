@@ -5,7 +5,7 @@ avatar: shuo_li.jpg
 email: shuoli_eee@connect.hku.hk
 scholar: https://scholar.google.com/citations?user=_6xqJPcAAAAJ&hl
 linkedin: shuo-li-a6a8a8286
-github: shuoli199909
+github: shuoli-roy
 joined: 2024
 left: ""
 ---
