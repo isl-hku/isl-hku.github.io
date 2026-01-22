@@ -1,6 +1,6 @@
 ---
 name: Chutian Wang
-position: gradstudent
+position: PhD gradstudent
 avatar: ctwang.jpg
 email: ctwang@eee.hku.hk
 scholar: https://scholar.google.com/citations?user=YrNzoXgAAAAJ&hl=zh-CN 
