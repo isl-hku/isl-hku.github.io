@@ -9,7 +9,7 @@ linkedin: haoyu-wei-b2781b138
 github: whywww
 # twitter: ni_chen
 joined: 2021
-left: ""
+left: 2025
 ---
 
 

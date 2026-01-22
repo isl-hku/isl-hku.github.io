@@ -1,5 +1,5 @@
 ---
-name: Haiyan Ou
+name: Dr. Haiyan Ou
 position: postdoc  
 avatar: hyou.jpg 
 email: 

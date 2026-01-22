@@ -10,7 +10,7 @@ web: https://yp000925.github.io/zhangyp/
 github: 
 # twitter: ni_chen
 joined: 2020
-left: ""
+left: 2025
 ---
 
 

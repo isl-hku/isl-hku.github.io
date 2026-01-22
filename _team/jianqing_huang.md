@@ -1,5 +1,5 @@
 ---
-name: Jianqing Huang
+name: Dr. Jianqing Huang
 position: postdoc
 avatar: jq_huang.jpg
 email: 

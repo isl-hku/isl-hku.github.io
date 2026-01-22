@@ -1,5 +1,5 @@
 ---
-name: Kaiqiang Wang
+name: Dr. Kaiqiang Wang
 position: postdoc
 avatar: kqwang.jpg
 email: kqwang@nwpu.edu.cn
