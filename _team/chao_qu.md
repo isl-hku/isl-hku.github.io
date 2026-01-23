@@ -1,6 +1,6 @@
 ---
 name: Chao Qu
-position: Research Assistant
+position: research assistant
 avatar: chao_qu.jpg
 email: quchao@hku.hk
 linkedin: 
