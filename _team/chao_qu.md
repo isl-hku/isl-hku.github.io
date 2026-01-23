@@ -1,6 +1,6 @@
 ---
 name: Chao Qu
-position: researchstaff
+position: visiting
 avatar: chao_qu.jpg
 email: quchao@hku.hk
 linkedin: 
