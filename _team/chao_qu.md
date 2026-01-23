@@ -1,6 +1,6 @@
 ---
 name: Chao Qu
-position: visiting
+position: researchstaff
 avatar: chao_qu.jpg
 email: quchao@hku.hk
 linkedin: 
@@ -15,8 +15,7 @@ left: ""
 
 
 
-## Visiting Student
-
+## Research Assistant
 
 <i class="fa fa-building"></i> Chow Yei Ching Building, Room 512
 
