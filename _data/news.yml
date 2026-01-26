@@ -1,4 +1,12 @@
 
+- date: 2026-01-18
+  headline: "plenary talk at The 25th International Conference on Electronics, Information, and Communication (ICEIC 2026)"
+  type: post
+  link: "https://iceic.org/2026/pages/program.vm"
+  avatar: 2026_iceic.jpg
+  summary: "Prof. Edmund Lam delivered a plenary talk on 'Neuromorphic Imaging' at ICEIC 2026."
+
+
 - date: 2025-08-12
   headline: "Prof. Lam delivered Invited Talk at CIOP Conference 2025"
   type: post
@@ -28,7 +36,7 @@
   summary: "CUBE generates controllable videos from event-camera edge streams guided by text prompts using pre-trained diffusion models—no additional training required."
 
 - date: 2024-08-06
-  headline: "Professor Lam Delivers Keynote on Computational Neuromorphic Imaging at COSI"
+  headline: "Professor Lam Delivers Keynote on Computational Neuromorphic Imaging at ImageSense"
   type: post
   link: ""
   avatar: 2024-cosi.jpg
