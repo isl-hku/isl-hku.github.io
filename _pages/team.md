@@ -92,7 +92,6 @@ title: "Team"
 			<th>Role</th>
 			<th>Years</th>
 			<th>Current</th>
-			<th>Links</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -102,7 +101,7 @@ title: "Team"
 	{% for profile in role_alumni %}
 		<tr>
 			<td>
-				<a class="name" href="{{ site.url }}{{ site.baseurl }}{{ profile.url }}">{{ profile.name }}</a>
+				{{ profile.name }}
 			</td>
 			<td>
 				{% case role %}
@@ -117,29 +116,6 @@ title: "Team"
 			</td>
 			<td>{{ profile.joined }}~{{ profile.left }}</td>
 			<td>{{ profile.current }}</td>
-			<td>
-				{% if profile.email %}
-				<a href="mailto:{{ profile.email }}"><i class="fa fa-envelope fa-align-left fa-lg"></i></a>
-				{% endif %}
-				{% if profile.scholar %}
-				<a href="{{ profile.scholar }}"><i class="ai ai-google-scholar icon-align-left fa-lg" ></i></a>
-				{% endif %}
-				{% if profile.web %}
-				<a href="{{ profile.web }}"><i class="fa fa-globe fa-align-left fa-lg"></i></a>
-				{% endif %}
-				{% if profile.github  %}
-				<a href="https://github.com/{{ profile.github }}"><i class="fa fa-github fa-align-left fa-lg"></i></a>
-				{% endif %}
-				{% if profile.orcid %}
-				<a href="https://orcid.org/{{ profile.orcid }}"><i class="ai ai-orcid icon-align-left fa-lg" ></i></a>
-				{% endif %}
-				{% if profile.twitter %}
-				<a href="https://twitter.com/{{ profile.twitter }}"><i class="fa fa-twitter fa-align-left fa-lg"></i></a>
-				{% endif %}
-				{% if profile.linkedin  %}
-				<a href="https://www.linkedin.com/in/{{ profile.linkedin }}"><i class="fa fa-linkedin fa-align-left fa-lg"></i></a>
-				{% endif %}
-			</td>
 		</tr>
 	{% endfor %}
 	{% endif %}
@@ -148,5 +124,4 @@ title: "Team"
 </table>
 {% endif %}
 </div>
-
 
