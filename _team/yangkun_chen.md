@@ -21,4 +21,4 @@ left: ""
 ### Education
 
 - PhD Student in Electrical and Computer Engineering, The University of Hong Kong, 2026–Present
-- MEng in Biomedical Engineering, Imperial College London, 2026
+- MEng in Biomedical Engineering, Imperial College London, 2022-2026
