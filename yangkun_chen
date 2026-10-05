@@ -1,0 +1,35 @@
+---
+name: Your Full Name  <!-- e.g., "John Doe" -->
+position: your role  <!-- e.g., "phdstudent", "postdoc", "researchstaff" -->
+avatar: firstname_lastname.jpg  <!-- Match your photo filename -->
+twitter: your_twitter_id 
+avatar: xxxx.jpg
+linkedin: xxxx <!-- ID only -->
+email: 
+scholar: https://scholar.google.com/citations?user=MvOSTcUAAAAJ
+web: 
+orcid: 0000-0000-0000-0000
+github: xxx   <!-- ID only -->
+joined: 2023  <!-- e.g., 2024 -->
+left: ""
+---
+
+
+<i class="fa fa-building"></i> Your Office Location (e.g., "RIC 1481")
+<br>
+
+<hr>
+
+### Bio
+
+A short description of your background (e.g., education, previous research, interests). Keep it brief!
+
+<hr>
+
+### Research Interests
+
+- Area 1 (e.g., "Computational imaging")
+- Area 2 (e.g., "Deep learning for microscopy")
+- Area 3
+
+### Others
