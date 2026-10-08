@@ -4,7 +4,7 @@ position: gradstudent
 avatar: yangkun_chen.jpg
 twitter:
 linkedin: yangkun-chen-a204b1253
-email:
+email:u3014084@connect.hku.hk
 scholar:
 web:
 orcid:
