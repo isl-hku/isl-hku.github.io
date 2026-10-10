@@ -7,7 +7,7 @@ scholar: https://scholar.google.com/citations?user=dinpqugAAAAJ&hl=en
 web: https://wujingqian.github.io/
 github: Wujingqian
 twitter: 
-joined: Jan, 2024
+joined: 2024
 left: ""
 ---
 
