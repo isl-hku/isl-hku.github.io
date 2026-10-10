@@ -1,5 +1,5 @@
 ---
-name: Chao Tan (谭超)
+name: Chao Tan
 position: gradstudent
 avatar: chao_tan.jpg
 email: chaotan2026@connect.hku.hk
